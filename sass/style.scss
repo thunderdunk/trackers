@@ -1,0 +1,15 @@
+//Importing Sass files to compile
+
+
+// configure the style from settings
+@import 'settings';
+
+// reset styles should stay at the top
+@import 'reset';
+
+// move mixins to their own partial
+@import 'mixins';
+
+// Main styles
+@import 'global';
+@import 'magnific';
