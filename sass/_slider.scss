@@ -1,0 +1,24 @@
+/* Slider Styles - Trackers Earth
+--------------------------------------------- */
+
+#hero-slider {
+	height: 60vh;
+	background: green;
+	width: 100%;
+
+	.flexslider {
+		background: yellow;
+		.slides {
+			background: red;
+			height: 100%;
+
+			.slide {
+				width: 10%;
+				img {
+					width: 100%;
+				}
+			}
+		}
+	}
+	
+}

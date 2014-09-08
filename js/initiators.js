@@ -1,6 +1,14 @@
 
 
 $(document).ready(function() {
+	
+	// Can also be used with $(document).ready()
+	  $('.flexslider').flexslider({
+	    animation: "slide"
+	  });
+
+
+
 	$('.test-popup-link').magnificPopup({ 
 	  type: 'image'
 		// other options

@@ -15,20 +15,92 @@
 <!-- Magnific Popup core JS file -->
 <script src="js/jquery.magnific-build-min.js"></script> 
 
+<!-- FlexSlider -->
+<script src="js/jquery.flexslider-min.js"></script>
+
 <script src="js/initiators.js"></script>
 
 </head>
 
 <body>
-	<header>
+	<header id="masthead">
+
+		<h1 class="site-branding">Trackers Earth Portland</h1>
+
+		<nav id="main-navigation">
+			<ul class="menu">
+				<li><a href="about.html">About</a></li>
+				<li><a href="youth.html">Youth</a></li>
+				<li><a href="adult.html">Adult</a></li>
+				<li><a href="locations.html">Locations</a>
+					<ul class="child">
+					<li><a href="portland.html">Portland</a></li>
+					<li><a href="bayarea.html">Bay Area</a></li>
+					</ul>
+				</li>
+				<li><a href="#">Blog</a></li>
+				<li><a href="#">Contact</a></li>
+			</ul>
+
+
+		</nav><!--#main-navigation-->
+
+		<nav id="secondary-navigation">
+			<ul class="menu">
+				<li class="login"><a href="#">Login</a></li>
+				<li class="facebook"><a href="https://www.facebook.com/trackersearth" target="_blank" title="Facebook">Facebook</a></li>
+				<li class="google-plus"><a href="https://plus.google.com/106518547425312602411/posts" target="_blank" title="Google Plus">Google+</a></li>
+				<li class="twitter"><a href="https://twitter.com/trackersearth" target="_blank" title="Twitter">Twitter</a></li>
+			</ul>
+		</nav><!--#secondary-navigation-->
+
 		
-	</header>
+	</header><!--#masthead-->
 
+	<!--Uses FlexSlider @link https://github.com/woothemes/FlexSlider-->
+	<section id="hero-slider" class="slider">
+		<div class="flexslider">
+			<ul class="slides">
+	            <li class="slide" <!--style="background-image: url('images/kitchen_adventurer_cheesecake_brownie.jpg')" -->>
+	            	<img src="images/kitchen_adventurer_cheesecake_brownie.jpg" alt="cheesecake brownie" />
+	  	    	    <div class="content">
+						<h3 class="quote">&ldquo;A totally new experience... like a junior Outward Bound.&rdquo;</h3>
+						<h4 class="author">Lucy Bosworth<br /><span class="">2013 Parent</span></h4>
+					</div><!--.content-->
+  	    		</li>
+  	    		<li class="slide">
+	  	    	    <img src="images/kitchen_adventurer_lemon.jpg" />
+	  	    	    <div class="content">
+						<h3 class="quote">&ldquo;A totally new experience... like a junior Outward Bound.&rdquo;</h3>
+						<h4 class="author">Lucy Bosworth<br /><span class="">2013 Parent</span></h4>
+					</div><!--.content-->
+  	    		</li>
+  	    		<li class="slide">
+	  	    	    <img src="images/kitchen_adventurer_donut.jpg" />
+  	    		</li>
+  	    		<li class="slide">
+	  	    	    <img src="images/kitchen_adventurer_caramel.jpg" />
+  	    		</li>
+	     	</ul>
+		</div><!--.flexslider-->
 
-	<section class="slider">
 		<article class="slide">
 			<div class="content">
 				<h3 class="quote">&ldquo;A totally new experience... like a junior Outward Bound.&rdquo;</h3>
+				<h4 class="author">Lucy Bosworth<br /><span class="">2013 Parent</span></h4>
+			</div><!--.content-->
+		</article><!--.slide-->
+
+		<article class="slide">
+			<div class="content">
+				<h3 class="quote">&ldquo;A quote for a second slide&rdquo;</h3>
+				<h4 class="author">Lucy Bosworth<br /><span class="">2013 Parent</span></h4>
+			</div><!--.content-->
+		</article><!--.slide-->
+
+		<article class="slide">
+			<div class="content">
+				<h3 class="quote">&ldquo;Trackers Earth is the coolest!&rdquo;</h3>
 				<h4 class="author">Lucy Bosworth<br /><span class="">2013 Parent</span></h4>
 			</div><!--.content-->
 		</article><!--.slide-->
