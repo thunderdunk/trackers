@@ -6,8 +6,12 @@
 <!-- Main stylesheet: includes Magnific CSS -->
 <link rel="stylesheet" type="text/css" href="css/style.css" /> 
 
+<!-- Google Fonts -->
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,300,600,700|Roboto+Slab:400,300' rel='stylesheet' type='text/css'>
+
 <!-- jQuery -->
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> 
+
 <!-- jQuery UI -->
 <link rel="stylesheet" href="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.1/themes/smoothness/jquery-ui.css" />
 <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.1/jquery-ui.min.js"></script>
@@ -25,7 +29,7 @@
 <body>
 	<header id="masthead">
 
-		<h1 class="site-branding">Trackers Earth Portland</h1>
+		<h1 class="site-branding"><a href="#">Trackers Earth Portland</a></h1>
 
 		<nav id="main-navigation">
 			<ul class="menu">
@@ -42,17 +46,13 @@
 				<li><a href="#">Contact</a></li>
 			</ul>
 
-
-		</nav><!--#main-navigation-->
-
-		<nav id="secondary-navigation">
-			<ul class="menu">
+			<ul class="menu social">
 				<li class="login"><a href="#">Login</a></li>
 				<li class="facebook"><a href="https://www.facebook.com/trackersearth" target="_blank" title="Facebook">Facebook</a></li>
 				<li class="google-plus"><a href="https://plus.google.com/106518547425312602411/posts" target="_blank" title="Google Plus">Google+</a></li>
 				<li class="twitter"><a href="https://twitter.com/trackersearth" target="_blank" title="Twitter">Twitter</a></li>
 			</ul>
-		</nav><!--#secondary-navigation-->
+		</nav><!--#main-navigation-->
 
 		
 	</header><!--#masthead-->
@@ -61,7 +61,7 @@
 	<section id="hero-slider" class="slider">
 		<div class="flexslider">
 			<ul class="slides">
-	            <li class="slide" <!--style="background-image: url('images/kitchen_adventurer_cheesecake_brownie.jpg')" -->>
+	            <li class="slide">
 	            	<img src="images/kitchen_adventurer_cheesecake_brownie.jpg" alt="cheesecake brownie" />
 	  	    	    <div class="content">
 						<h3 class="quote">&ldquo;A totally new experience... like a junior Outward Bound.&rdquo;</h3>
@@ -84,27 +84,60 @@
 	     	</ul>
 		</div><!--.flexslider-->
 
-		<article class="slide">
-			<div class="content">
-				<h3 class="quote">&ldquo;A totally new experience... like a junior Outward Bound.&rdquo;</h3>
-				<h4 class="author">Lucy Bosworth<br /><span class="">2013 Parent</span></h4>
-			</div><!--.content-->
-		</article><!--.slide-->
-
-		<article class="slide">
-			<div class="content">
-				<h3 class="quote">&ldquo;A quote for a second slide&rdquo;</h3>
-				<h4 class="author">Lucy Bosworth<br /><span class="">2013 Parent</span></h4>
-			</div><!--.content-->
-		</article><!--.slide-->
-
-		<article class="slide">
-			<div class="content">
-				<h3 class="quote">&ldquo;Trackers Earth is the coolest!&rdquo;</h3>
-				<h4 class="author">Lucy Bosworth<br /><span class="">2013 Parent</span></h4>
-			</div><!--.content-->
-		</article><!--.slide-->
+		
 	</section><!--.slider-->
+
+	<header class="page-header">
+		<h1 class="page-title">Page Title</h1>
+	</header><!--.page-header-->
+
+	<article class="entry-content">
+		<h2>Heading 2</h2>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis erat odio, ornare eu velit a, facilisis luctus lorem. Pellentesque imperdiet dui id purus lobortis, a semper magna auctor. Curabitur tristique dictum metus eget tempor. Cras id ex aliquam arcu maximus interdum vitae vel purus. Ut varius, quam id lacinia accumsan, ante ligula posuere libero, at ullamcorper lorem orci id dolor. Nam ac mauris augue. Donec id mattis quam. Sed hendrerit mauris in leo lacinia rhoncus maximus nec nisi. Fusce ac nisi lectus.</p>
+
+		<p>Nulla consectetur ligula malesuada ante vestibulum tincidunt. Cras condimentum lectus enim, ac condimentum tellus laoreet nec. Nam ullamcorper est pellentesque dolor eleifend, id auctor arcu posuere. Proin scelerisque, orci facilisis vestibulum ornare, sem arcu scelerisque lacus, quis iaculis massa diam quis sapien. Donec luctus consectetur mi. Vivamus bibendum, diam quis aliquet volutpat, nibh est luctus felis, ut fermentum libero ligula vel lectus. Suspendisse quis bibendum orci, at vehicula leo. Integer vel est felis. Curabitur elit purus, semper vitae ante eu, congue consequat mi. Proin interdum, ligula pellentesque sollicitudin commodo, urna turpis venenatis libero, sit amet elementum velit ante ac augue. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum sed nulla diam. Nulla ut tellus magna.</p>
+
+	</article><!--.entry-content-->
+
+	<section id="registration">
+
+		<div class="tabs" id="tabs">
+			<ul>
+				<li><a href="#tabs-1">NE</a></li>
+				<li><a href="#tabs-2">North</a></li>
+				<li><a href="#tabs-3">Hillsboro</a></li>
+			</ul>
+			<div id="tabs-1" class="accordion">
+				<div class="head">
+					<h3>First header</h3>
+				</div><!--.head-->
+
+				<div class="content">
+					<p>First content panel</p>
+				</div><!--.content-->
+
+				<div class="head">
+				  <h3>Second header</h3>
+				</div><!--.head-->
+
+				<div class="content">
+					<p>Class info here</p>
+				</div><!--.content-->
+
+			</div><!--.accordion-->
+
+			<div id="tabs-2">
+				<p>Morbi tincidunt, dui sit amet facilisis feugiat, odio metus gravida ante, ut pharetra massa metus id nunc. Duis scelerisque molestie turpis. Sed fringilla, massa eget luctus malesuada, metus eros molestie lectus, ut tempus eros massa ut dolor. Aenean aliquet fringilla sem. Suspendisse sed ligula in ligula suscipit aliquam. Praesent in eros vestibulum mi adipiscing adipiscing. Morbi facilisis. Curabitur ornare consequat nunc. Aenean vel metus. Ut posuere viverra nulla. Aliquam erat volutpat. Pellentesque convallis. Maecenas feugiat, tellus pellentesque pretium posuere, felis lorem euismod felis, eu ornare leo nisi vel felis. Mauris consectetur tortor et purus.</p>
+			</div>
+			<div id="tabs-3">
+				<p>Mauris eleifend est et turpis. Duis id erat. Suspendisse potenti. Aliquam vulputate, pede vel vehicula accumsan, mi neque rutrum erat, eu congue orci lorem eget lorem. Vestibulum non ante. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Fusce sodales. Quisque eu urna vel enim commodo pellentesque. Praesent eu risus hendrerit ligula tempus pretium. Curabitur lorem enim, pretium nec, feugiat nec, luctus a, lacus.</p>
+				<p>Duis cursus. Maecenas ligula eros, blandit nec, pharetra at, semper at, magna. Nullam ac lacus. Nulla facilisi. Praesent viverra justo vitae neque. Praesent blandit adipiscing velit. Suspendisse potenti. Donec mattis, pede vel pharetra blandit, magna ligula faucibus eros, id euismod lacus dolor eget odio. Nam scelerisque. Donec non libero sed nulla mattis commodo. Ut sagittis. Donec nisi lectus, feugiat porttitor, tempor ac, tempor vitae, pede. Aenean vehicula velit eu tellus interdum rutrum. Maecenas commodo. Pellentesque nec elit. Fusce in lacus. Vivamus a libero vitae lectus hendrerit hendrerit.</p>
+			</div>
+			
+			
+
+		</div><!--.tabs-->
+	</section><!--#registration-->
 
 	<main>
 		<h1>Trackers Earth Roolzuh</h1>
@@ -152,6 +185,23 @@
 			<!--End mc_embed_signup-->
 		</div>
 	</main>
+
+	<footer id="colophon">
+		<nav id="footer-menu">
+			<ul class="menu">
+				<li><a href="#">Portland Camps</a></li>
+				<li><a href="#">Portland Info</a></li>
+				<li><a href="#">Employment</a></li>
+				<li><a href="#">Trackers Bay</a></li>
+			</ul><!--.menu-->
+		</nav><!--#footer-menu-->
+
+		<div class="site-info">
+			<p>&copy;2014 Trackers Earth Portland. 4617 SE Milwaukie Avenue, Portland, Oregon 97202  |  503-345-3312  |  <a href="#">Privacy Policy</a><br />
+			Website design by <a href="http://heptagoncreative.com" title="Heptagon Creative">Heptagon Creative</a>.</p>
+		</div><!--.site-info-->
+
+	</footer><!--#colophon-->
 
 </body>
 

@@ -1,0 +1,35 @@
+/* Header
+--------------------------------------------- */
+
+#masthead {
+	background: #222;
+	height: 60px;
+
+
+	.site-branding {
+		width: 25%;
+		float: left;
+
+		a {
+			color: #fff;
+			display: block;
+		}
+	}
+
+	#main-navigation {
+		float: right;
+		width: 75%;
+
+		.menu {
+			float: left;
+
+			li {
+				display: inline-block;
+
+				a {
+					color: #fff;
+				}
+			}
+		}
+	}
+}

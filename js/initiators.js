@@ -7,7 +7,14 @@ $(document).ready(function() {
 	    animation: "slide"
 	  });
 
+	 // $( ".accordion" ).accordion();
 
+	  $('.accordion .head').click(function() {
+	      $(this).next().toggle('slow');
+	      return false;
+	  }).next().hide();
+
+	$( ".tabs" ).tabs();
 
 	$('.test-popup-link').magnificPopup({ 
 	  type: 'image'

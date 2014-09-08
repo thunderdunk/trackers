@@ -1,0 +1,23 @@
+/* Registration
+--------------------------------------------- */
+
+#registration {
+	background: #eee;
+	clear: both;
+	margin: 2em 0;
+
+
+	.accordion {
+
+		.head {
+			margin-top: .25em;
+			background: #ddd;
+			padding: .5em 1em;
+
+			h3 {
+				line-height: 1;
+				margin: 0;
+			}
+		}
+	}
+}

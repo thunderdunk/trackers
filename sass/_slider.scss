@@ -5,9 +5,11 @@
 	height: 60vh;
 	background: green;
 	width: 100%;
+	overflow: hidden;
 
 	.flexslider {
 		background: yellow;
+
 		.slides {
 			background: red;
 			height: 100%;
