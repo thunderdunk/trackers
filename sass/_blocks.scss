@@ -1,0 +1,15 @@
+/* Blocks
+--------------------------------------------- */
+
+.blocks {
+	clear: both;
+
+	.block {
+		box-sizing: border-box; //Sets border inside dimensions
+		background: $bg-white;
+
+		border: $block-border;
+
+		padding: 1em;
+	}
+}

@@ -1,23 +1,60 @@
-/* Slider Styles - Trackers Earth
+/* Slider Style Overrides - Trackers Earth
 --------------------------------------------- */
 
 #hero-slider {
-	height: 60vh;
-	background: green;
+	//height: 60vh;
+	
 	width: 100%;
-	overflow: hidden;
+	clear: both;
 
 	.flexslider {
-		background: yellow;
+		margin: 0;
+		border: 0;
+		
+		-webkit-box-shadow: none;
+		box-shadow: none;
 
 		.slides {
-			background: red;
+			
 			height: 100%;
 
 			.slide {
+				height: 60vh; //Slider height!!
 				width: 10%;
+				position: relative;
+				
 				img {
 					width: 100%;
+				}
+
+				.content {
+					position: absolute;
+					top: 10em;
+					left: 8em;
+				}
+			}
+		}
+
+		.flex-control-paging {
+			bottom: 1em;
+
+			li {
+				a {
+					background: #bbb; 
+					background: rgba(255,255,255,0.7);
+
+					-webkit-box-shadow: none;
+					box-shadow: none;
+
+					&:hover {
+						background: $trackers-orange; 
+						background: rgba(220,61,18,.7);
+					}
+
+					&.flex-active {
+						background: #fff;
+						background: rgba(255,255,255,1);
+					}
 				}
 			}
 		}

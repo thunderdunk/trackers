@@ -2,8 +2,33 @@
 --------------------------------------------- */
 
 #masthead {
-	background: #222;
-	height: 60px;
+	/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzFjMjkyMiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMxYzI5MjIiIHN0b3Atb3BhY2l0eT0iMCIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+	background: -moz-linear-gradient(top,  rgba(28,41,34,1) 0%, rgba(28,41,34,0) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(28,41,34,1)), color-stop(100%,rgba(28,41,34,0))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  rgba(28,41,34,1) 0%,rgba(28,41,34,0) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  rgba(28,41,34,1) 0%,rgba(28,41,34,0) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  rgba(28,41,34,1) 0%,rgba(28,41,34,0) 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  rgba(28,41,34,1) 0%,rgba(28,41,34,0) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1c2922', endColorstr='#001c2922',GradientType=0 ); /* IE6-8 */
+
+
+
+	height: 120px;
+	position: fixed;
+	z-index: 100;
+	width: 100%;
+
+	-webkit-transition: background .4s;
+	-moz-transition: background .4s;
+	-ms-transition: background .4s;
+	-o-transition: background .4s;
+	transition: background .4s;
+	
+
+	&.solid { //Change to solid on scroll past slider
+		background: rgba(28,41,34,0.8);
+	}
 
 
 	.site-branding {
@@ -15,19 +40,94 @@
 			display: block;
 		}
 	}
+	
+
+	/* Menus
+	---------------- */
+
+	//General masthead menu rules
+	.menu {
+		//float: left;
+		margin: 1em 0;
+
+		li {
+			display: inline-block;
+			text-transform: uppercase;
+			font-weight: 500;
+			font-size: 14px;
+
+			a {
+				color: #fff;
+				text-decoration: none;
+				padding: 1em;
+				display: block;
+			}
+		}
+	}
 
 	#main-navigation {
-		float: right;
-		width: 75%;
-
-		.menu {
-			float: left;
-
+		float: left;
+		width: 50%;
+		
+		
+		ul {
+			
 			li {
-				display: inline-block;
+				position: relative;
 
 				a {
-					color: #fff;
+
+				}
+
+				//Child menu
+				ul {
+					box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+					background: rgba(28,41,34,0.8);
+					display: none;
+					float: left;
+					left: 0;
+					position: absolute;
+					top: 1.5em;
+					z-index: 99999;
+					padding: 1em 0;
+					
+					li {
+						a {
+							width: 200px;
+							display: block;
+							padding: .5em 1em;
+
+							&:hover {
+								background: rgba(28,41,34,1);
+							}
+						}
+					}
+					
+					
+					//Grandchild
+					ul {
+						left: 100%;
+						top: 0;
+					}
+				}
+			}
+			
+
+			li:hover > ul {
+				display: block;
+			}
+		}
+		
+	}
+
+	#secondary-navigation {
+		float: right;
+		width: 25%;
+
+		ul {
+			li {
+				a {
+
 				}
 			}
 		}

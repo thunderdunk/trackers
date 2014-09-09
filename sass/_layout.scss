@@ -1,0 +1,59 @@
+/* Layout
+--------------------------------------------- */
+
+//Layout Breakpoints
+$break-small: 480px;
+$break-medium: 768px;
+$break-large: 1024px;
+$break-x-large: 1280px;
+
+//Grid - 5 columns
+$one-col: 17.6%;
+$two-col: 38.2%;
+$three-col: 58.8%;
+$four-col: 79.4%;
+$five-col: 100%;
+$gutter: 3%;
+
+.container {
+	margin: 0 4%;
+}
+
+#colophon {
+	clear: both;
+}
+
+@media all and (min-width: $break-large) {
+
+	
+
+	#primary {
+		float: left;
+		width: $three-col;
+		margin-right: $gutter;
+	}
+
+	#secondary {
+		float: right;
+		width: $two-col;
+
+	}
+
+	//Columns
+	.one-column {
+		float: left;
+		width: $one-col;
+		margin-right: $gutter;
+
+		&.last {
+			margin-right: 0;
+		}
+	}
+}
+
+@media all and (min-width: $break-x-large) {
+	.container {
+		max-width: 1280px;
+		margin: 0 auto;
+	}
+}

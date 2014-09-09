@@ -12,9 +12,12 @@
 
 // Main styles
 @import 'global';
+@import 'layout';
 @import 'typography';
 @import 'header';
 @import 'footer';
+
+@import 'blocks';
 
 @import 'magnific';
 
