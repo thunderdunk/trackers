@@ -68,7 +68,11 @@ body {
     width: 17.6%;
     margin-right: 3%; }
     .one-column.last {
-      margin-right: 0; } }
+      margin-right: 0; }
+
+  /* 
+  All column items will be given a right margin. If an item is the farthest to the right on any particular row, assign a class of 'last' to it. This will remove the right margin.
+  */ }
 @media all and (min-width: 1280px) {
   .container {
     max-width: 1280px;

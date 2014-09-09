@@ -49,6 +49,10 @@ $gutter: 3%;
 			margin-right: 0;
 		}
 	}
+
+	/* 
+	All column items will be given a right margin. If an item is the farthest to the right on any particular row, assign a class of 'last' to it. This will remove the right margin.
+	*/
 }
 
 @media all and (min-width: $break-x-large) {
