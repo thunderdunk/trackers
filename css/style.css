@@ -85,6 +85,12 @@ body {
 h1, h2, h3, h4 {
   margin: 1em 0 .5em; }
 
+b {
+  font-weight: 600; }
+
+i {
+  font-style: italic; }
+
 .page-title {
   font-family: "Roboto Slab", "Open Sans", Arial, sans-serif;
   font-size: 30px;
@@ -892,13 +898,90 @@ html[xmlns] .slides {
 /* Registration
 --------------------------------------------- */
 #registration {
-  background: #eee;
   clear: both;
   margin: 2em 0; }
-  #registration .accordion .head {
-    margin-top: .25em;
-    background: #ddd;
-    padding: .5em 1em; }
-    #registration .accordion .head h3 {
+  #registration .ui-tabs .ui-tabs-nav li {
+    display: inline-block;
+    background: rgba(255, 255, 255, 0.8);
+    border-top: 1px solid #b9b9b9;
+    border-right: 1px solid #b9b9b9;
+    border-left: 1px solid #b9b9b9;
+    padding: .5em;
+    font-family: "Roboto Slab", "Open Sans", Arial, sans-serif;
+    box-sizing: border-box; }
+    #registration .ui-tabs .ui-tabs-nav li a {
+      text-decoration: none;
+      color: #1c2922; }
+    #registration .ui-tabs .ui-tabs-nav li.ui-tabs-active {
+      background: #1c2922; }
+      #registration .ui-tabs .ui-tabs-nav li.ui-tabs-active a {
+        color: #fff; }
+  #registration .ui-tabs .ui-tabs-panel .location {
+    border-right: 1px solid #b9b9b9;
+    border-bottom: 1px solid #b9b9b9;
+    border-left: 1px solid #b9b9b9;
+    border-top: 3px solid #1c2922;
+    box-sizing: border-box;
+    position: relative; }
+    #registration .ui-tabs .ui-tabs-panel .location img {
+      width: 100%;
+      vertical-align: top; }
+    #registration .ui-tabs .ui-tabs-panel .location .gradient {
+      /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+      background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzFjMjkyMiIgc3RvcC1vcGFjaXR5PSIwIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMxYzI5MjIiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+      background: -moz-linear-gradient(top, rgba(28, 41, 34, 0) 0%, #1c2922 100%);
+      /* FF3.6+ */
+      background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(28, 41, 34, 0)), color-stop(100%, #1c2922));
+      /* Chrome,Safari4+ */
+      background: -webkit-linear-gradient(top, rgba(28, 41, 34, 0) 0%, #1c2922 100%);
+      /* Chrome10+,Safari5.1+ */
+      background: -o-linear-gradient(top, rgba(28, 41, 34, 0) 0%, #1c2922 100%);
+      /* Opera 11.10+ */
+      background: -ms-linear-gradient(top, rgba(28, 41, 34, 0) 0%, #1c2922 100%);
+      /* IE10+ */
+      background: linear-gradient(to bottom, rgba(28, 41, 34, 0) 0%, #1c2922 100%);
+      /* W3C */
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#001c2922', endColorstr='#1c2922',GradientType=0 );
+      /* IE6-8 */ }
+      #registration .ui-tabs .ui-tabs-panel .location .gradient figcaption {
+        position: absolute;
+        bottom: 1em;
+        left: 1em;
+        color: #fff;
+        font-size: 20px;
+        font-weight: 500;
+        font-style: italic; }
+  #registration .ui-tabs .ui-tabs-panel .accordion .head {
+    margin-top: .5em;
+    background: rgba(150, 150, 150, 0.4);
+    padding: 1em 1em;
+    cursor: pointer;
+    -webkit-transition: background .2s;
+    transition: background .2s; }
+    #registration .ui-tabs .ui-tabs-panel .accordion .head:hover {
+      background: rgba(150, 150, 150, 0.3); }
+    #registration .ui-tabs .ui-tabs-panel .accordion .head.active {
+      background: green;
+      color: #fff; }
+    #registration .ui-tabs .ui-tabs-panel .accordion .head h3 {
       line-height: 1;
       margin: 0; }
+  #registration .ui-tabs .ui-tabs-panel .accordion .content {
+    border-left: 1px solid #b9b9b9;
+    border-right: 1px solid #b9b9b9; }
+    #registration .ui-tabs .ui-tabs-panel .accordion .content .classlist li {
+      border-bottom: 1px solid #b9b9b9; }
+      #registration .ui-tabs .ui-tabs-panel .accordion .content .classlist li a {
+        display: block;
+        padding: 1em;
+        text-decoration: none;
+        color: #353535;
+        font-size: 14px;
+        -webkit-transition: background .2s;
+        transition: .2s; }
+        #registration .ui-tabs .ui-tabs-panel .accordion .content .classlist li a:hover {
+          background: #eee; }
+        #registration .ui-tabs .ui-tabs-panel .accordion .content .classlist li a .full {
+          color: #dc3d12; }
+      #registration .ui-tabs .ui-tabs-panel .accordion .content .classlist li.full a {
+        background: #FCD5C7; }

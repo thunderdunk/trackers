@@ -10,8 +10,9 @@ $(document).ready(function() {
 	 // $( ".accordion" ).accordion();
 
 	  $('.accordion .head').click(function() {
-	      $(this).next().toggle('slow');
-	      return false;
+	  		$(this).toggleClass('active');
+			$(this).next().toggle('medium');
+			return false;
 	  }).next().hide();
 
 	$( ".tabs" ).tabs();
