@@ -1,0 +1,8 @@
+/* Mixins
+--------------------------------------------- */
+
+//Adds rem and pixel value for font-size - @link http://css-tricks.com/snippets/css/less-mixin-for-rem-font-sizing/
+@mixin font-size($sizeValue: 1.6) {
+	font-size: ($sizeValue * 1) + px;
+	font-size: ($sizeValue * .1) + rem;
+}

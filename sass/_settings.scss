@@ -8,6 +8,7 @@ $heading-font: 'Roboto Slab', 'Open Sans', Arial, sans-serif;
 
 //Colors
 $text-color: #353535;
+$text-light: #555;
 $heading-color: #1c2922;
 $bg-main: #f8f6f3;
 $bg-dark: $heading-color;
@@ -15,8 +16,8 @@ $trackers-orange: #dc3d12;
 $bg-orange-light: #FCD5C7;
 $bg-white: rgba(255,255,255,0.8);
 
-$green: green;
-$green-light: rgba(150,150,150,0.4);
-$green-light-hover: rgba(150,150,150,0.3);
+$green: rgba(135,164,132,1);
+$green-light: rgba(135,164,132,0.2);
+$green-light-hover: rgba(135,164,132,0.3);
 
 $block-border: 1px solid #b9b9b9;

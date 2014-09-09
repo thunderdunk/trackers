@@ -22,7 +22,15 @@ $(document).ready(function() {
 		// other options
 	});
 
-
+	//MMenu
+	 $("#main-navigation").mmenu({
+         // options
+      }, {
+         // configuration
+         offCanvas: {
+            pageNodetype: "section"
+         }
+      });
 	
 
 	//Form test

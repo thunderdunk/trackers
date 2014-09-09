@@ -14,23 +14,41 @@
 		.ui-tabs-nav {
 			li {
 				display: inline-block;
-				background: $bg-white;
-				border-top: $block-border;
+				
 				border-right: $block-border;
 				border-left: $block-border;
-				padding: .5em;
+				
 				font-family: $heading-font;
-				box-sizing: border-box;
+				
+				@include font-size(18);
 
 				a {
 					text-decoration: none;
-					color: $heading-color;
+					color: $text-light;
+					background: $bg-white;
+					border-top: $block-border;
+					display: block;
+					padding: .5em;
+					box-sizing: border-box;
+					-webkit-transition: background .2s;
+					-moz-transition: background .2s;
+					-ms-transition: background .2s;
+					-o-transition: background .2s;
+					transition: background .2s;
+					
+
+					&:hover {
+						background: #fff;
+						color: $heading-color;
+					}
+
 				}
 
 				&.ui-tabs-active {
-					background: $bg-dark;
+					
 
-					a {
+					a {	
+						background: $bg-dark;
 						color: #fff;
 					}
 				}
@@ -47,8 +65,6 @@
 				border-top: 3px solid $bg-dark;
 				box-sizing: border-box;
 				position: relative;
-
-				
 
 				img {
 					width: 100%;
@@ -71,7 +87,7 @@
 						bottom: 1em;
 						left: 1em;
 						color: #fff;
-						font-size: 20px;
+						@include font-size(20);
 						font-weight: 500;
 						font-style: italic;
 						
@@ -90,6 +106,7 @@
 					cursor: pointer;
 					-webkit-transition: background .2s;
 					transition: background .2s;
+					@include font-size(16);
 
 					&:hover {
 						background: $green-light-hover;
@@ -120,8 +137,9 @@
 								display: block;
 								padding: 1em;
 								text-decoration: none;
-								color: $text-color;
-								font-size: 14px;
+								color: $text-light;
+								//font-size: 14px;
+								@include font-size(14);
 								-webkit-transition: background .2s;
 								transition: .2s;
 
