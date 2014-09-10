@@ -77,6 +77,34 @@ body main {
     .one-column.last {
       margin-right: 0; }
 
+  .two-column {
+    float: left;
+    width: 38.2%;
+    margin-right: 3%; }
+    .two-column.last {
+      margin-right: 0; }
+
+  .three-column {
+    float: left;
+    width: 58.8%;
+    margin-right: 3%; }
+    .three-column.last {
+      margin-right: 0; }
+
+  .four-column {
+    float: left;
+    width: 79.4%;
+    margin-right: 3%; }
+    .four-column.last {
+      margin-right: 0; }
+
+  .five-column {
+    float: left;
+    width: 100%;
+    margin-right: 3%; }
+    .five-column.last {
+      margin-right: 0; }
+
   /* 
   All column items will be given a right margin. If an item is the farthest to the right on any particular row, assign a class of 'last' to it. This will remove the right margin.
   */ }
@@ -592,13 +620,35 @@ textarea {
       display: block; } }
 /* Blocks
 --------------------------------------------- */
-.blocks {
-  clear: both; }
-  .blocks .block {
+.block-row {
+  clear: both;
+  overflow: hidden; }
+  .block-row .block {
     box-sizing: border-box;
     background: rgba(255, 255, 255, 0.8);
     border: 1px solid #b9b9b9;
-    padding: 1em; }
+    margin-bottom: 2em; }
+    .block-row .block figure {
+      width: 100%; }
+      .block-row .block figure img {
+        width: 100%;
+        height: auto; }
+    .block-row .block .content {
+      padding: 1em; }
+      .block-row .block .content .block-title {
+        font-family: "Roboto Slab", "Open Sans", Arial, sans-serif;
+        font-size: 18px;
+        font-size: 1.8rem;
+        margin-top: 0; }
+      .block-row .block .content p {
+        color: #555;
+        line-height: 1.4; }
+    .block-row .block.horizontal figure {
+      width: 50%;
+      float: left;
+      margin-right: 1em; }
+      .block-row .block.horizontal figure img {
+        vertical-align: top; }
 
 /* Magnific Popup CSS 
 --------------------------------------------- */

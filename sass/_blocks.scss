@@ -1,15 +1,50 @@
 /* Blocks
 --------------------------------------------- */
-
-.blocks {
+.block-row {
 	clear: both;
+	overflow: hidden; //Make sure it clears below
 
 	.block {
 		box-sizing: border-box; //Sets border inside dimensions
 		background: $bg-white;
-
 		border: $block-border;
+		margin-bottom: 2em;
 
-		padding: 1em;
+		figure {
+			width: 100%;
+
+			img {
+				width: 100%;
+				height: auto;
+			}
+		}
+
+		.content {
+			padding: 1em;
+
+			.block-title {
+				font-family: $heading-font;
+				@include font-size(18);
+				margin-top: 0;
+			}
+
+			p {
+				color: $text-light;
+				line-height: 1.4;
+			}
+		}
+
+		&.horizontal {
+
+			figure {
+				width: 50%;
+				float: left;
+				margin-right: 1em;
+
+				img {
+					vertical-align: top; //Eliminate extra space below img element
+				}
+			}
+		}
 	}
 }

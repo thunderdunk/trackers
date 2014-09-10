@@ -54,6 +54,46 @@ $gutter: 3%;
 		}
 	}
 
+	.two-column {
+		float: left;
+		width: $two-col;
+		margin-right: $gutter;
+
+		&.last {
+			margin-right: 0;
+		}
+	}
+
+	.three-column {
+		float: left;
+		width: $three-col;
+		margin-right: $gutter;
+
+		&.last {
+			margin-right: 0;
+		}
+	}
+
+	.four-column {
+		float: left;
+		width: $four-col;
+		margin-right: $gutter;
+
+		&.last {
+			margin-right: 0;
+		}
+	}
+
+	.five-column {
+		float: left;
+		width: $five-col;
+		margin-right: $gutter;
+
+		&.last {
+			margin-right: 0;
+		}
+	}
+
 	/* 
 	All column items will be given a right margin. If an item is the farthest to the right on any particular row, assign a class of 'last' to it. This will remove the right margin.
 	*/
