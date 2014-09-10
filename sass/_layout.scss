@@ -1,6 +1,10 @@
 /* Layout
 --------------------------------------------- */
-
+body {
+	main {
+		padding: 0 0 2em 0;
+	}
+}
 //Layout Breakpoints
 $break-small: 480px;
 $break-medium: 768px;
