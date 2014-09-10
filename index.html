@@ -1,46 +1,54 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Trackers Earth</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1" /><!--Make sure phones don't scale the layout-->
 
-<!--[if gte IE 9]>
-  <style type="text/css">
-    .gradient {
-       filter: none;
-    }
-  </style>
-<![endif]-->
+	<title>Trackers Earth</title>
 
-<!-- Main stylesheet: includes Magnific CSS -->
-<link rel="stylesheet" type="text/css" href="css/style.css" /> 
+	<!--[if gte IE 9]>
+	  <style type="text/css">
+	    .gradient {
+	       filter: none;
+	    }
+	  </style>
+	<![endif]-->
 
-<!-- Google Fonts -->
-<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,300,600,700|Roboto+Slab:400,300' rel='stylesheet' type='text/css'>
+	<!-- Main stylesheet: includes Magnific CSS -->
+	<link rel="stylesheet" type="text/css" href="css/style.css" /> 
 
-<!-- Font Awesome -->
-<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+	<!-- Google Fonts -->
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,300,600,700|Roboto+Slab:400,300' rel='stylesheet' type='text/css'>
 
-<!-- jQuery -->
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> 
+	<!-- Font Awesome -->
+	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 
-<!-- jQuery UI -->
-<!--<link rel="stylesheet" href="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.1/themes/smoothness/jquery-ui.css" />-->
-<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.1/jquery-ui.min.js"></script>
+	<!-- jQuery -->
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> 
 
-<!--jQuery MMenu 
-<script src="js/jquery.mmenu.min.js"></script>-->
+	<!-- jQuery UI -->
+	<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.1/jquery-ui.min.js"></script>
 
-<!-- Magnific Popup core JS file -->
-<script src="js/jquery.magnific-build-min.js"></script> 
+	<!-- Magnific Popup core JS file -->
+	<script src="js/jquery.magnific-build-min.js"></script> 
 
-<!-- FlexSlider -->
-<script src="js/jquery.flexslider-min.js"></script>
+	<!-- FlexSlider -->
+	<script src="js/jquery.flexslider-min.js"></script>
 
-<script src="js/initiators.js"></script>
+	<!--BUGGYFILL TO FIX VIEWPORT UNITS IN IOS @link https://github.com/rodneyrehm/viewport-units-buggyfill-->
+	<script src="js/viewport-units-buggyfill.js"></script>
+	<script></script>
+
+	<script src="js/initiators.js"></script>
+
+
 
 </head>
 
 <body>
+
+	
+
+
 	<div id="page">
 		<header id="masthead" class="gradient">
 			<div class="container">
@@ -187,9 +195,63 @@
 					<article class="entry-content">
 						<h2>Heading 2</h2>
 						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis erat odio, ornare eu velit a, facilisis luctus lorem. Pellentesque imperdiet dui id purus lobortis, <a href="#">link inside the main content area</a> a semper magna auctor. Curabitur tristique dictum metus eget tempor. Cras id ex aliquam arcu maximus interdum vitae vel purus. Ut varius, quam id lacinia accumsan, ante ligula posuere libero, at ullamcorper lorem orci id dolor. Nam ac mauris augue. Donec id mattis quam. Sed hendrerit mauris in leo lacinia rhoncus maximus nec nisi. Fusce ac nisi lectus.</p>
+	       
+						<p><strong>Pellentesque habitant morbi tristique</strong> senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. <em>Aenean ultricies mi vitae est.</em> Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, <code>commodo vitae</code>, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. <a href="#">Donec non enim</a> in turpis pulvinar facilisis. Ut felis.</p>
 
-						<p>Nulla consectetur ligula malesuada ante vestibulum tincidunt. Cras condimentum lectus enim, ac condimentum tellus laoreet nec. Nam ullamcorper est pellentesque dolor eleifend, id auctor arcu posuere. Proin scelerisque, orci facilisis vestibulum ornare, sem arcu scelerisque lacus, quis iaculis massa diam quis sapien. Donec luctus consectetur mi. Vivamus bibendum, diam quis aliquet volutpat, nibh est luctus felis, ut fermentum libero ligula vel lectus. Suspendisse quis bibendum orci, at vehicula leo. Integer vel est felis. Curabitur elit purus, semper vitae ante eu, congue consequat mi. Proin interdum, ligula pellentesque sollicitudin commodo, urna turpis venenatis libero, sit amet elementum velit ante ac augue. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum sed nulla diam. Nulla ut tellus magna.</p>
+						<h2>Header Level 2</h2>
+							       
+						<ol>
+						   <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
+						   <li>Aliquam tincidunt mauris eu risus.</li>
+						</ol>
 
+						<blockquote><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus magna. Cras in mi at felis aliquet congue. Ut a est eget ligula molestie gravida. Curabitur massa. Donec eleifend, libero at sagittis mollis, tellus est malesuada tellus, at luctus turpis elit sit amet quam. Vivamus pretium ornare est.</p></blockquote>
+
+						<h3>Header Level 3</h3>
+
+						<ul>
+						   <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
+						   <li>Aliquam tincidunt mauris eu risus.</li>
+						</ul>
+
+						<form action="#" method="post">
+						    <div>
+						         <label for="name">Text Input:</label>
+						         <input type="text" name="name" id="name" value="" tabindex="1" />
+						    </div>
+
+						    <div>
+						        <h4>Radio Button Choice</h4>
+								<input type="radio" name="radio-choice-1" id="radio-choice-1" tabindex="2" value="choice-1" />
+						        <label for="radio-choice-1">Choice 1</label>
+						         
+								<input type="radio" name="radio-choice-2" id="radio-choice-2" tabindex="3" value="choice-2" />
+								<label for="radio-choice-2">Choice 2</label>
+						    </div>
+
+							<div>
+								<label for="select-choice">Select Dropdown Choice:</label>
+								<select name="select-choice" id="select-choice">
+									<option value="Choice 1">Choice 1</option>
+									<option value="Choice 2">Choice 2</option>
+									<option value="Choice 3">Choice 3</option>
+								</select>
+							</div>
+							
+							<div>
+								<label for="textarea">Textarea:</label>
+								<textarea cols="40" rows="8" name="textarea" id="textarea"></textarea>
+							</div>
+							
+							<div>
+							    <label for="checkbox">Checkbox:</label>
+								<input type="checkbox" name="checkbox" id="checkbox" />
+						    </div>
+
+							<div>
+							    <input type="submit" value="Submit" />
+						    </div>
+						</form>
 					</article><!--.entry-content-->
 				</div><!--#primary-->
 

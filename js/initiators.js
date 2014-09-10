@@ -1,9 +1,8 @@
 
+//BuggyFill for iOS and browsers that don't like vh units
+window.viewportUnitsBuggyfill.init();
 
 $(document).ready(function() {
-	
-
-	
 
 	/* Off Canvas nav */
 	$(".open-panel").click(function(){
@@ -12,15 +11,12 @@ $(document).ready(function() {
 		//$('#page').toggleClass('open');
 	});
 	
-	//if ($('#page').hasClass('open')) {
 		//Click anywhere in primary content area to close menu
 		$('main').click(function() {
 			$('html').removeClass('openNav');
 			//$('#page').removeClass('open');
 		});
-	//}
 	
-
 
 	  $('.flexslider').flexslider({
 	    animation: "slide"
@@ -39,19 +35,6 @@ $(document).ready(function() {
 	  type: 'image'
 		// other options
 	});
-
-/*	//MMenu
-	 $("#mobile-navigation").mmenu({
-        // options
-        slidingSubmenus: false,
-        labels: true,
-        offCanvas: {
-        	position: 'right',
-        }
-      });
-	*/
-
-	
 
 
 	//Form test
@@ -74,4 +57,5 @@ $(window).scroll(function() {
 		$("#masthead").removeClass("solid");
 	}
 
-}); //end window scrol
+}); //end window scroll
+

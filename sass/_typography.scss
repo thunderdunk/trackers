@@ -1,25 +1,130 @@
 /* Typography
 --------------------------------------------- */
 
-body {
+body,
+button,
+input,
+select,
+textarea {
 	font-family: $base-font;
 	color: $text-color;
 	@include font-size(14);
-	//line-height: 1.6;
 }
 
-h1, h2, h3, h4 {
+/* Headings */
+h1,h2,h3,h4,h5,h6 {
+	//font-family: $heading-font;
+	//clear: both;
 	margin: 1em 0 .5em;
 }
 
-b {
+hr {
+	background-color: #ccc;
+	border: 0;
+	height: 1px;
+	margin-bottom: $vspacing;
+}
+
+/* Text elements */
+p {
+	//margin-bottom: $vspacing;
+}
+
+dt {
 	font-weight: 600;
 }
-
-i {
+dd {
+	margin: 0 $vspacing $vspacing;
+}
+b, strong {
+	font-weight: 600;
+}
+dfn, cite, em, i {
 	font-style: italic;
 }
+blockquote {
+	margin: 0 $vspacing;
+	color: $text-light;
+	text-align: center;
+	@include font-size(22);
+	font-style: italic;
 
+	p {
+		@include font-size(22);
+	}
+}
+address {
+	margin: 0 0 $vspacing;
+}
+pre {
+	background: #eee;
+	font-family: "Courier 10 Pitch", Courier, monospace;
+	font-size: 15px;
+	font-size: 1.5rem;
+	line-height: 1.6;
+	margin-bottom: 1.6em;
+	padding: 1.6em;
+	overflow: auto;
+	max-width: 100%;
+}
+code, kbd, tt, var {
+	font: 15px Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+}
+abbr, acronym {
+	border-bottom: 1px dotted #666;
+	cursor: help;
+}
+mark, ins {
+	background: #fff9c0;
+	text-decoration: none;
+}
+sup,
+sub {
+	font-size: 75%;
+	height: 0;
+	line-height: 0;
+	position: relative;
+	vertical-align: baseline;
+}
+sup {
+	bottom: 1ex;
+}
+sub {
+	top: .5ex;
+}
+small {
+	font-size: 75%;
+}
+big {
+	font-size: 125%;
+}
+figure {
+	margin: 0;
+}
+table {
+	margin: 0 0 $vspacing;
+	width: 100%;
+}
+th {
+	font-weight: bold;
+}
+img {
+	height: auto; /* Make sure images are scaled correctly. */
+	max-width: 100%; /* Adhere to container width. */
+}
+
+/* Links */
+a {
+	color: $link-color;
+
+	&:hover,
+	&:active {
+		color: $link-hover;
+	}
+}
+
+
+//PAGE CONTENT
 .page-title {
 	font-family: $heading-font;
 	font-size: 30px;
@@ -27,10 +132,28 @@ i {
 }
 
 .entry-content {
+	h1,h2,h3,h4,h5,h6 {
+		font-family: $heading-font;
+		clear: both;
+		margin: 1em 0 .5em;
+	}
 	h2 {
 		font-size: 24px;
 		font-family: $heading-font;
 		color: $heading-color;
+	}
+
+	h3 {
+		font-size: 18px;
+		font-family: $heading-font;
+		color: $heading-color;
+	}
+
+	h4 {
+		font-size: 16px;
+		font-family: $heading-font;
+		color: $text-light;
+		text-transform: uppercase;
 	}
 
 	p {
@@ -48,4 +171,28 @@ i {
 			}
 		}
 	}
+
+	ul, ol {
+		margin: 0 0 $vspacing 3em;
+	}
+	ul {
+		list-style: disc;
+	}
+	ol {
+		list-style: decimal;
+	}
+	li > ul,
+	li > ol {
+		margin-bottom: 0;
+		margin-left: $vspacing;
+	}
+
+	li {
+		margin-bottom: .5em;
+	}
 }
+
+
+
+
+

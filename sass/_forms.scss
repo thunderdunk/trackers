@@ -1,6 +1,12 @@
 /* Forms
 --------------------------------------------- */
 
+form {
+	padding: 2em 1em;
+	background: rgba(255,255,255,0.5);
+	margin-bottom: 2em;
+}
+
 button,
 input,
 select,
@@ -20,7 +26,6 @@ input[type="submit"] {
 
 	//Green
 	background: $green; /* Old browsers */
-
 	color: #fff;
 	cursor: pointer; /* Improves usability and consistency of cursor style between image-type 'input' and others */
 	@include font-size(14);
@@ -29,17 +34,12 @@ input[type="submit"] {
 	text-decoration: none;
 	line-height: 1;
 	padding: .6em 1em;
-
 	-webkit-box-shadow: 1px 1px 1px 0 rgba(4,4,4,.2);
 	box-shadow: 1px 1px 1px 0 rgba(4,4,4,.2);
-
 	border: none;
 	border-radius: 0;
-
 	text-shadow: none;
-
 	display: inline-block; //Keeps padding from overflowing into neighboring elements
-
 
 	&:hover {
 		background: $green; 
@@ -51,11 +51,8 @@ input[type="submit"] {
 	&.action { //Orange button
 		background: $trackers-orange; /* Old browsers */
 		
-
 		&:hover {
 			background: rgb(244,161,53); /* Old browsers */
-			
-
 		}
 
 		&:focus,
@@ -74,9 +71,6 @@ input[type="submit"] {
 	}
 }
 
-@media screen and (min-width: $break-medium) {
-
-}
 
 button,
 input[type="button"],
@@ -86,11 +80,22 @@ input[type="submit"] {
 
 }
 
+label {
+	clear: both;
+	margin-right: 1em;
+	//display: block;
+	margin-bottom: .5em;
+	font-style: italic;
+	color: $text-light;
+}
+
+
 
 input[type="checkbox"],
 input[type="radio"] {
 	padding: 0; /* Addresses excess padding in IE8/9 */
 	margin-right: .5em;
+	margin-bottom: $vspacing;
 }
 input[type="search"] {
 	-webkit-appearance: textfield; /* Addresses appearance set to searchfield in S5, Chrome */
@@ -108,7 +113,8 @@ input::-moz-focus-inner { /* Corrects inner padding and border displayed oddly i
 }
 
 select {
-	font-size: 16px;
+	@include font-size(16);
+	margin-bottom: $vspacing;
 }
 
 input[type="text"],
@@ -122,6 +128,7 @@ textarea {
 	border: 1px solid #ccc;
 	//border-radius: 3px;
 	font-size: 16px; //Keeps iOS from zooming
+	margin-bottom: $vspacing;
 
 	//Placeholders
 	&::-webkit-input-placeholder {
