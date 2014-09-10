@@ -38,21 +38,35 @@ input[type="submit"] {
 	box-shadow: 1px 1px 1px 0 rgba(4,4,4,.2);
 	border: none;
 	border-radius: 0;
-	text-shadow: none;
+	-webkit-text-shadow: -1px -1px 2px #748e72;
+	-moz-text-shadow: -1px -1px 2px #748e72;
+	-ms-text-shadow: -1px -1px 2px #748e72;
+	-o-text-shadow: -1px -1px 2px #748e72;
+	text-shadow: -1px -1px 2px #748e72;
 	display: inline-block; //Keeps padding from overflowing into neighboring elements
+	-webkit-transition: background .2s;
+	-moz-transition: background .2s;
+	-ms-transition: background .2s;
+	-o-transition: background .2s;
+	transition: background .2s;
+	
 
 	&:hover {
-		background: $green; 
+		background: $green-hover; 
 		
 		color: #fff;
 	}
 
-	&.alt,
 	&.action { //Orange button
-		background: $trackers-orange; /* Old browsers */
-		
+		background: $trackers-orange; 
+		-webkit-text-shadow: -1px -1px 2px #bb4728;
+		-moz-text-shadow: -1px -1px 2px #bb4728;
+		-ms-text-shadow: -1px -1px 2px #bb4728;
+		-o-text-shadow: -1px -1px 2px #bb4728;
+		text-shadow: -1px -1px 2px #bb4728;
+
 		&:hover {
-			background: rgb(244,161,53); /* Old browsers */
+			background: $trackers-orange-hover; 
 		}
 
 		&:focus,

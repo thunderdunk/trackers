@@ -1,0 +1,25 @@
+/* Content
+--------------------------------------------- */
+
+
+.callout {
+	background: $bg-white;
+	border: $block-border;
+	margin-bottom: 3em;
+	
+	.title {
+		background: $green-light;
+		margin: 0;
+		padding: .5em 1em;
+	}
+	.content {
+		padding: $vspacing 2em;
+
+		.subheading {
+			font-family: $base-font;
+			font-style: italic;
+			font-weight: 600;
+			@include font-size(16);
+		}
+	}
+}
