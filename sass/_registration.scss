@@ -96,11 +96,24 @@
 				
 			}
 
+			.message {
+				background: $bg-white;
+				border-right: $block-border;
+				border-bottom: $block-border;
+				border-left: $block-border;
+				padding: 1em;
+
+				p {
+					font-style: italic;
+					line-height: $line-height-content;
+				}
+			}
+
 			//ACCORDION
 			.accordion {
 
 				.head {
-					margin-top: .5em;
+					margin-top: .4em;
 					background: $green-light;
 					padding: 1em 1em;
 					cursor: pointer;

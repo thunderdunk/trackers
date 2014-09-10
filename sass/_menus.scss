@@ -162,18 +162,7 @@
 			display: block;
 			
 			ul {
-				margin: 1em 0;
-
-				&.main {
-					float: left;
-					width: 50%;
-				}
-
-				&.secondary {
-					float: right;
-					width: 25%;
-
-				}
+				
 				
 				li {
 					position: relative;
@@ -185,8 +174,12 @@
 					a {
 						color: #fff;
 						text-decoration: none;
-						padding: 1em;
+						//padding: 1em;
 						display: block;
+
+						.fa {
+							@include font-size(18);
+						}
 					}
 
 					//Child menu

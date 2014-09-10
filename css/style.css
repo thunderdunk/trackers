@@ -52,7 +52,7 @@ body {
 /* Layout
 --------------------------------------------- */
 body main {
-  padding: 0 0 2em 0; }
+  padding: 0 0 6em 0; }
 
 .container {
   margin: 0 3%; }
@@ -113,7 +113,7 @@ i {
 .entry-content p {
   font-size: 14px;
   margin-bottom: 1.5em;
-  line-height: 1.4; }
+  line-height: 1.6; }
 
 /* Header
 --------------------------------------------- */
@@ -134,7 +134,6 @@ i {
   /* W3C */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1c2922', endColorstr='#001c2922',GradientType=0 );
   /* IE6-8 */
-  height: 120px;
   position: fixed;
   z-index: 100;
   width: 100%;
@@ -146,18 +145,75 @@ i {
   #masthead.solid {
     background: rgba(28, 41, 34, 0.8); }
   #masthead .site-branding {
-    width: 25%;
-    float: left; }
+    width: 70%;
+    float: left;
+    clear: none;
+    margin: 1em 5% 1em 0; }
     #masthead .site-branding a {
       color: #fff;
       display: block; }
+      #masthead .site-branding a img {
+        width: 100%; }
 
+@media all and (min-width: 480px) {
+  #masthead .site-branding {
+    width: 45%; } }
+@media all and (min-width: 769px) {
+  #masthead .site-branding {
+    width: 35%; }
+
+  #main-navigation {
+    float: right;
+    width: 60%; }
+    #main-navigation .menu.main {
+      float: right;
+      margin: 1em 0 0; }
+      #main-navigation .menu.main li a {
+        padding: .5em .75em; }
+    #main-navigation .menu.secondary {
+      float: right;
+      margin: .5rem 0; }
+      #main-navigation .menu.secondary li a {
+        padding: .5em 1.5em; } }
+@media all and (min-width: 1024px) {
+  #masthead .site-branding {
+    width: 25%; }
+  #masthead #main-navigation {
+    float: right;
+    width: 70%; }
+    #masthead #main-navigation .menu.main {
+      float: left;
+      margin: 2.8rem 0; }
+      #masthead #main-navigation .menu.main li a {
+        padding: .5em .75em; }
+    #masthead #main-navigation .menu.secondary {
+      float: right;
+      margin: 2.4rem 0; }
+      #masthead #main-navigation .menu.secondary li a {
+        padding: .5em .75em; } }
+@media all and (min-width: 1120px) {
+  #masthead #main-navigation .menu.main li a {
+    padding: 0 1em; }
+  #masthead #main-navigation .menu.secondary li a {
+    padding: 0 1em; } }
+@media all and (min-width: 1280px) {
+  #masthead #main-navigation {
+    float: right;
+    width: 70%; }
+    #masthead #main-navigation .menu.main {
+      margin: 4rem 0; }
+      #masthead #main-navigation .menu.main li a {
+        padding: 0 1.25em; }
+    #masthead #main-navigation .menu.secondary {
+      margin: 3.6rem 0; }
+      #masthead #main-navigation .menu.secondary li a {
+        padding: 0 1.25em; } }
 /* Footer
 --------------------------------------------- */
 #colophon {
-  margin-top: 3em;
-  border-top: 1px solid red;
-  padding-top: 1em; }
+  border-top: 1px solid #b9b9b9;
+  padding-top: 1em;
+  background: #f8f6f3; }
   #colophon #footer-menu {
     margin-bottom: 1em; }
     #colophon #footer-menu .menu li {
@@ -169,12 +225,232 @@ i {
     padding: .5em 0;
     text-align: right; }
     #colophon .site-info p {
-      font-size: 12px; }
+      font-size: 11px;
+      font-size: 1.1rem;
+      line-height: 1.6; }
       #colophon .site-info p a {
         color: #fff; }
 
 /* Forms
 --------------------------------------------- */
+button,
+input,
+select,
+textarea {
+  font-size: 100%;
+  /* Corrects font size not being inherited in all browsers */
+  margin: 0;
+  /* Addresses margins set differently in IE6/7, F3/4, S5, Chrome */
+  vertical-align: baseline;
+  /* Improves appearance and consistency in all browsers */
+  *vertical-align: middle;
+  /* Improves appearance and consistency in all browsers */ }
+
+.button,
+.button:visited,
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  background: #87a484;
+  /* Old browsers */
+  color: #fff;
+  cursor: pointer;
+  /* Improves usability and consistency of cursor style between image-type 'input' and others */
+  font-size: 14px;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  text-decoration: none;
+  line-height: 1;
+  padding: .6em 1em;
+  -webkit-box-shadow: 1px 1px 1px 0 rgba(4, 4, 4, 0.2);
+  box-shadow: 1px 1px 1px 0 rgba(4, 4, 4, 0.2);
+  border: none;
+  border-radius: 0;
+  text-shadow: none; }
+  .button:hover,
+  .button:visited:hover,
+  button:hover,
+  input[type="button"]:hover,
+  input[type="reset"]:hover,
+  input[type="submit"]:hover {
+    background: #87a484;
+    color: #fff; }
+  .button.alt, .button.action,
+  .button:visited.alt,
+  .button:visited.action,
+  button.alt,
+  button.action,
+  input[type="button"].alt,
+  input[type="button"].action,
+  input[type="reset"].alt,
+  input[type="reset"].action,
+  input[type="submit"].alt,
+  input[type="submit"].action {
+    background: #dc3d12;
+    /* Old browsers */ }
+    .button.alt:hover, .button.action:hover,
+    .button:visited.alt:hover,
+    .button:visited.action:hover,
+    button.alt:hover,
+    button.action:hover,
+    input[type="button"].alt:hover,
+    input[type="button"].action:hover,
+    input[type="reset"].alt:hover,
+    input[type="reset"].action:hover,
+    input[type="submit"].alt:hover,
+    input[type="submit"].action:hover {
+      background: #f4a135;
+      /* Old browsers */ }
+    .button.alt:focus, .button.alt:active, .button.action:focus, .button.action:active,
+    .button:visited.alt:focus,
+    .button:visited.alt:active,
+    .button:visited.action:focus,
+    .button:visited.action:active,
+    button.alt:focus,
+    button.alt:active,
+    button.action:focus,
+    button.action:active,
+    input[type="button"].alt:focus,
+    input[type="button"].alt:active,
+    input[type="button"].action:focus,
+    input[type="button"].action:active,
+    input[type="reset"].alt:focus,
+    input[type="reset"].alt:active,
+    input[type="reset"].action:focus,
+    input[type="reset"].action:active,
+    input[type="submit"].alt:focus,
+    input[type="submit"].alt:active,
+    input[type="submit"].action:focus,
+    input[type="submit"].action:active {
+      border: 1px solid red; }
+  .button.big,
+  .button:visited.big,
+  button.big,
+  input[type="button"].big,
+  input[type="reset"].big,
+  input[type="submit"].big {
+    font-size: 18px;
+    font-weight: 400; }
+
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  /* Corrects inability to style clickable 'input' types in iOS */ }
+
+input[type="checkbox"],
+input[type="radio"] {
+  padding: 0;
+  /* Addresses excess padding in IE8/9 */
+  margin-right: .5em; }
+
+input[type="search"] {
+  -webkit-appearance: textfield;
+  /* Addresses appearance set to searchfield in S5, Chrome */
+  -webkit-box-sizing: content-box;
+  /* Addresses box sizing set to border-box in S5, Chrome (include -moz to future-proof) */
+  -moz-box-sizing: content-box;
+  box-sizing: content-box; }
+
+input[type="search"]::-webkit-search-decoration {
+  /* Corrects inner padding displayed oddly in S5, Chrome on OSX */
+  -webkit-appearance: none; }
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  /* Corrects inner padding and border displayed oddly in FF3/4 www.sitepen.com/blog/2008/05/14/the-devils-in-the-details-fixing-dojos-toolbar-buttons/ */
+  border: 0;
+  padding: 0; }
+
+select {
+  font-size: 16px; }
+
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="password"],
+input[type="search"],
+input[type="tel"],
+textarea {
+  color: #666;
+  border: 1px solid #ccc;
+  font-size: 16px; }
+  input[type="text"]::-webkit-input-placeholder,
+  input[type="email"]::-webkit-input-placeholder,
+  input[type="url"]::-webkit-input-placeholder,
+  input[type="password"]::-webkit-input-placeholder,
+  input[type="search"]::-webkit-input-placeholder,
+  input[type="tel"]::-webkit-input-placeholder,
+  textarea::-webkit-input-placeholder {
+    font-style: italic;
+    font-weight: 300; }
+  input[type="text"]:-moz-placeholder,
+  input[type="email"]:-moz-placeholder,
+  input[type="url"]:-moz-placeholder,
+  input[type="password"]:-moz-placeholder,
+  input[type="search"]:-moz-placeholder,
+  input[type="tel"]:-moz-placeholder,
+  textarea:-moz-placeholder {
+    /* Firefox 18- */
+    font-style: italic;
+    font-weight: 300; }
+  input[type="text"]::-moz-placeholder,
+  input[type="email"]::-moz-placeholder,
+  input[type="url"]::-moz-placeholder,
+  input[type="password"]::-moz-placeholder,
+  input[type="search"]::-moz-placeholder,
+  input[type="tel"]::-moz-placeholder,
+  textarea::-moz-placeholder {
+    /* Firefox 19+ */
+    font-style: italic;
+    font-weight: 300; }
+  input[type="text"]:-ms-input-placeholder,
+  input[type="email"]:-ms-input-placeholder,
+  input[type="url"]:-ms-input-placeholder,
+  input[type="password"]:-ms-input-placeholder,
+  input[type="search"]:-ms-input-placeholder,
+  input[type="tel"]:-ms-input-placeholder,
+  textarea:-ms-input-placeholder {
+    font-style: italic;
+    font-weight: 300; }
+
+@media screen and (min-width: 480px) {
+  input[type="text"],
+  input[type="email"],
+  input[type="url"],
+  input[type="password"],
+  input[type="search"],
+  input[type="tel"],
+  textarea {
+    font-size: 14px;
+    font-size: 1.4rem; } }
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="password"]:focus,
+input[type="search"]:focus,
+textarea:focus {
+  color: #111; }
+
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="password"],
+input[type="search"],
+input[type="tel"] {
+  padding: .5em 1em; }
+
+textarea {
+  overflow: auto;
+  /* Removes default vertical scrollbar in IE6/7/8/9 */
+  padding-left: 3px;
+  vertical-align: top;
+  /* Improves readability and alignment in all browsers */
+  width: 98%; }
+
 /* Menus
 --------------------------------------------- */
 .menu-toggle {
@@ -273,53 +549,47 @@ i {
   -o-transition: -o-transform 400ms ease;
   transition: transform 400ms ease; }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 769px) {
   .menu-toggle {
     display: none; }
 
   #masthead #main-navigation {
     display: block; }
-    #masthead #main-navigation ul {
-      margin: 1em 0; }
-      #masthead #main-navigation ul.main {
+    #masthead #main-navigation ul li {
+      position: relative;
+      display: inline-block;
+      text-transform: uppercase;
+      font-weight: 500;
+      font-size: 13px;
+      font-size: 1.3rem; }
+      #masthead #main-navigation ul li a {
+        color: #fff;
+        text-decoration: none;
+        display: block; }
+        #masthead #main-navigation ul li a .fa {
+          font-size: 18px;
+          font-size: 1.8rem; }
+      #masthead #main-navigation ul li ul {
+        box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+        background: rgba(28, 41, 34, 0.8);
+        display: none;
         float: left;
-        width: 50%; }
-      #masthead #main-navigation ul.secondary {
-        float: right;
-        width: 25%; }
-      #masthead #main-navigation ul li {
-        position: relative;
-        display: inline-block;
-        text-transform: uppercase;
-        font-weight: 500;
-        font-size: 13px;
-        font-size: 1.3rem; }
-        #masthead #main-navigation ul li a {
-          color: #fff;
-          text-decoration: none;
-          padding: 1em;
-          display: block; }
-        #masthead #main-navigation ul li ul {
-          box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
-          background: rgba(28, 41, 34, 0.8);
-          display: none;
-          float: left;
-          left: 0;
-          position: absolute;
-          top: 1.5em;
-          z-index: 99999;
-          padding: 1em 0; }
-          #masthead #main-navigation ul li ul li a {
-            width: 200px;
-            display: block;
-            padding: .5em 1em; }
-            #masthead #main-navigation ul li ul li a:hover {
-              background: #1c2922; }
-          #masthead #main-navigation ul li ul ul {
-            left: 100%;
-            top: 0; }
-      #masthead #main-navigation ul li:hover > ul {
-        display: block; } }
+        left: 0;
+        position: absolute;
+        top: 1.5em;
+        z-index: 99999;
+        padding: 1em 0; }
+        #masthead #main-navigation ul li ul li a {
+          width: 200px;
+          display: block;
+          padding: .5em 1em; }
+          #masthead #main-navigation ul li ul li a:hover {
+            background: #1c2922; }
+        #masthead #main-navigation ul li ul ul {
+          left: 100%;
+          top: 0; }
+    #masthead #main-navigation ul li:hover > ul {
+      display: block; } }
 /* Blocks
 --------------------------------------------- */
 .blocks {
@@ -1076,8 +1346,17 @@ html[xmlns] .slides {
         font-size: 2rem;
         font-weight: 500;
         font-style: italic; }
+  #registration .ui-tabs .ui-tabs-panel .message {
+    background: rgba(255, 255, 255, 0.8);
+    border-right: 1px solid #b9b9b9;
+    border-bottom: 1px solid #b9b9b9;
+    border-left: 1px solid #b9b9b9;
+    padding: 1em; }
+    #registration .ui-tabs .ui-tabs-panel .message p {
+      font-style: italic;
+      line-height: 1.6; }
   #registration .ui-tabs .ui-tabs-panel .accordion .head {
-    margin-top: .5em;
+    margin-top: .4em;
     background: rgba(135, 164, 132, 0.2);
     padding: 1em 1em;
     cursor: pointer;
@@ -1112,4 +1391,4 @@ html[xmlns] .slides {
         #registration .ui-tabs .ui-tabs-panel .accordion .content .classlist li a .full {
           color: #dc3d12; }
       #registration .ui-tabs .ui-tabs-panel .accordion .content .classlist li.full a {
-        background: #FCD5C7; }
+        background: #fadece; }

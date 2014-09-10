@@ -14,7 +14,7 @@
 
 
 
-	height: 120px;
+	//height: 100px;
 	position: fixed;
 	z-index: 100;
 	width: 100%;
@@ -32,15 +32,193 @@
 
 
 	.site-branding {
-		width: 25%;
+		width: 70%;
 		float: left;
+		clear: none;
+		margin: 1em 5% 1em 0;
 
 		a {
 			color: #fff;
 			display: block;
+
+			img {
+				width: 100%;
+
+			}
 		}
 	}
-	
 
 	
+}
+
+@media all and (min-width: $break-small) {
+	#masthead {
+		.site-branding{
+			width: 45%;
+
+
+		}
+	}
+}
+
+@media all and (min-width: $break-medium) {
+	#masthead {
+		.site-branding{
+			width: 35%;
+
+
+		}
+	}
+
+	#main-navigation {
+		float: right;
+		width: 60%;
+
+		.menu {
+			
+			
+			&.main {
+				float: right;
+				margin: 1em 0 0;
+
+				li {
+
+					a {
+						padding: .5em .75em;
+					}
+				}
+			}
+
+			&.secondary {
+				float: right;
+				margin: .5rem 0; //make up for extra height of icons @18px
+
+				li {
+
+					a {
+						padding: .5em 1.5em;
+					}
+				}
+			}
+		}
+	}
+}
+
+@media all and (min-width: $break-large) {
+	#masthead {
+		.site-branding{
+			width: 25%;
+
+
+		}
+
+		#main-navigation {
+			float: right;
+			width: 70%;
+
+			.menu {
+
+
+				&.main {
+					float: left;
+					margin: 2.8rem 0;
+
+					li {
+
+						a {
+							padding: .5em .75em;
+						}
+					}
+				}
+
+				&.secondary {
+					float: right;
+					margin: 2.4rem 0; //make up for extra height of icons @18px
+
+					li {
+
+						a {
+							padding: .5em .75em;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+@media all and (min-width: 1120px) {
+	#masthead {
+
+
+		#main-navigation {
+
+
+			.menu {
+
+
+				&.main {
+
+
+					li {
+
+						a {
+							padding: 0 1em;
+						}
+					}
+				}
+
+				&.secondary {
+					
+					//margin: 2.4rem 0; //make up for extra height of icons @18px
+
+					li {
+
+						a {
+							padding: 0 1em;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+@media all and (min-width: $break-x-large) {
+	#masthead {
+
+
+		#main-navigation {
+			float: right;
+			width: 70%;
+
+			.menu {
+				
+
+				&.main {
+
+					margin: 4rem 0;
+
+					li {
+
+						a {
+							padding: 0 1.25em;
+						}
+					}
+				}
+
+				&.secondary {
+					
+					margin: 3.6rem 0;
+
+					li {
+
+						a {
+							padding: 0 1.25em;
+						}
+					}
+				}
+			}
+		}
+	}
 }

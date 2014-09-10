@@ -1,2 +1,178 @@
 /* Forms
 --------------------------------------------- */
+
+button,
+input,
+select,
+textarea {
+	font-size: 100%; /* Corrects font size not being inherited in all browsers */
+	margin: 0; /* Addresses margins set differently in IE6/7, F3/4, S5, Chrome */
+	vertical-align: baseline; /* Improves appearance and consistency in all browsers */
+	*vertical-align: middle; /* Improves appearance and consistency in all browsers */
+}
+
+.button,
+.button:visited,
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+
+	//Green
+	background: $green; /* Old browsers */
+
+	color: #fff;
+	cursor: pointer; /* Improves usability and consistency of cursor style between image-type 'input' and others */
+	@include font-size(14);
+	text-transform: uppercase;
+	font-weight: 500;
+	text-decoration: none;
+	line-height: 1;
+	padding: .6em 1em;
+
+	-webkit-box-shadow: 1px 1px 1px 0 rgba(4,4,4,.2);
+	box-shadow: 1px 1px 1px 0 rgba(4,4,4,.2);
+
+	border: none;
+	border-radius: 0;
+
+	text-shadow: none;
+
+
+	&:hover {
+		background: $green; 
+		
+		color: #fff;
+	}
+
+	&.alt,
+	&.action { //Orange button
+		background: $trackers-orange; /* Old browsers */
+		
+
+		&:hover {
+			background: rgb(244,161,53); /* Old browsers */
+			
+
+		}
+
+		&:focus,
+		&:active {
+			border: 1px solid red;
+		}
+	}
+
+	&.big { //Bigger button
+		font-size: 18px;
+		font-weight: 400;
+	}
+}
+
+@media screen and (min-width: $break-medium) {
+
+}
+
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+	-webkit-appearance: button; /* Corrects inability to style clickable 'input' types in iOS */
+
+}
+
+
+input[type="checkbox"],
+input[type="radio"] {
+	padding: 0; /* Addresses excess padding in IE8/9 */
+	margin-right: .5em;
+}
+input[type="search"] {
+	-webkit-appearance: textfield; /* Addresses appearance set to searchfield in S5, Chrome */
+	-webkit-box-sizing: content-box; /* Addresses box sizing set to border-box in S5, Chrome (include -moz to future-proof) */
+	-moz-box-sizing: 	content-box;
+	box-sizing: 		content-box;
+}
+input[type="search"]::-webkit-search-decoration { /* Corrects inner padding displayed oddly in S5, Chrome on OSX */
+	-webkit-appearance: none;
+}
+button::-moz-focus-inner,
+input::-moz-focus-inner { /* Corrects inner padding and border displayed oddly in FF3/4 www.sitepen.com/blog/2008/05/14/the-devils-in-the-details-fixing-dojos-toolbar-buttons/ */
+	border: 0;
+	padding: 0;
+}
+
+select {
+	font-size: 16px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="password"],
+input[type="search"],
+input[type="tel"],
+textarea {
+	color: #666;
+	border: 1px solid #ccc;
+	//border-radius: 3px;
+	font-size: 16px; //Keeps iOS from zooming
+
+	//Placeholders
+	&::-webkit-input-placeholder {
+	   font-style: italic;
+	   font-weight: 300;
+	}
+
+	&:-moz-placeholder { /* Firefox 18- */
+	   font-style: italic;
+	   font-weight: 300;
+	}
+
+	&::-moz-placeholder {  /* Firefox 19+ */
+	   font-style: italic;
+	   font-weight: 300;
+	}
+
+	&:-ms-input-placeholder {  
+	   font-style: italic;
+	   font-weight: 300;
+	}
+}
+
+@media screen and (min-width: $break-small) {
+	input[type="text"],
+	input[type="email"],
+	input[type="url"],
+	input[type="password"],
+	input[type="search"],
+	input[type="tel"],
+	textarea {
+		font-size: 14px;
+		font-size: 1.4rem;
+	}
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="password"]:focus,
+input[type="search"]:focus,
+textarea:focus {
+	color: #111;
+}
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="password"],
+input[type="search"],
+input[type="tel"] {
+	padding: .5em 1em;
+}
+textarea {
+	overflow: auto; /* Removes default vertical scrollbar in IE6/7/8/9 */
+	padding-left: 3px;
+	vertical-align: top; /* Improves readability and alignment in all browsers */
+	width: 98%;
+}
+
+

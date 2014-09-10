@@ -2,9 +2,10 @@
 --------------------------------------------- */
 
 #colophon {
-	margin-top: 3em;
-	border-top: 1px solid red;
+	//margin-top: 3em;
+	border-top: $block-border;
 	padding-top: 1em;
+	background: $bg-main;
 
 	#footer-menu {
 		margin-bottom: 1em;
@@ -24,7 +25,8 @@
 		text-align: right;
 
 		p {
-			font-size: 12px;
+			@include font-size(11);
+			line-height: $line-height-content;
 
 			a {
 				color: #fff;
