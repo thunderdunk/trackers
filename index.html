@@ -135,46 +135,58 @@
 			<section id="hero-slider" class="slider">
 				<div class="flexslider">
 					<ul class="slides">
-			            <li class="slide">
-			            	<img src="images/kitchen_adventurer_cheesecake_brownie.jpg" alt="cheesecake brownie" />
-			            	<div class="container">
-				  	    	    <div class="content alignleft">
-									<h3 class="quote">&ldquo;A totally new experience... like a junior Outward Bound.&rdquo;</h3>
-									<h4 class="author">Lucy Bosworth<br /><span class="">2013 Parent</span></h4>
-								</div><!--.content-->
-							</div><!--.container-->
+			            <li class="slide" style="background-image: url('images/kitchen_adventurer_cheesecake_brownie.jpg');">
+			            	<div class="gradient">
+				            	<div class="container">
+					  	    	    <div class="content alignleft">
+										<h3 class="quote">&ldquo;A totally new experience...<br />like a junior Outward Bound.&rdquo;</h3>
+										<h4 class="author">Lucy Bosworth, 2013 Parent</h4>
+										<a class="button" href="#">Button text</a>
+									</div><!--.content-->
+								</div><!--.container-->
+							</div><!--.gradient-->
 		  	    		</li>
-		  	    		<li class="slide">
-			  	    	    <img src="images/kitchen_adventurer_lemon.jpg" />
-			  	    	    <div class="container">
-				  	    	    <div class="content alignright">
-									<h3 class="quote">&ldquo;A totally new experience... like a junior Outward Bound.&rdquo;</h3>
-									<h4 class="author">Lucy Bosworth<br /><span class="">2013 Parent</span></h4>
-								</div><!--.content-->
-							</div><!--.container-->
+		  	    		<li class="slide" style="background-image: url('images/kitchen_adventurer_lemon.jpg');">
+		  	    			<div class="gradient"> <!-- Gradient overlays full-width image. Don't use this if you're adding text to the background image manually -->
+				  	    	    <div class="container">
+					  	    	    <div class="content alignright">
+										<h3 class="quote">&ldquo;A totally new experience... like a junior Outward Bound.&rdquo;</h3>
+										<h4 class="author">Lucy Bosworth, 2013 Parent</h4>
+										<a class="button big action" href="#">Really Important Button</a>
+									</div><!--.content-->
+								</div><!--.container-->
+							</div><!--.gradient-->
 		  	    		</li>
-		  	    		<li class="slide">
-			  	    	    <img src="images/kitchen_adventurer_donut.jpg" />
+		  	    		<!--<li class="slide" style="background-image: url('images/kitchen_adventurer_donut.jpg');">
 		  	    		</li>
-		  	    		<li class="slide">
-			  	    	    <img src="images/kitchen_adventurer_caramel.jpg" />
-		  	    		</li>
+		  	    		<li class="slide" style="background-image: url('images/kitchen_adventurer_caramel.jpg');">
+			  	    	   
+		  	    		</li>-->
 			     	</ul>
 				</div><!--.flexslider-->
 
 				
 			</section><!--.slider-->
+	
+			<!-- Container
+				// A div with class="container" sets a max-width and adds margins on the left and right depending on window size. 
+				// Only use container for full-width elements! Note that the #primary and #secondary columns are within the container.
 
-		
+			-->
 			<div class="container">
 				<header class="page-header">
 					<h1 class="page-title">Page Title</h1>
 				</header><!--.page-header-->
 				
 				<div id="primary">
+
+					<!-- Entry Content
+						// Use class="entry-content" for the main body text on a page. This will set all the proper text formats, such as subheadings, blockquotes, paragraph spacing, etc. 
+
+					-->
 					<article class="entry-content">
 						<h2>Heading 2</h2>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis erat odio, ornare eu velit a, facilisis luctus lorem. Pellentesque imperdiet dui id purus lobortis, a semper magna auctor. Curabitur tristique dictum metus eget tempor. Cras id ex aliquam arcu maximus interdum vitae vel purus. Ut varius, quam id lacinia accumsan, ante ligula posuere libero, at ullamcorper lorem orci id dolor. Nam ac mauris augue. Donec id mattis quam. Sed hendrerit mauris in leo lacinia rhoncus maximus nec nisi. Fusce ac nisi lectus.</p>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis erat odio, ornare eu velit a, facilisis luctus lorem. Pellentesque imperdiet dui id purus lobortis, <a href="#">link inside the main content area</a> a semper magna auctor. Curabitur tristique dictum metus eget tempor. Cras id ex aliquam arcu maximus interdum vitae vel purus. Ut varius, quam id lacinia accumsan, ante ligula posuere libero, at ullamcorper lorem orci id dolor. Nam ac mauris augue. Donec id mattis quam. Sed hendrerit mauris in leo lacinia rhoncus maximus nec nisi. Fusce ac nisi lectus.</p>
 
 						<p>Nulla consectetur ligula malesuada ante vestibulum tincidunt. Cras condimentum lectus enim, ac condimentum tellus laoreet nec. Nam ullamcorper est pellentesque dolor eleifend, id auctor arcu posuere. Proin scelerisque, orci facilisis vestibulum ornare, sem arcu scelerisque lacus, quis iaculis massa diam quis sapien. Donec luctus consectetur mi. Vivamus bibendum, diam quis aliquet volutpat, nibh est luctus felis, ut fermentum libero ligula vel lectus. Suspendisse quis bibendum orci, at vehicula leo. Integer vel est felis. Curabitur elit purus, semper vitae ante eu, congue consequat mi. Proin interdum, ligula pellentesque sollicitudin commodo, urna turpis venenatis libero, sit amet elementum velit ante ac augue. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum sed nulla diam. Nulla ut tellus magna.</p>
 
@@ -218,7 +230,7 @@
 												<a href="#"><b>Grades 3-4 <span class="full">FULL!</span></b> - <i>Making clothing out of animal skins</i></a>
 											</li>
 											<li>
-												<a href="#"><b>Grades 5-6</b> - <i>Making clothing out of animal skins</i></a>
+												<a href="#"><b>Grade 1 &amp; 4-5 OPEN <span class="full">Grade 2-3 FULL</span></b> - <i>Stealth, Archery &amp; Wilderness Survival</i></a>
 											</li>
 											<li>
 												<a href="#"><b class="full">Grades 7-8 FULL</b> - <i>Making clothing out of animal skins</i></a>
@@ -227,25 +239,25 @@
 									</div><!--.content-->
 
 									<div class="head">
-									  <h3><b>Week 2</b> - <i>June 11 - June 18</i></h3>
+										<h3><b>Week 1</b> - <i>with Add to Cart button</i></h3>
 									</div><!--.head-->
 
 									<div class="content">
 										<ul class="classlist">
 											<li>
-												<a href="#"><b>Grades 1-2</b> - <i>Stealth and Archery and Superfun Stuff</i></a>
+												<a href="#"><b>Grades 1-2</b> - <i>Stealth and Archery and Superfun Stuff</i><button class="cart" href="#"><i class="fa fa-shopping-cart"></i> Add</button></a>
 											</li>
 											<li>
-												<a href="#"><b>Grades 3-4</b> - <i>Intro to Human Psychology</i></a>
+												<a href="#"><b>Grades 3-4</b> - <i>Intro to Human Psychology</i><button class="cart" href="#"><i class="fa fa-shopping-cart"></i> Add</button></a>
 											</li>
 											<li class="full">
 												<a href="#"><b>Grades 3-4 <span class="full">FULL!</span></b> - <i>Making clothing out of animal skins</i></a>
 											</li>
 											<li>
-												<a href="#"><b>Grades 5-6</b> - <i>Making clothing out of animal skins</i></a>
+												<a href="#"><b>Grades 5-6</b> - <i>Making clothing out of animal skins</i><button class="cart" href="#"><i class="fa fa-shopping-cart"></i> Add</button></a>
 											</li>
 											<li>
-												<a href="#"><b class="full">Grades 7-8 FULL</b> - <i>Making clothing out of animal skins</i></a>
+												<a href="#"><b>Grade 1 &amp; 4-5 OPEN <span class="full">Grade 2-3 FULL</span></b> - <i>Stealth, Archery &amp; Wilderness Survival</i></a><button class="cart" href="#"><i class="fa fa-shopping-cart"></i> Add</button>
 											</li>
 										</ul><!--.classlist-->
 									</div><!--.content-->
@@ -301,22 +313,22 @@
 								</figure><!--.location-->
 								<div class="accordion">
 									<div class="head">
-										<h3><b>Week 1</b> - <i>June 3 - June 10</i></h3>
+										<h3><b>Week 1</b> - <i>with Add to Cart button</i></h3>
 									</div><!--.head-->
 
 									<div class="content">
 										<ul class="classlist">
 											<li>
-												<a href="#"><b>Grades 1-2</b> - <i>Stealth and Archery and Superfun Stuff</i></a>
+												<a href="#"><b>Grades 1-2</b> - <i>Stealth and Archery and Superfun Stuff</i><button class="cart" href="#"><i class="fa fa-shopping-cart"></i> Add</button></a>
 											</li>
 											<li>
-												<a href="#"><b>Grades 3-4</b> - <i>Intro to Human Psychology</i></a>
+												<a href="#"><b>Grades 3-4</b> - <i>Intro to Human Psychology</i><button class="cart" href="#"><i class="fa fa-shopping-cart"></i> Add</button></a>
 											</li>
 											<li class="full">
 												<a href="#"><b>Grades 3-4 <span class="full">FULL!</span></b> - <i>Making clothing out of animal skins</i></a>
 											</li>
 											<li>
-												<a href="#"><b>Grades 5-6</b> - <i>Making clothing out of animal skins</i></a>
+												<a href="#"><b>Grades 5-6</b> - <i>Making clothing out of animal skins</i><button class="cart" href="#"><i class="fa fa-shopping-cart"></i> Add</button></a>
 											</li>
 											<li>
 												<a href="#"><b class="full">Grades 7-8 FULL</b> - <i>Making clothing out of animal skins</i></a>
@@ -384,10 +396,29 @@
 				
 
 					<!-- Block notes
+						// Default orientation is stacked, so you don't need to add stacked class. Adding class="horizontal" to the article element will override orientation on large monitors only. Phones and tablets will always show stacked orientation (better for consistency as things move around for a smaller screen).
+						
+						// Blocks must be organized into rows. Just add a <div class="block-row"></div> around each set of blocks. This will ensure that they clear properly. Also, they won't be styled if not in a block-row div.
 
 						// For last block in a row (full size) add class 'last' to aricle element. This will eliminate the right margin.
+
+						// Content: 
+							- For the title of the block, use <h3 class="block-title">Title</h3>
+							- For content use <p>content blah blah...</p>
+
+						// Images:
+							- 
 					-->
-						
+
+					<!-- Buttons
+						// Create a button by adding class="button" to an <a> element. Example: <a class="button" href="#">Button Text</a>
+						// Styles: Buttons default to green at 14px font-size. 
+						//		- For a larger button (font-size 18px) use class 'big'. Example <a class="button big" href="#">Button Text</a>
+								- For a smaller button (font-size 12px) use class 'small'. Example <a class="button small" href="#">Button Text</a>
+								- For an orange button use class 'action'. Example <a class="button action" href="#">Button Text</a>
+
+						//
+					-->
 					<div class="block-row">
 
 						<article class="block one-column">
@@ -428,7 +459,22 @@
 
 						<article class="block stacked one-column">
 							<figure>
-								<img src="images/Ranger-480x320.jpg" alt="image alt text" />
+								<a href="#">
+									<img src="images/Ranger-480x320.jpg" alt="image alt text" />
+								</a>
+							</figure>
+							<div class="content">
+								<h3 class="block-title">Class Title</h3>
+								<p>Learn the ancient art of working hot metal on the anvil!</p>
+
+							</div><!--.content-->
+						</article><!--.block-->
+
+						<article class="block stacked one-column">
+							<figure>
+								<a href="#">
+									<img src="images/Ranger-480x320.jpg" alt="image alt text" />
+								</a>
 							</figure>
 							<div class="content">
 								<h3 class="block-title">Class Title</h3>
@@ -438,37 +484,35 @@
 
 						<article class="block stacked one-column">
 							<figure>
-								<img src="images/Ranger-480x320.jpg" alt="image alt text" />
+								<a href="#">
+									<img src="images/Ranger-480x320.jpg" alt="image alt text" />
+								</a>
 							</figure>
 							<div class="content">
 								<h3 class="block-title">Class Title</h3>
 								<p>Learn the ancient art of working hot metal on the anvil!</p>
+								<a class="button small">Button Small</a>
 							</div><!--.content-->
 						</article><!--.block-->
 
 						<article class="block stacked one-column">
 							<figure>
-								<img src="images/Ranger-480x320.jpg" alt="image alt text" />
+								<a href="#">
+									<img src="images/Ranger-480x320.jpg" alt="image alt text" />
+								</a>
 							</figure>
 							<div class="content">
 								<h3 class="block-title">Class Title</h3>
 								<p>Learn the ancient art of working hot metal on the anvil!</p>
-							</div><!--.content-->
-						</article><!--.block-->
-
-						<article class="block stacked one-column">
-							<figure>
-								<img src="images/Ranger-480x320.jpg" alt="image alt text" />
-							</figure>
-							<div class="content">
-								<h3 class="block-title">Class Title</h3>
-								<p>Learn the ancient art of working hot metal on the anvil!</p>
+								<a class="button action small" href="#">Small action button</a>
 							</div><!--.content-->
 						</article><!--.block-->
 
 						<article class="block stacked one-column last">
 							<figure>
-								<img src="images/Ranger-480x320.jpg" alt="image alt text" />
+								<a href="#">
+									<img src="images/Ranger-480x320.jpg" alt="image alt text" />
+								</a>
 							</figure>
 							<div class="content">
 								<h3 class="block-title">Class Title</h3>
@@ -483,21 +527,27 @@
 						
 						<article class="block stacked two-column">
 							<figure>
-								<img src="images/Animals-480x356.jpg" alt="image alt text" />
+								<a href="#">
+									<img src="images/Animals-480x356.jpg" alt="image alt text" />
+								</a>
 							</figure>
 							<div class="content">
-								<h3 class="block-title">Class Title</h3>
+								<h3 class="block-title">Class Title - 480 x 356 img dimensions</h3>
 								<p>Learn the ancient art of working hot metal on the anvil!</p>
+								<a class="button">Normal button</a>
 							</div><!--.content-->
 						</article><!--.block-->
 
 						<article class="block horizontal three-column last">
 							<figure>
-								<img src="images/Animals-480x356.jpg" alt="image alt text" />
+								<a href="#">
+									<img src="images/Animals-480x356.jpg" alt="image alt text" />
+								</a>
 							</figure>
 							<div class="content">
-								<h3 class="block-title">Class Title</h3>
+								<h3 class="block-title">Class Title - 480 x 356 img dimensions</h3>
 								<p>Learn the ancient art of working hot metal on the anvil!</p>
+								<a class="button big action">Big Action button</a>
 							</div><!--.content-->
 						</article><!--.block-->
 
@@ -508,31 +558,40 @@
 						
 						<article class="block horizontal two-column">
 							<figure>
-								<img src="images/Ranger-480x320.jpg" alt="image alt text" />
+								<a href="#">
+									<img src="images/Ranger-480x320.jpg" alt="image alt text" />
+								</a>
 							</figure>
 							<div class="content">
 								<h3 class="block-title">Class Title - 480 x 320 img dimensions</h3>
 								<p>Learn the ancient art of working hot metal on the anvil!</p>
+
 							</div><!--.content-->
 						</article><!--.block-->
 
 						<article class="block stacked two-column">
 							<figure>
-								<img src="images/Ranger-480x320.jpg" alt="image alt text" />
+								<a href="#">
+									<img src="images/Ranger-480x320.jpg" alt="image alt text" />
+								</a>
 							</figure>
 							<div class="content">
 								<h3 class="block-title">Class Title - 480 x 320 img dimensions</h3>
 								<p>Learn the ancient art of working hot metal on the anvil!</p>
+								<a class="button big">Big Button</a>
 							</div><!--.content-->
 						</article><!--.block-->
 						
 						<article class="block stacked one-column last">
 							<figure>
-								<img src="images/Ranger-480x320.jpg" alt="image alt text" />
+								<a href="#">
+									<img src="images/Ranger-480x320.jpg" alt="image alt text" />
+								</a>
 							</figure>
 							<div class="content">
 								<h3 class="block-title">Class Title - 480 x 320 img dimensions</h3>
 								<p>Learn the ancient art of working hot metal on the anvil!</p>
+								<a class="button" href="#">Normal button</a>
 							</div><!--.content-->
 						</article><!--.block-->
 

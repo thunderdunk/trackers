@@ -38,6 +38,8 @@ input[type="submit"] {
 
 	text-shadow: none;
 
+	display: inline-block; //Keeps padding from overflowing into neighboring elements
+
 
 	&:hover {
 		background: $green; 
@@ -63,8 +65,12 @@ input[type="submit"] {
 	}
 
 	&.big { //Bigger button
-		font-size: 18px;
+		@include font-size(18);
 		font-weight: 400;
+	}
+
+	&.small {
+		@include font-size(12);
 	}
 }
 

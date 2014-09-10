@@ -8,7 +8,8 @@
 		box-sizing: border-box; //Sets border inside dimensions
 		background: $bg-white;
 		border: $block-border;
-		margin-bottom: 2em;
+		margin-bottom: 3em;
+		overflow: hidden; //Keeps image in horizontal block from bleeding out below
 
 		figure {
 			width: 100%;
@@ -26,23 +27,47 @@
 				font-family: $heading-font;
 				@include font-size(18);
 				margin-top: 0;
+				line-height: 1.2
 			}
 
 			p {
 				color: $text-light;
 				line-height: 1.4;
 			}
+
+			.button {
+				margin: 1em 0 .5em;
+			}
 		}
+	}
+}
 
-		&.horizontal {
+@media screen and (min-width: $break-large) {
+	.block-row {
+		
+		.block {
 
-			figure {
-				width: 50%;
-				float: left;
-				margin-right: 1em;
+			.content {
 
-				img {
-					vertical-align: top; //Eliminate extra space below img element
+				.block-title {
+
+				}
+
+				p {
+
+				}
+			}
+
+			&.horizontal {
+
+				figure {
+					width: 50%;
+					float: left;
+					margin-right: 1.5em;
+
+					img {
+						vertical-align: top; //Eliminate extra space below img element
+					}
 				}
 			}
 		}

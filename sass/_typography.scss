@@ -37,5 +37,15 @@ i {
 		font-size: 14px;
 		margin-bottom: 1.5em;
 		line-height: $line-height-content;
+
+		a {
+			color: $link-color;
+			font-style: italic;
+
+			&:hover {
+				color: $link-hover;
+				
+			}
+		}
 	}
 }
