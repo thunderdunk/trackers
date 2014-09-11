@@ -52,9 +52,10 @@
 					}
 
 					.content {
-						margin-top: 15em;
+						margin-top: 40vh;
 						color: #fff;
 						line-height: 1.4;
+						text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
 
 						h3 {
 							@include font-size(28);

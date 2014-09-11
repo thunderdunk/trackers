@@ -8,7 +8,7 @@ require 'header-pdx.php'; //Includes main navigation and body, header, #masthead
 
 			<!--Uses FlexSlider @link https://github.com/woothemes/FlexSlider
 				// Use image with minimum dimensions _____ X _____ as background image -->
-			<section id="hero-slider" class="slider">
+			<section id="hero-slider" class="slider hero">
 				<div class="flexslider">
 
 					<ul class="slides">

@@ -38,8 +38,34 @@ $gutter: 3%;
 	}
 
 	#secondary {
+		
+		.block-row { //REFIGURE MATH ON THIS
+			$one-col: 47%;
+			$two-col: 100%;
+			$gutter: 6%;
+
+			.block {
+				margin-right: $gutter;
+
+				&.one-column {
+					width: $one-col;
+				}
+
+				&.two-column {
+					width: $two-col;
+				}
+
+				&.last {
+					margin-right: 0;
+				}
+			}
+		}
+		
+
 		float: right;
 		width: $two-col;
+
+
 
 	}
 
