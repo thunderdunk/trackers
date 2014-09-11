@@ -1,7 +1,7 @@
 <?php
 
 /*
- * Header for non-location-specific pages, such as home page
+ * Header for Bay Area pages - contains Bay Area logo
  */
 
 ?>

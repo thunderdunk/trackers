@@ -59,18 +59,18 @@
 						<li><a href="adult.html">Adult</a></li>
 						<li class="label"><a href="#">Locations</a>
 							<ul class="child">
-							<li><a href="portland.html">Portland</a></li>
-							<li><a href="bayarea.html">Bay Area</a></li>
+								<li><a href="portland.html">Portland</a></li>
+								<li><a href="bayarea.html">Bay Area</a></li>
 							</ul>
 						</li>
 						<li><a href="#">Blog</a></li>
-						<li><a href="#">Contact</a></li>
+						<li><a href="contact-form.php" data-mfp-src="#contact-popup" class="open-popup-link">Contact</a></li>
 					</ul>
 						
 					<ul class="menu secondary">
 						<!--Uses icons from Font Awesome @link http://fortawesome.github.io/Font-Awesome/ -->
 						<li><a class="login" href="#"><span class="icon-label">Login</span> &nbsp;<i class="fa fa-sign-in"></i></a></li>
-						<li><div class="facebook"><a class="facebook" href="https://www.facebook.com/trackersearth" target="_blank" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+						<li><a class="facebook" href="https://www.facebook.com/trackersearth" target="_blank" title="Facebook"><i class="fa fa-facebook"></i></a></li>
 						<li><a class="google-plus" href="https://plus.google.com/106518547425312602411/posts" target="_blank" title="Google Plus"><i class="fa fa-google-plus"></i></a></li>
 						<li><a class="twitter" href="https://twitter.com/trackersearth" target="_blank" title="Twitter"><i class="fa fa-twitter"></i></a></li>
 					</ul>

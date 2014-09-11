@@ -3,7 +3,7 @@
  * Page: All Site Elements
  */
 
-require 'header.php'; //Includes main navigation and body, header, #masthead, #page 
+require 'header-pdx.php'; //Includes main navigation and body, header, #masthead, #page FOR PDX PAGES
 ?>
 
 			<!--Uses FlexSlider @link https://github.com/woothemes/FlexSlider
@@ -551,11 +551,8 @@ require 'header.php'; //Includes main navigation and body, header, #masthead, #p
 					<p>a paragraph of text</p>
 					<a class="test-popup-link" href="images/thefridge.jpg">Open popup</a>
 
-					<a class="open-popup-link" href="contact-form.php">FORM POPUP MAYBE</a>
-					
-					<div id="form-popup" class="white-popup mfp-hide">
-			
-					</div>
+					<a href="contact-form.php" data-mfp-src="#test-popup" class="open-popup-link">Show inline popup</a>
+
 			</div><!--.container-->
 
 <?php include 'footer.php'; // Includes closing main, body, html tags and footer #colophon ?>
