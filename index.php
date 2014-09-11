@@ -1,148 +1,18 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<meta name="viewport" content="width=device-width, initial-scale=1" /><!--Make sure phones don't scale the layout-->
+<?php
+/*
+ * Page: All Site Elements
+ */
 
-	<title>Trackers Earth</title>
-
-	<!--[if gte IE 9]>
-	  <style type="text/css">
-	    .gradient {
-	       filter: none;
-	    }
-	  </style>
-	<![endif]-->
-
-	<!-- Main stylesheet: includes Magnific CSS -->
-	<link rel="stylesheet" type="text/css" href="css/style.css" /> 
-
-	<!-- Google Fonts -->
-	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,300,600,700|Roboto+Slab:400,300' rel='stylesheet' type='text/css'>
-
-	<!-- Font Awesome -->
-	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
-
-	<!-- jQuery -->
-	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> 
-
-	<!-- jQuery UI -->
-	<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.1/jquery-ui.min.js"></script>
-
-	<!-- Magnific Popup core JS file -->
-	<script src="js/jquery.magnific-build-min.js"></script> 
-
-	<!-- FlexSlider -->
-	<script src="js/jquery.flexslider-min.js"></script>
-
-	<!--BUGGYFILL TO FIX VIEWPORT UNITS IN IOS @link https://github.com/rodneyrehm/viewport-units-buggyfill-->
-	<script src="js/viewport-units-buggyfill.js"></script>
-	<script></script>
-
-	<script src="js/initiators.js"></script>
-
-
-
-</head>
-
-<body>
-
-	
-
-
-	<div id="page">
-		<header id="masthead" class="gradient">
-			<div class="container">
-			<h1 class="site-branding"><a href="#"><img src="images/Logo-TrackersPDX-dropshadow.png" title="Trackers PDX" alt="Trackers PDX logo" /></a></h1>
-
-				<a href="#" class="menu-toggle open-panel"><i class="fa fa-navicon"></i></a>
-				
-				<!--MOBILE OFF-CANVAS NAV-->
-				<nav id="mobile-navigation" >
-					<div class="wrap">
-						<ul class="menu main">
-							<li><a href="about.html">About</a></li>
-							<li><a href="youth.html">Youth</a></li>
-							<li><a href="adult.html">Adult</a></li>
-							<li><a href="#">Blog</a></li>
-
-							<li class="label">Locations</li>
-							
-								<li><a href="portland.html">Portland</a></li>
-								<li><a href="bayarea.html">Bay Area</a></li>
-				
-							<li class="label">Join our Mailing list</li>
-							
-							<li class="mailchimp">
-								<!-- Begin MailChimp Signup Form 
-									// All MC inline styles stripped -->
-								
-								<div id="mc_embed_signup">
-									<form action="//heptagoncreative.us4.list-manage.com/subscribe/post?u=4d084ac9e136d67dc8ecfd83c&amp;id=e7b4a517a7" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-										<!--<label for="mce-EMAIL">Subscribe to our mailing list</label>-->
-										<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
-									    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-									    <div style="position: absolute; left: -5000px;"><input type="text" name="b_4d084ac9e136d67dc8ecfd83c_e7b4a517a7" tabindex="-1" value=""></div>
-									    <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
-									</form>
-								</div>
-
-								<!--End mc_embed_signup-->
-							</li>
-
-							<li class="contact"><a class="button" href="#">Contact Us &nbsp;<i class="fa fa-envelope-o"></i></a></li>
-							
-							<li class="social">
-								<!--Uses icons from Font Awesome @link http://fortawesome.github.io/Font-Awesome/ -->
-								<a class="facebook" href="https://www.facebook.com/trackersearth" target="_blank" title="Facebook"><i class="fa fa-facebook"></i></a>
-								<a class="google-plus" href="https://plus.google.com/106518547425312602411/posts" target="_blank" title="Google Plus"><i class="fa fa-google-plus"></i></a>
-								<a class="twitter" href="https://twitter.com/trackersearth" target="_blank" title="Twitter"><i class="fa fa-twitter"></i></a>
-								<a class="login" href="#"><span class="text">Login</span>&nbsp; <i class="fa fa-sign-in"></i></a>
-							</li>
-
-							<li class="login"></li>
-
-						</ul>
-
-					</div><!--.wrap-->
-				</nav><!--#main-navigation-->
-				
-				<!--DESKTOP FULL NAV-->
-				<nav id="main-navigation" >
-					<ul class="menu main">
-						<li><a href="about.html">About</a></li>
-						<li><a href="youth.html">Youth</a></li>
-						<li><a href="adult.html">Adult</a></li>
-						<li class="label"><a href="#">Locations</a>
-							<ul class="child">
-							<li><a href="portland.html">Portland</a></li>
-							<li><a href="bayarea.html">Bay Area</a></li>
-							</ul>
-						</li>
-						<li><a href="#">Blog</a></li>
-						<li><a href="#">Contact</a></li>
-					</ul>
-						
-					<ul class="menu secondary">
-						<!--Uses icons from Font Awesome @link http://fortawesome.github.io/Font-Awesome/ -->
-						<li><a class="login" href="#"><span class="icon-label">Login</span> &nbsp;<i class="fa fa-sign-in"></i></a></li>
-						<li><div class="facebook"><a class="facebook" href="https://www.facebook.com/trackersearth" target="_blank" title="Facebook"><i class="fa fa-facebook"></i></a></li>
-						<li><a class="google-plus" href="https://plus.google.com/106518547425312602411/posts" target="_blank" title="Google Plus"><i class="fa fa-google-plus"></i></a></li>
-						<li><a class="twitter" href="https://twitter.com/trackersearth" target="_blank" title="Twitter"><i class="fa fa-twitter"></i></a></li>
-					</ul>
-
-				</nav><!--#main-navigation-->
-
-			</div><!--.container-->
-			
-		</header><!--#masthead-->
-		
-		<main>
+require 'header.php'; //Includes main navigation and body, header, #masthead, #page 
+?>
 
 			<!--Uses FlexSlider @link https://github.com/woothemes/FlexSlider
 				// Use image with minimum dimensions _____ X _____ as background image -->
 			<section id="hero-slider" class="slider">
 				<div class="flexslider">
+
 					<ul class="slides">
+
 			            <li class="slide" style="background-image: url('images/kitchen_adventurer_cheesecake_brownie.jpg');">
 			            	<div class="gradient">
 				            	<div class="container">
@@ -154,6 +24,7 @@
 								</div><!--.container-->
 							</div><!--.gradient-->
 		  	    		</li>
+
 		  	    		<li class="slide" style="background-image: url('images/kitchen_adventurer_lemon.jpg');">
 		  	    			<div class="gradient"> <!-- Gradient overlays full-width image. Don't use this if you're adding text to the background image manually -->
 				  	    	    <div class="container">
@@ -165,15 +36,11 @@
 								</div><!--.container-->
 							</div><!--.gradient-->
 		  	    		</li>
-		  	    		<!--<li class="slide" style="background-image: url('images/kitchen_adventurer_donut.jpg');">
-		  	    		</li>
-		  	    		<li class="slide" style="background-image: url('images/kitchen_adventurer_caramel.jpg');">
-			  	    	   
-		  	    		</li>-->
+	
 			     	</ul>
+
 				</div><!--.flexslider-->
 
-				
 			</section><!--.slider-->
 	
 			<!-- Container
@@ -187,6 +54,8 @@
 				</header><!--.page-header-->
 				
 				<div id="primary">
+
+				<?php require_once('contact-form.php'); ?>
 
 					<!-- Entry Content
 						// Use class="entry-content" for the main body text on a page. This will set all the proper text formats, such as subheadings, blockquotes, paragraph spacing, etc. 
@@ -688,30 +557,6 @@
 			
 					</div>
 			</div><!--.container-->
-		</main>
 
-		<footer id="colophon">
-			<div class="container">
-				<nav id="footer-menu">
-					<ul class="menu">
-						<li><a href="#">Portland Camps</a></li>
-						<li><a href="#">Portland Info</a></li>
-						<li><a href="#">Employment</a></li>
-						<li><a href="#">Trackers Bay</a></li>
-					</ul><!--.menu-->
-				</nav><!--#footer-menu-->
-			</div><!--.container-->
+<?php include 'footer.php'; // Includes closing main, body, html tags and footer #colophon ?>
 
-			<div class="site-info">
-				<div class="container">
-					<p>&copy;2014 Trackers Earth Portland. 4617 SE Milwaukie Avenue, Portland, Oregon 97202  |  503-345-3312  |  <a href="#">Privacy Policy</a><br />
-					Website design by <a href="http://heptagoncreative.com" title="Heptagon Creative">Heptagon Creative</a>.</p>
-				</div><!--.container-->
-			</div><!--.site-info-->
-		
-		</footer><!--#colophon-->
-	</div><!--#page-->
-
-</body>
-
-</html>
