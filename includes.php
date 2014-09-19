@@ -1,5 +1,6 @@
 <meta name="viewport" content="width=device-width, initial-scale=1" /><!--Make sure phones don't scale the layout-->
 
+	<!--IE9 support for background gradients-->
 	<!--[if gte IE 9]>
 	  <style type="text/css">
 	    .gradient {
@@ -10,15 +11,6 @@
 
 	<!-- Main stylesheet: includes Magnific CSS -->
 	<link rel="stylesheet" type="text/css" href="css/style.css" /> 
-
-	<!--Pure CSS stuff -->
-	<!--<link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/grids-responsive-min.css">-->
-	<!--[if lte IE 8]>
-	    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/grids-responsive-old-ie-min.css">
-	<![endif]-->
-	<!--[if gt IE 8]><!-->
-	  <!--  <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/grids-responsive-min.css">
-	<!--<![endif]-->
 
 	<!-- Google Fonts -->
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,300,600,700|Roboto+Slab:400,300' rel='stylesheet' type='text/css'>
@@ -43,6 +35,6 @@
 
 	<!--BUGGYFILL TO FIX VIEWPORT UNITS IN IOS @link https://github.com/rodneyrehm/viewport-units-buggyfill-->
 	<script src="js/viewport-units-buggyfill.js"></script>
-	<script></script>
+
 
 	<script src="js/initiators.js"></script>

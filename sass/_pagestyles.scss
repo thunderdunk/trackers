@@ -28,10 +28,26 @@
 			height: 100%;
 
 			.content {
-				margin: 25% auto 0 auto;
-				//width: 50%;
+				margin: 13% auto 0 auto;
+				width: 40%;
 				text-align: center;
 				color: #fff;
+
+				a {
+					img {
+						opacity: .8;
+						-webkit-transition: opacity .2s;
+						-moz-transition: opacity .2s;
+						-ms-transition: opacity .2s;
+						-o-transition: opacity .2s;
+						transition: opacity .2s;
+						
+					}
+
+					&:hover img {
+						opacity: 1;
+					}
+				}
 
 				h2 {
 					@include font-size(30);
@@ -55,6 +71,39 @@
 		}
 	}
 
+	@media screen and (min-width: $break-small) {
+
+		.location {
+
+
+			.gradient {
+
+				.content {
+					margin: 10% auto 0 auto;
+					width: 40%;
+
+				}
+			}
+		}
+	}
+
+	@media screen and (min-width: 520px) {
+
+		.location {
+
+
+			.gradient {
+
+				.content {
+					margin: 13% auto 0 auto;
+					width: 30%;
+					//text-align: center;
+					//color: #fff;
+				}
+			}
+		}
+	}
+
 	@media screen and (min-width: $break-medium) {
 
 		.location {
@@ -65,8 +114,8 @@
 			.gradient {
 
 				.content {
-					margin: 45vh auto 0 auto;
-					width: 50%;
+					margin: 20vh auto 0 auto;
+					width: 60%;
 					//text-align: center;
 					//color: #fff;
 				}

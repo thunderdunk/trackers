@@ -1,6 +1,6 @@
 <?php
 /*
- * Page: All Site Elements
+ * Page: Category Page
  */
 
 //require 'header.php'; //Use for home page
@@ -30,9 +30,6 @@ require 'header-pdx.php'; //Includes main navigation and body, header, #masthead
 		  	    		<li class="slide" style="background-image: url('images/SliderCoast.jpg');">
 		  	    			<div class="gradient"> <!-- Gradient overlays full-width image. Don't use this if you're adding text to the background image manually -->
 				  	    	    <div class="container">
-				  	    	    	<!--
-				  	    	    		// Align content using the following classes: alignleft, alignright, aligncenter
-				  	    	    	-->
 					  	    	    <div class="content alignright">
 										<h3 class="quote">&ldquo;A totally new experience... like a junior Outward Bound.&rdquo;</h3>
 										<h4 class="author">Lucy Bosworth, 2013 Parent</h4>
@@ -62,8 +59,6 @@ require 'header-pdx.php'; //Includes main navigation and body, header, #masthead
 				</header><!--.page-header-->
 				
 				<div class="primary">
-
-				<?php //require_once('contact-form.php'); ?>
 
 					<!-- Entry Content
 						// Use class="entry-content" for the main body text on a page, and for text content in the sidebar/secondary area (including around Callout boxes). This will set all the proper text formats, such as subheadings, blockquotes, paragraph spacing, etc. 
@@ -107,14 +102,6 @@ require 'header-pdx.php'; //Includes main navigation and body, header, #masthead
 
 							<?php include 'registration-catpage.php'; ?>
 
-							<header class="reg-heading">
-							
-							<h2 class="content-subheading">Register Now!</h2>
-							
-							<p class="register-help">Click your location and week</p>
-						</header><!--reg-heading-->
-
-							<?php include 'registration-classpage.php'; ?>
 
 					</section><!--.class-picker-->
 
@@ -200,168 +187,115 @@ require 'header-pdx.php'; //Includes main navigation and body, header, #masthead
 
 						//
 					-->
-
 					
-					<!-- Small Image Blocks -->
+					<section class="below-content">
+						<!-- Below Content
+							// Content that goes below the main two-column area (primary/secondary) should go in a container with class "below-content". This will ensure it spans the width of the page and clears properly
+						-->
 
-					<div class="block-row">
+						<h2 class="content-subheading">You might also like...</h2>
 
-						<article class="block stacked small">
-							<figure>
-								<a href="#">
-									<img src="images/Ranger-480x320.jpg" alt="image alt text" />
-								</a>
-							</figure>
-							<div class="content">
-								<h3 class="block-title">Class Title</h3>
-								<p>Learn the ancient art of working hot metal on the anvil!</p>
+						<!-- Small Image Blocks -->
 
-							</div><!--.content-->
-						</article><!--.block-->
+						<div class="block-row">
 
-						<article class="block small">
-							<figure>
-								<a href="#">
-									<img src="images/Ranger-480x320.jpg" alt="image alt text" />
-								</a>
-							</figure>
-							<div class="content">
-								<h3 class="block-title">Class Title</h3>
-								<p>Learn the ancient art of working hot metal on the anvil!</p>
-							</div><!--.content-->
-						</article><!--.block-->
+							<article class="block stacked small">
+								<figure>
+									<a href="#">
+										<img src="images/Ranger-480x320.jpg" alt="image alt text" />
+									</a>
+								</figure>
+								<div class="content">
+									<h3 class="block-title">Class Title</h3>
+									<p>Learn the ancient art of working hot metal on the anvil!</p>
 
-						<article class="block stacked small">
-							<figure>
-								<a href="#">
-									<img src="images/Ranger-480x320.jpg" alt="image alt text" />
-								</a>
-							</figure>
-							<div class="content">
-								<h3 class="block-title">Class Title</h3>
-								<p>Learn the ancient art of working hot metal on the anvil!</p>
-								<a class="button small">Button Small</a>
-							</div><!--.content-->
-						</article><!--.block-->
+								</div><!--.content-->
+							</article><!--.block-->
 
-						<article class="block stacked small">
-							<figure>
-								<a href="#">
-									<img src="images/Ranger-480x320.jpg" alt="image alt text" />
-								</a>
-							</figure>
-							<div class="content">
-								<h3 class="block-title">Class Title</h3>
-								<p>Learn the ancient art of working hot metal on the anvil!</p>
-								<a class="button action small" href="#">Small action button</a>
-							</div><!--.content-->
-						</article><!--.block-->
+							<article class="block small">
+								<figure>
+									<a href="#">
+										<img src="images/Ranger-480x320.jpg" alt="image alt text" />
+									</a>
+								</figure>
+								<div class="content">
+									<h3 class="block-title">Class Title</h3>
+									<p>Learn the ancient art of working hot metal on the anvil!</p>
+								</div><!--.content-->
+							</article><!--.block-->
 
-						<article class="block stacked small last">
-							<figure>
-								<a href="#">
-									<img src="images/Ranger-480x320.jpg" alt="image alt text" />
-								</a>
-							</figure>
-							<div class="content">
-								<h3 class="block-title">Class Title</h3>
-								<p>Learn the ancient art of working hot metal on the anvil!</p>
-							</div><!--.content-->
-						</article><!--.block-->
+							<article class="block stacked small">
+								<figure>
+									<a href="#">
+										<img src="images/Ranger-480x320.jpg" alt="image alt text" />
+									</a>
+								</figure>
+								<div class="content">
+									<h3 class="block-title">Class Title</h3>
+									<p>Learn the ancient art of working hot metal on the anvil!</p>
+									<a class="button small">Button Small</a>
+								</div><!--.content-->
+							</article><!--.block-->
 
-					</div><!--.block-row-->
-				
-					<!-- Large Blocks -->
-					<div class="block-row">
+							<article class="block stacked small">
+								<figure>
+									<a href="#">
+										<img src="images/Ranger-480x320.jpg" alt="image alt text" />
+									</a>
+								</figure>
+								<div class="content">
+									<h3 class="block-title">Class Title</h3>
+									<p>Learn the ancient art of working hot metal on the anvil!</p>
+									<a class="button action small" href="#">Small action button</a>
+								</div><!--.content-->
+							</article><!--.block-->
+
+							<article class="block stacked small last">
+								<figure>
+									<a href="#">
+										<img src="images/Ranger-480x320.jpg" alt="image alt text" />
+									</a>
+								</figure>
+								<div class="content">
+									<h3 class="block-title">Class Title</h3>
+									<p>Learn the ancient art of working hot metal on the anvil!</p>
+								</div><!--.content-->
+							</article><!--.block-->
+
+						</div><!--.block-row-->
 						
-						<article class="block stacked medium">
-							<figure>
-								<a href="#">
-									<img src="images/Animals-480x356.jpg" alt="image alt text" />
-								</a>
-							</figure>
-							<div class="content">
-								<h3 class="block-title">Class Title - 480 x 356 img dimensions</h3>
-								<p>Learn the ancient art of working hot metal on the anvil!</p>
-								<a class="button">Normal button</a>
-							</div><!--.content-->
-						</article><!--.block-->
+						<!-- Large Blocks -->
+						<div class="block-row">
+							
+							<article class="block stacked medium">
+								<figure>
+									<a href="#">
+										<img src="images/Animals-480x356.jpg" alt="image alt text" />
+									</a>
+								</figure>
+								<div class="content">
+									<h3 class="block-title">Class Title - 480 x 356 img dimensions</h3>
+									<p>Learn the ancient art of working hot metal on the anvil!</p>
+									<a class="button">Normal button</a>
+								</div><!--.content-->
+							</article><!--.block-->
 
-						<article class="block horizontal large last">
-							<figure>
-								<a href="#">
-									<img src="images/Animals-480x356.jpg" alt="image alt text" />
-								</a>
-							</figure>
-							<div class="content">
-								<h3 class="block-title">Class Title - 480 x 356 img dimensions</h3>
-								<p>Learn the ancient art of working hot metal on the anvil!</p>
-								<a class="button big action">Big Action button</a>
-							</div><!--.content-->
-						</article><!--.block-->
+							<article class="block horizontal large last">
+								<figure>
+									<a href="#">
+										<img src="images/Animals-480x356.jpg" alt="image alt text" />
+									</a>
+								</figure>
+								<div class="content">
+									<h3 class="block-title">Class Title - 480 x 356 img dimensions</h3>
+									<p>Learn the ancient art of working hot metal on the anvil!</p>
+									<a class="button big action">Big Action button</a>
+								</div><!--.content-->
+							</article><!--.block-->
 
-					</div><!--.block-row-->
-
-					<!-- Large Blocks -->
-					<div class="block-row">
-						
-						<article class="block horizontal large">
-							<figure>
-								<a href="#">
-									<img src="images/Ranger-480x320.jpg" alt="image alt text" />
-								</a>
-							</figure>
-							<div class="content">
-								<h3 class="block-title">Class Title - 480 x 320 img dimensions</h3>
-								<p>Learn the ancient art of working hot metal on the anvil!</p>
-
-							</div><!--.content-->
-						</article><!--.block-->
-
-						<article class="block stacked small">
-							<figure>
-								<a href="#">
-									<img src="images/Ranger-480x320.jpg" alt="image alt text" />
-								</a>
-							</figure>
-							<div class="content">
-								<h3 class="block-title">Class Title - 480 x 320 img dimensions</h3>
-								<p>Learn the ancient art of working hot metal on the anvil!</p>
-								<a class="button big">Big Button</a>
-							</div><!--.content-->
-						</article><!--.block-->
-						
-						<article class="block stacked small last">
-							<figure>
-								<a href="#">
-									<img src="images/Ranger-480x320.jpg" alt="image alt text" />
-								</a>
-							</figure>
-							<div class="content">
-								<h3 class="block-title">Class Title - 480 x 320 img dimensions</h3>
-								<p>Learn the ancient art of working hot metal on the anvil!</p>
-								<a class="button" href="#">Normal button</a>
-							</div><!--.content-->
-						</article><!--.block-->
-
-					</div><!--.block-row-->
-
-					<div class="block-row">
-						
-						<article class="block horizontal full">
-							<figure>
-								<a href="#">
-									<img src="images/Ranger-480x320.jpg" alt="image alt text" />
-								</a>
-							</figure>
-							<div class="content">
-								<h3 class="block-title">Class Title - 480 x 320 img dimensions</h3>
-								<p>Learn the ancient art of working hot metal on the anvil!</p>
-
-							</div><!--.content-->
-						</article><!--.block-->
-
-					</div><!--.block-row-->
+						</div><!--.block-row-->
+					</section><!--.below-content-->
+					
 
 
 			</div><!--.container-->

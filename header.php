@@ -21,7 +21,7 @@
 	<div id="page">
 		<header id="masthead" class="gradient">
 			<div class="container">
-			<h1 class="site-branding"><a href="#"><img src="images/Logo-TrackersPDX-dropshadow.png" title="Trackers PDX" alt="Trackers PDX logo" /></a></h1>
+			<h1 class="site-branding"><a href="#"><img src="images/TrackersLogo1.png" title="Trackers PDX" alt="Trackers PDX logo" /></a></h1>
 
 				<a href="#" class="menu-toggle open-panel"><i class="fa fa-bars"></i></a>
 				

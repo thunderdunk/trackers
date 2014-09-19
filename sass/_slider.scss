@@ -20,6 +20,15 @@
 			@media screen and (min-width: $break-medium) {
 				display: block;
 			}
+
+			a { //Override: These create extra margins on the side if they go off-canvas
+				&.flex-next {
+					right: 10px;
+				}
+				&.flex-prev {
+					left: 10px;
+				}
+			}
 		}
 
 		.slides {
@@ -80,13 +89,13 @@
 								margin-top: 30vh;
 
 								h3 {
-									@include font-size(24);
-									font-style: italic;
+									//@include font-size(24);
+									//font-style: italic;
 								}
 
 								h4 {
-									@include font-size(16);
-									font-weight: 100;
+									//@include font-size(16);
+									//font-weight: 100;
 									margin-bottom: 2em;
 									margin-top: .5em;
 								}
@@ -94,11 +103,51 @@
 						}
 
 						@media all and (min-height: 800px) {
-							margin: 0 auto;
-							max-width: 1280px;
+							//margin: 0 auto;
+							//max-width: 1280px;
 
 							.content {
 								margin-top: 40vh;
+
+								h3 {
+									//@include font-size(28);
+									//font-style: italic;
+								}
+
+								h4 {
+									//@include font-size(18);
+									//font-weight: 100;
+									margin-bottom: 2em;
+									margin-top: .5em;
+								}
+							}
+						}
+
+						@media all and (min-width: $break-medium) {
+
+							.content {
+								//margin-top: 30vh;
+
+								h3 {
+									@include font-size(24);
+									font-style: italic;
+								}
+
+								h4 {
+									@include font-size(16);
+									font-weight: 100;
+									//margin-bottom: 2em;
+									//margin-top: .5em;
+								}
+							}
+						}
+
+						@media all and (min-width: $break-large) {
+							//margin: 0 auto;
+							//max-width: 1280px;
+
+							.content {
+								//margin-top: 40vh;
 
 								h3 {
 									@include font-size(28);
@@ -108,10 +157,16 @@
 								h4 {
 									@include font-size(18);
 									font-weight: 100;
-									margin-bottom: 2em;
-									margin-top: .5em;
+									//margin-bottom: 2em;
+									//margin-top: .5em;
 								}
 							}
+						}
+
+						@media all and (min-width: $break-x-large) {
+							margin: 0 auto;
+							max-width: 1280px;
+
 						}
 
 					}

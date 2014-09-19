@@ -18,20 +18,7 @@
 				<li class="label">Join our Mailing list</li>
 				
 				<li class="mailchimp">
-					<!-- Begin MailChimp Signup Form 
-						// All MC inline styles stripped -->
-					
-					<div id="mc_embed_signup">
-						<form action="//heptagoncreative.us4.list-manage.com/subscribe/post?u=4d084ac9e136d67dc8ecfd83c&amp;id=e7b4a517a7" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-							<!--<label for="mce-EMAIL">Subscribe to our mailing list</label>-->
-							<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
-						    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-						    <div style="position: absolute; left: -5000px;"><input type="text" name="b_4d084ac9e136d67dc8ecfd83c_e7b4a517a7" tabindex="-1" value=""></div>
-						    <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
-						</form>
-					</div>
-
-					<!--End mc_embed_signup-->
+					<?php include 'includes/email-signup.php'; ?>
 				</li>
 
 				<li class="contact"><a class="button open-popup-link" data-mfp-src="#contact-popup" href="contact-form.php">Contact Us &nbsp;<i class="fa fa-envelope-o"></i></a></li>

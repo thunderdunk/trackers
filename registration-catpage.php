@@ -9,7 +9,10 @@
 							<div id="tabs-1" class="tab">
 
 								<figure class="location">
-									
+										<!--
+											// Image Dimensions: 960 X 480
+										-->
+
 										<img src="images/luke-skywalker.jpg" alt="Trackers NE" />
 										<div class="gradient"></div><!--.gradient-->
 										<figcaption>1234 NE 23rd Avenue, Portland OR</figcaption>

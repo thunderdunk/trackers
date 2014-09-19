@@ -10,9 +10,10 @@ require 'header.php'; //Includes main navigation and body, header, #masthead, #p
 				<div class="pdx location" style="background-image: url('images/kitchen_adventurer_donut.jpg');"> <!--must use background-image, not just background-->
 					<div class="gradient">
 						<div class="content">
-							<h2>Portland</h2>
-							<p>A short blurb about Portland and why it is cool.</p>
-							<a class="button x-large">Trackers PDX</a>
+							<a href="#"><img src="images/TrackersBigPDX.png" alt="Trackers PDX" /></a>
+							<!--<h2>Portland</h2>-->
+							<!--<p>A short blurb about Portland and why it is cool.</p>-->
+							<!--<a class="button x-large">Trackers PDX</a>-->
 						</div><!--.content-->
 					</div><!--.gradient-->
 				</div><!--.pdx-->
@@ -20,9 +21,10 @@ require 'header.php'; //Includes main navigation and body, header, #masthead, #p
 				<div class="bay location" style="background-image: url('images/kitchen_adventurer_caramel.jpg');" >
 					<div class="gradient">
 						<div class="content">
-							<h2>Bay Area</h2>
+							<a href="#"><img src="images/TrackersBigBAY.png" alt="Trackers PDX" /></a>
+							<!--<h2>Bay Area</h2>
 							<p>Something quick about how the Bay Area is nice too.</p>
-							<a class="button x-large action">Trackers Bay</a>
+							<a class="button x-large action">Trackers Bay</a>-->
 						</div><!--.content-->
 					</div><!--.gradient-->
 				</div><!--.bay-->
@@ -31,7 +33,7 @@ require 'header.php'; //Includes main navigation and body, header, #masthead, #p
 
 			<!-- Container
 				// A div with class="container" sets a max-width and adds margins on the left and right depending on window size. 
-				// Only use container for full-width elements! Note that the #primary and #secondary columns are within the container.
+				// Only use container for full-width elements! Note that the .primary and #secondary columns are within the container.
 
 			-->
 			<div class="container">
@@ -39,7 +41,7 @@ require 'header.php'; //Includes main navigation and body, header, #masthead, #p
 					<h1 class="page-title">About Trackers Earth</h1>
 				</header><!--.page-header-->
 				
-				<div id="primary">
+				<div class="primary">
 
 				<?php //require_once('contact-form.php'); ?>
 
@@ -56,9 +58,9 @@ require 'header.php'; //Includes main navigation and body, header, #masthead, #p
 						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis erat odio, ornare eu velit a, facilisis luctus lorem. Pellentesque imperdiet dui id purus lobortis, <a href="#">link inside the main content area</a> a semper magna auctor. Curabitur tristique dictum metus eget tempor. Cras id ex aliquam arcu maximus interdum vitae vel purus. Ut varius, quam id lacinia accumsan, ante ligula posuere libero, at ullamcorper lorem orci id dolor. Nam ac mauris augue. Donec id mattis quam. Sed hendrerit mauris in leo lacinia rhoncus maximus nec nisi. Fusce ac nisi lectus.</p>
 
 					</article><!--.entry-content-->
-				</div><!--#primary-->
+				</div><!--.primary-->
 
-				<div id="secondary">
+				<div class="secondary">
 					<div class="block-row">
 
 						<article class="block stacked small">
@@ -88,56 +90,6 @@ require 'header.php'; //Includes main navigation and body, header, #masthead, #p
 
 					</div><!--.block-row-->
 
-					<div class="block-row">
-
-						<article class="block stacked small">
-							<figure>
-								<a href="#">
-									<img src="images/Ranger-480x320.jpg" alt="image alt text" />
-								</a>
-							</figure>
-							<div class="content">
-								<h3 class="block-title">Class Title</h3>
-								<p>Learn the ancient art of working hot metal on the anvil!</p>
-								<a class="button small">Button Small</a>
-							</div><!--.content-->
-						</article><!--.block-->
-
-						<article class="block stacked small last">
-							<figure>
-								<a href="#">
-									<img src="images/Ranger-480x320.jpg" alt="image alt text" />
-								</a>
-							</figure>
-							<div class="content">
-								<h3 class="block-title">Class Title</h3>
-								<p>Learn the ancient art of working hot metal on the anvil!</p>
-								<a class="button action small" href="#">Small action button</a>
-							</div><!--.content-->
-						</article><!--.block-->
-
-					</div><!--.block-row-->
-
-					<!-- Large Blocks -->
-					<div class="block-row">
-						
-						<article class="block stacked large last">
-							<figure>
-								<a href="#">
-									<img src="images/Animals-480x356.jpg" alt="image alt text" />
-								</a>
-							</figure>
-							<div class="content">
-								<h3 class="block-title">Class Title - 480 x 356 img dimensions</h3>
-								<p>Learn the ancient art of working hot metal on the anvil!</p>
-								<a class="button">Normal button</a>
-							</div><!--.content-->
-						</article><!--.block-->
-
-	
-
-					</div><!--.block-row-->
-	<!--REGISTRATION-->
 					
 				</div><!--#secondary-->
 				
@@ -169,10 +121,21 @@ require 'header.php'; //Includes main navigation and body, header, #masthead, #p
 					-->
 					
 					
-					<!-- Small Image Blocks -->
+					<!-- Full-width Block -->
 
 					
-				
+				<div class="block-row">
+
+						<article class="block full">
+							<figure>
+								<a href="#">
+									<img src="images/full-banner1.jpg" alt="image alt text" />
+								</a>
+							</figure>
+							
+						</article><!--.block-->
+
+					</div><!--.block-row-->
 					
 
 			</div><!--.container-->

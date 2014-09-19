@@ -1,5 +1,26 @@
 /* Registration
 --------------------------------------------- */
+.class-picker {
+	padding-top: 2em;
+}
+
+.reg-heading {
+	
+	.content-subheading {
+		margin-bottom: $vspacing;
+	}
+
+	.register-help {
+		color: $trackers-orange;
+		background: transparent url('../images/help-arrow.png') right top no-repeat;
+		display: inline;
+		padding: 1.5em 3em 1em 0;
+		font-weight: 600;
+		font-style: italic;
+		@include font-size(16);
+		//margin-left: 38%;
+	}
+}
 
 #registration {
 	
@@ -126,6 +147,13 @@
 					transition: background .2s;
 					@include font-size(16);
 
+					&:before {
+						font-family: 'FontAwesome';
+						content: "\f0da";
+						float: left;
+						margin-right: 1em;
+					}
+
 					&:hover {
 						background: $green-light-hover;
 					}
@@ -133,6 +161,10 @@
 					&.active {
 						background: $green;
 						color: #fff;
+
+						&:before {
+							content: "\f0d7";
+						}
 					}
 
 					h3 {

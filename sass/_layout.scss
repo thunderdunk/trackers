@@ -9,7 +9,7 @@ body {
 $break-small: 480px;
 $break-medium: 769px;
 $break-large: 1024px;
-$break-x-large: 1280px;
+$break-x-large: 1320px;
 
 //Grid - 5 columns
 $col-1-5: 17.6%;
@@ -24,6 +24,19 @@ $col-1-2: 48.5%;
 
 .container {
 	margin: 0 3%;
+
+	.primary,
+	.secondary {
+		margin-bottom: 3em;
+	}
+}
+
+.clear {
+	clear: both;
+}
+
+.below-content {
+	clear: both;
 }
 
 #colophon {
@@ -34,16 +47,17 @@ $col-1-2: 48.5%;
 @media all and (min-width: $break-small) {
 	.block-row {
 
-		.block {
+		.block,
+		.item {
+
+			
 			//Columns
 			&.small {
 				float: left;
 				width: $col-1-2;
 				margin-right: $gutter;
 
-				&:nth-child(2n) {
-					margin-right: 0;
-				}
+				
 			}
 
 			&.medium {
@@ -51,9 +65,9 @@ $col-1-2: 48.5%;
 				width: $col-1-2;
 				margin-right: $gutter;
 
-				&:nth-child(2n) {
-					margin-right: 0;
-				}
+				//&:nth-child(2n) {
+				//	margin-right: 0;
+				//}
 			}
 
 			&.large {
@@ -71,7 +85,10 @@ $col-1-2: 48.5%;
 				margin-right: 0;
 
 			}
-
+			
+			&:nth-child(2n) {
+					margin-right: 0;
+				}
 
 		}
 		
@@ -90,15 +107,17 @@ $col-1-2: 48.5%;
 
 	
 
-	#primary {
+	.primary {
 		float: left;
 		width: $col-3-5;
 		margin-right: $gutter;
+		//margin-bottom: 3em;
 	}
 	
 	.block-row {
 
-		.block {
+		.block,
+		.item {
 			//Columns
 			&.small {
 				float: left;
@@ -162,31 +181,37 @@ $col-1-2: 48.5%;
 		*/
 	} // .block-row
 
-	#secondary {
+	.secondary {
+		$col-1-2: 46.5%;
+		$gutter: 7%;
+
 		float: right;
 		width: $col-2-5;
+		//margin-bottom: 3em;
 
 		.block-row { //REFIGURE MATH ON THIS
 
-			.block {
-				margin-right: $gutter;
+			.block,
+			.item {
+				
 
-				&.small {
-					width: $col-1-2;
-				}
-
+				&.small,
 				&.medium {
 					width: $col-1-2;
+					margin-right: $gutter;
+
 				}
 
 				&.large {
 					width: $col-full;
+					margin-right: 0;
 				}
 
 
 				&.last {
 					margin-right: 0;
 				}
+
 			}
 		}
 

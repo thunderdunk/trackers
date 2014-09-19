@@ -23,11 +23,17 @@
     <div>
       <p>I would like to receive updates for the following Trackers programs...</p>
 
-        <input name="youth" type="checkbox" id="youth" value="yes-updates" />
-        <label for="radio-choice">Portland Youth Camps</label>
-
-        <input name="adult" type="checkbox" id="adult" value="yes-updates" />
-        <label for="radio-choice">Portland Adult Programs</label>
+        <ul class="radio">
+          <li>
+            <input name="youth" type="checkbox" id="youth" value="yes-updates" />
+            <label for="radio-choice">Portland Youth Camps</label>
+          </li>
+          
+          <li>
+            <input name="adult" type="checkbox" id="adult" value="yes-updates" />
+            <label for="radio-choice">Portland Adult Programs</label>
+          </li>
+        </ul>
     </div>
 
     <input name="submit" type="submit" value="Send Message" />
