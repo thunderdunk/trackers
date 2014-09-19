@@ -150,13 +150,18 @@
 						li {
 							line-height: 1.2;
 							border-bottom: $block-border;
+							//padding: 0;
+
+							.title {
+								width: 80%;
+								display: inline-block;
+							}
 
 							a {
 								display: block;
 								padding: 1em;
-								text-decoration: none;
+								//text-decoration: none;
 								color: $text-light;
-								//font-size: 14px;
 								@include font-size(13);
 								-webkit-transition: background .2s;
 								transition: .2s;
@@ -192,4 +197,32 @@
 
 		}
 	}
+
+	&.class-page { //Rules for accordion items that are not links (and have add to cart buttons)
+		.ui-tabs {
+			.ui-tabs-panel {
+				.accordion {
+					.content {
+						.classlist {
+							li {
+								padding: 1em;
+								color: $text-light;
+								@include font-size(13);
+
+								.full {
+									color: $trackers-orange;
+								}
+
+								&.full {
+									background: $bg-orange-light;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+
+	}
 }
+

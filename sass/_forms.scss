@@ -1,11 +1,18 @@
 /* Forms
 --------------------------------------------- */
 
-form {
-	padding: 2em 1em;
-	background: rgba(255,255,255,0.5);
+form,
+.entry-content form {
+	//padding: 2em 1em;
+	//background: rgba(255,255,255,0.5);
 	margin-bottom: 2em;
+
+	p {
+		margin-bottom: .5em;
+		line-height: $line-height-content;
+	}
 }
+
 
 button,
 input,
@@ -83,6 +90,10 @@ input[type="submit"] {
 	&.small {
 		@include font-size(12);
 	}
+
+	&.x-large {
+		@include font-size(24);
+	}
 }
 
 
@@ -97,13 +108,16 @@ input[type="submit"] {
 label {
 	clear: both;
 	margin-right: 1em;
-	//display: block;
+	display: block;
 	margin-bottom: .5em;
 	font-style: italic;
 	color: $text-light;
 }
 
-
+label[for="radio-choice"],
+label[for="checkbox-choice"] {
+	display: inline;
+}
 
 input[type="checkbox"],
 input[type="radio"] {
@@ -143,6 +157,7 @@ textarea {
 	//border-radius: 3px;
 	font-size: 16px; //Keeps iOS from zooming
 	margin-bottom: $vspacing;
+	max-width: 94%;
 
 	//Placeholders
 	&::-webkit-input-placeholder {
@@ -192,14 +207,14 @@ input[type="email"],
 input[type="url"],
 input[type="password"],
 input[type="search"],
-input[type="tel"] {
-	padding: .5em 1em;
-}
+input[type="tel"],
 textarea {
-	overflow: auto; /* Removes default vertical scrollbar in IE6/7/8/9 */
-	padding-left: 3px;
-	vertical-align: top; /* Improves readability and alignment in all browsers */
-	width: 98%;
+	padding: .5em;
+	
 }
 
+textarea {
+	overflow: auto; /* Removes default vertical scrollbar in IE6/7/8/9 */
+	vertical-align: top; /* Improves readability and alignment in all browsers */
+}
 

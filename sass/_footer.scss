@@ -3,9 +3,9 @@
 
 #colophon {
 	//margin-top: 3em;
-	border-top: $block-border;
+	//border-top: $block-border;
 	padding-top: 1em;
-	background: $bg-main;
+	background: $bg-mid;
 
 	#footer-menu {
 		margin-bottom: 1em;
@@ -18,10 +18,12 @@
 
 				a {
 					text-decoration: none;
+					color: $bg-dark;
 
 					&:hover,
 					&:active {
 						text-decoration: underline;
+						color: $link-hover;
 					}
 				}
 				
@@ -41,6 +43,11 @@
 
 			a {
 				color: #fff;
+
+				&:hover,
+				&:active {
+					color: $bg-main;
+				}
 			}
 		}
 	}

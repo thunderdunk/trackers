@@ -1,0 +1,152 @@
+/* Layout
+--------------------------------------------- */
+body {
+	main {
+		padding: 0 0 6em 0;
+	}
+}
+//Layout Breakpoints
+$break-small: 480px;
+$break-medium: 769px;
+$break-large: 1024px;
+$break-x-large: 1280px;
+
+
+
+.container {
+	margin: 0 3%;
+}
+
+#colophon {
+	clear: both;
+}
+/*
+//Grid - 5 columns
+$one-col: 45%;
+$two-col: 100%;
+$three-col: 100%;
+$four-col: 100%;
+$five-col: 100%;
+$gutter: 5%;*/
+
+//Setting flexbox
+.pure-g, .pure-g-r {
+	display: -webkit-flex;
+	-webkit-flex-flow: row wrap;
+
+	/* IE10 uses display: flexbox */
+	display: -ms-flexbox;
+	-ms-flex-flow: row wrap;
+}
+
+@media all and (min-width: $break-small) {
+
+}
+
+@media all and (min-width: $break-medium) {
+}
+
+@media all and (min-width: $break-large) {
+
+	
+
+	#primary {
+		float: left;
+		//width: $three-col;
+		//margin-right: $gutter;
+	}
+
+	#secondary {
+		
+		.block-row { //REFIGURE MATH ON THIS
+			//$one-col: 47%;
+			//$two-col: 100%;
+			//$gutter: 6%;
+
+			.block {
+				//margin-right: $gutter;
+
+				&.one-column {
+				//	width: $one-col;
+				}
+
+				&.two-column {
+				//	width: $two-col;
+				}
+
+				&.last {
+					//margin-right: 0;
+				}
+			}
+		}
+		
+
+		float: right;
+		//width: $two-col;
+
+
+
+	}
+
+	//Columns
+	.one-column {
+		//float: left;
+		//width: $one-col;
+		//margin-right: $gutter;
+
+		&.last {
+			//margin-right: 0;
+		}
+	}
+
+	.two-column {
+		//float: left;
+		//width: $two-col;
+		//margin-right: $gutter;
+
+		&.last {
+			//margin-right: 0;
+		}
+	}
+
+	.three-column {
+		//float: left;
+		//width: $three-col;
+		//margin-right: $gutter;
+
+		&.last {
+		//	margin-right: 0;
+		}
+	}
+
+	.four-column {
+		//float: left;
+		//width: $four-col;
+		//margin-right: $gutter;
+
+		&.last {
+			//margin-right: 0;
+		}
+	}
+
+	.five-column {
+		//float: left;
+		//width: $five-col;
+		//margin-right: $gutter;
+
+		&.last {
+			//margin-right: 0;
+		}
+	}
+
+	/* 
+	All column items will be given a right margin. If an item is the farthest to the right on any particular row, assign a class of 'last' to it. This will remove the right margin.
+	*/
+}
+
+@media all and (min-width: $break-x-large) {
+	.container {
+		max-width: 1280px;
+		margin: 0 auto;
+	}
+}

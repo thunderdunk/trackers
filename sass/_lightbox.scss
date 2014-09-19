@@ -1,0 +1,48 @@
+/* Lightbox Overrides
+--------------------------------------------- */
+
+.mfp-wrap {
+	//top: 10px; -- Fix positioning iOS
+
+	.mfp-inline-holder,
+	.mfp-ajax-holder {
+		
+		.mfp-content {
+			//width: 65%;
+			width: 90%;
+			padding: 5%;
+			background: $bg-main;
+		}
+	}
+}
+
+
+@media screen and (min-width: $break-medium) {
+	.mfp-wrap {
+		.mfp-inline-holder,
+		.mfp-ajax-holder {
+			
+			.mfp-content {
+				width: 65%;
+				padding: 2em;
+				//background: $bg-main;
+			}
+		}
+	}
+
+}
+
+@media screen and (min-width: $break-medium) {
+	.mfp-wrap {
+		.mfp-inline-holder,
+		.mfp-ajax-holder {
+			
+			.mfp-content {
+				width: 50%;
+				padding: 2em;
+				//background: $bg-main;
+			}
+		}
+	}
+
+}

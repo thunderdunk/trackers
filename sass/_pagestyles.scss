@@ -3,14 +3,15 @@
 
 //Home
 #hero-home {
-	height: 70vh;
+	height: 80vh;
 
 	.location {
-		width: 50%;
+		//width: 50%;
 		background-repeat: no-repeat;
 		background-size: cover;
-		float: left;
-		height: 100%;
+		background-position: center center;
+		//float: left;
+		height: 50%;
 
 		.gradient {
 			/* IE9 SVG, needs conditional override of 'filter' to 'none' */
@@ -27,8 +28,8 @@
 			height: 100%;
 
 			.content {
-				margin: 45vh auto 0 auto;
-				width: 50%;
+				margin: 25% auto 0 auto;
+				//width: 50%;
 				text-align: center;
 				color: #fff;
 
@@ -50,6 +51,25 @@
 					margin-top: $vspacing;
 				}
 
+			}
+		}
+	}
+
+	@media screen and (min-width: $break-medium) {
+
+		.location {
+			width: 50%;
+			float: left;
+			height: 100%;
+
+			.gradient {
+
+				.content {
+					margin: 45vh auto 0 auto;
+					width: 50%;
+					//text-align: center;
+					//color: #fff;
+				}
 			}
 		}
 	}

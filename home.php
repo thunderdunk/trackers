@@ -12,7 +12,7 @@ require 'header.php'; //Includes main navigation and body, header, #masthead, #p
 						<div class="content">
 							<h2>Portland</h2>
 							<p>A short blurb about Portland and why it is cool.</p>
-							<a class="button big">Trackers PDX</a>
+							<a class="button x-large">Trackers PDX</a>
 						</div><!--.content-->
 					</div><!--.gradient-->
 				</div><!--.pdx-->
@@ -22,7 +22,7 @@ require 'header.php'; //Includes main navigation and body, header, #masthead, #p
 						<div class="content">
 							<h2>Bay Area</h2>
 							<p>Something quick about how the Bay Area is nice too.</p>
-							<a class="button big action">Trackers Bay</a>
+							<a class="button x-large action">Trackers Bay</a>
 						</div><!--.content-->
 					</div><!--.gradient-->
 				</div><!--.bay-->
@@ -61,7 +61,7 @@ require 'header.php'; //Includes main navigation and body, header, #masthead, #p
 				<div id="secondary">
 					<div class="block-row">
 
-						<article class="block stacked one-column">
+						<article class="block stacked small">
 							<figure>
 								<a href="#">
 									<img src="images/Ranger-480x320.jpg" alt="image alt text" />
@@ -74,7 +74,7 @@ require 'header.php'; //Includes main navigation and body, header, #masthead, #p
 							</div><!--.content-->
 						</article><!--.block-->
 
-						<article class="block stacked one-column last">
+						<article class="block stacked small last">
 							<figure>
 								<a href="#">
 									<img src="images/Ranger-480x320.jpg" alt="image alt text" />
@@ -90,7 +90,7 @@ require 'header.php'; //Includes main navigation and body, header, #masthead, #p
 
 					<div class="block-row">
 
-						<article class="block stacked one-column">
+						<article class="block stacked small">
 							<figure>
 								<a href="#">
 									<img src="images/Ranger-480x320.jpg" alt="image alt text" />
@@ -103,7 +103,7 @@ require 'header.php'; //Includes main navigation and body, header, #masthead, #p
 							</div><!--.content-->
 						</article><!--.block-->
 
-						<article class="block stacked one-column last">
+						<article class="block stacked small last">
 							<figure>
 								<a href="#">
 									<img src="images/Ranger-480x320.jpg" alt="image alt text" />
@@ -121,7 +121,7 @@ require 'header.php'; //Includes main navigation and body, header, #masthead, #p
 					<!-- Large Blocks -->
 					<div class="block-row">
 						
-						<article class="block stacked two-column last">
+						<article class="block stacked large last">
 							<figure>
 								<a href="#">
 									<img src="images/Animals-480x356.jpg" alt="image alt text" />

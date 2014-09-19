@@ -23,9 +23,11 @@
 @import 'blocks';
 
 @import 'magnific';
+@import 'lightbox'; //Overrides
 
 @import 'flexslider';
-@import 'slider';
+@import 'slider'; //Overrides 
+
 @import 'registration';
 
 @import 'pagestyles';

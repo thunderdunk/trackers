@@ -13,7 +13,7 @@ require 'header-pdx.php'; //Includes main navigation and body, header, #masthead
 
 					<ul class="slides">
 
-			            <li class="slide" style="background-image: url('images/kitchen_adventurer_cheesecake_brownie.jpg');">
+			            <li class="slide" style="background-image: url('images/SliderHut.jpg');">
 			            	<div class="gradient">
 				            	<div class="container">
 					  	    	    <div class="content alignleft">
@@ -25,7 +25,7 @@ require 'header-pdx.php'; //Includes main navigation and body, header, #masthead
 							</div><!--.gradient-->
 		  	    		</li>
 
-		  	    		<li class="slide" style="background-image: url('images/kitchen_adventurer_lemon.jpg');">
+		  	    		<li class="slide" style="background-image: url('images/SliderCoast.jpg');">
 		  	    			<div class="gradient"> <!-- Gradient overlays full-width image. Don't use this if you're adding text to the background image manually -->
 				  	    	    <div class="container">
 					  	    	    <div class="content alignright">
@@ -53,7 +53,7 @@ require 'header-pdx.php'; //Includes main navigation and body, header, #masthead
 					<h1 class="page-title">Page Title</h1>
 				</header><!--.page-header-->
 				
-				<div id="primary">
+				<div id="primary" class="pure-u-1 pure-u-lg-3-5">
 
 				<?php require_once('contact-form.php'); ?>
 
@@ -90,12 +90,12 @@ require 'header-pdx.php'; //Includes main navigation and body, header, #masthead
 						    </div>
 
 						    <div>
-						        <h4>Radio Button Choice</h4>
+						        <p>Radio Button Choice</p>
 								<input type="radio" name="radio-choice-1" id="radio-choice-1" tabindex="2" value="choice-1" />
-						        <label for="radio-choice-1">Choice 1</label>
+						        <label for="radio-choice">Choice 1</label>
 						         
 								<input type="radio" name="radio-choice-2" id="radio-choice-2" tabindex="3" value="choice-2" />
-								<label for="radio-choice-2">Choice 2</label>
+								<label for="radio-choice">Choice 2</label>
 						    </div>
 
 							<div>
@@ -113,8 +113,10 @@ require 'header-pdx.php'; //Includes main navigation and body, header, #masthead
 							</div>
 							
 							<div>
-							    <label for="checkbox">Checkbox:</label>
+							    <p>Checkbox text:</p>
 								<input type="checkbox" name="checkbox" id="checkbox" />
+								<label for="checkbox-choice">I want to choose this option</label>
+
 						    </div>
 
 							<div>
@@ -141,221 +143,68 @@ require 'header-pdx.php'; //Includes main navigation and body, header, #masthead
 					</article><!--.entry-content-->
 				</div><!--#primary-->
 
-				<div id="secondary">
+				<div id="secondary" class="">
 
 	<!--REGISTRATION-->
-					<section id="registration">
+				<h3 class="title">Registration for Category Page</h3>
+				<p>Each class is a link to the class page</p>
 
-						<div class="tabs" id="tabs">
-							<ul>
-								<li><a href="#tabs-1">NE</a></li>
-								<li><a href="#tabs-2">North</a></li>
-								<li><a href="#tabs-3">Hillsboro</a></li>
-							</ul>
-							<div id="tabs-1" class="tab">
+				<?php include 'registration-catpage.php'; ?>
 
-								<figure class="location">
-									
-										<img src="images/luke-skywalker.jpg" alt="Trackers NE" />
-										<div class="gradient"></div><!--.gradient-->
-										<figcaption>1234 NE 23rd Avenue, Portland OR</figcaption>
+				<h3 class="title">Registration for Class Page</h3>
+				<p>Each class is not a link, and has a button</p>
 
-								</figure><!--.location-->
-
-								<div class="accordion">
-									<div class="head">
-										<h3><b>Week 1</b> - <i>June 3 - June 10</i></h3>
-									</div><!--.head-->
-
-									<div class="content">
-										<ul class="classlist">
-											<li>
-												<a href="#"><b>Grades 1-2</b> - <i>Stealth and Archery and Superfun Stuff</i></a>
-											</li>
-											<li>
-												<a href="#"><b>Grades 3-4</b> - <i>Intro to Human Psychology</i></a>
-											</li>
-											<li class="full">
-												<a href="#"><b>Grades 3-4 <span class="full">FULL!</span></b> - <i>Making clothing out of animal skins</i></a>
-											</li>
-											<li>
-												<a href="#"><b>Grade 1 &amp; 4-5 OPEN <span class="full">Grade 2-3 FULL</span></b> - <i>Stealth, Archery &amp; Wilderness Survival</i></a>
-											</li>
-											<li>
-												<a href="#"><b class="full">Grades 7-8 FULL</b> - <i>Making clothing out of animal skins</i></a>
-											</li>
-										</ul><!--.classlist-->
-									</div><!--.content-->
-
-									<div class="head">
-										<h3><b>Week 1</b> - <i>with Add to Cart button</i></h3>
-									</div><!--.head-->
-
-									<div class="content">
-										<ul class="classlist">
-											<li>
-												<a href="#"><b>Grades 1-2</b> - <i>Stealth and Archery and Superfun Stuff</i><button class="cart" href="#"><i class="fa fa-shopping-cart"></i> Add</button></a>
-											</li>
-											<li>
-												<a href="#"><b>Grades 3-4</b> - <i>Intro to Human Psychology</i><button class="cart" href="#"><i class="fa fa-shopping-cart"></i> Add</button></a>
-											</li>
-											<li class="full">
-												<a href="#"><b>Grades 3-4 <span class="full">FULL!</span></b> - <i>Making clothing out of animal skins</i></a>
-											</li>
-											<li>
-												<a href="#"><b>Grades 5-6</b> - <i>Making clothing out of animal skins</i><button class="cart" href="#"><i class="fa fa-shopping-cart"></i> Add</button></a>
-											</li>
-											<li>
-												<a href="#"><b>Grade 1 &amp; 4-5 OPEN <span class="full">Grade 2-3 FULL</span></b> - <i>Stealth, Archery &amp; Wilderness Survival</i></a><button class="cart" href="#"><i class="fa fa-shopping-cart"></i> Add</button>
-											</li>
-										</ul><!--.classlist-->
-									</div><!--.content-->
-
-									<div class="head">
-									  <h3><b>Week 3</b> - <i>June 19 - June 26</i></h3>
-									</div><!--.head-->
-
-									<div class="content">
-										<ul class="classlist">
-											<li>
-												<a href="#"><b>Grades 1-2</b> - <i>Stealth and Archery and Superfun Stuff</i></a>
-											</li>
-											<li>
-												<a href="#"><b>Grades 3-4</b> - <i>Intro to Human Psychology</i></a>
-											</li>
-											<li class="full">
-												<a href="#"><b>Grades 3-4 <span class="full">FULL!</span></b> - <i>Making clothing out of animal skins</i></a>
-											</li>
-											<li>
-												<a href="#"><b>Grades 5-6</b> - <i>Making clothing out of animal skins</i></a>
-											</li>
-											<li>
-												<a href="#"><b class="full">Grades 7-8 FULL</b> - <i>Making clothing out of animal skins</i></a>
-											</li>
-										</ul><!--.classlist-->
-									</div><!--.content-->
-
-								</div><!--.accordion-->
-							</div><!--.tab #tabs-1-->
-
-							<div id="tabs-2" class="tab">
-								<figure class="location">
-									<img src="images/queens-1.jpg" alt="Trackers North" />
-									<div class="gradient"></div><!--.gradient-->
-										<figcaption>1234 NE 23rd Avenue, Portland OR</figcaption>
-								</figure><!--.location-->
-								
-								<div class="message">
-									<p>Here is some content in case there are no classes and you just want to show a message. For instance, the peninsula dropped off into the Columbia so we are trying to find a new location for North PDX classes.</p>
-								</div><!--.message-->
-							</div><!--#tabs-2-->
+				<?php include 'registration-classpage.php'; ?>
 
 
-							<div id="tabs-3" class="tab">
-								<figure class="location">
-
-										<img src="images/space.jpg" alt="Trackers Hillsboro" />
-										<div class="gradient"></div><!--.gradient-->
-										<figcaption>1234 NE 23rd Avenue, Portland OR</figcaption>
-
-								</figure><!--.location-->
-								<div class="accordion">
-									<div class="head">
-										<h3><b>Week 1</b> - <i>with Add to Cart button</i></h3>
-									</div><!--.head-->
-
-									<div class="content">
-										<ul class="classlist">
-											<li>
-												<a href="#"><b>Grades 1-2</b> - <i>Stealth and Archery and Superfun Stuff</i><button class="cart" href="#"><i class="fa fa-shopping-cart"></i> Add</button></a>
-											</li>
-											<li>
-												<a href="#"><b>Grades 3-4</b> - <i>Intro to Human Psychology</i><button class="cart" href="#"><i class="fa fa-shopping-cart"></i> Add</button></a>
-											</li>
-											<li class="full">
-												<a href="#"><b>Grades 3-4 <span class="full">FULL!</span></b> - <i>Making clothing out of animal skins</i></a>
-											</li>
-											<li>
-												<a href="#"><b>Grades 5-6</b> - <i>Making clothing out of animal skins</i><button class="cart" href="#"><i class="fa fa-shopping-cart"></i> Add</button></a>
-											</li>
-											<li>
-												<a href="#"><b class="full">Grades 7-8 FULL</b> - <i>Making clothing out of animal skins</i></a>
-											</li>
-										</ul><!--.classlist-->
-									</div><!--.content-->
-
-									<div class="head">
-									  <h3><b>Week 2</b> - <i>June 11 - June 18</i></h3>
-									</div><!--.head-->
-
-									<div class="content">
-										<ul class="classlist">
-											<li>
-												<a href="#"><b>Grades 1-2</b> - <i>Stealth and Archery and Superfun Stuff</i></a>
-											</li>
-											<li>
-												<a href="#"><b>Grades 3-4</b> - <i>Intro to Human Psychology</i></a>
-											</li>
-											<li class="full">
-												<a href="#"><b>Grades 3-4 <span class="full">FULL!</span></b> - <i>Making clothing out of animal skins</i></a>
-											</li>
-											<li>
-												<a href="#"><b>Grades 5-6</b> - <i>Making clothing out of animal skins</i></a>
-											</li>
-											<li>
-												<a href="#"><b class="full">Grades 7-8 FULL</b> - <i>Making clothing out of animal skins</i></a>
-											</li>
-										</ul><!--.classlist-->
-									</div><!--.content-->
-
-									<div class="head">
-									  <h3><b>Week 3</b> - <i>June 19 - June 26</i></h3>
-									</div><!--.head-->
-
-									<div class="content">
-										<ul class="classlist">
-											<li>
-												<a href="#"><b>Grades 1-2</b> - <i>Stealth and Archery and Superfun Stuff</i></a>
-											</li>
-											<li>
-												<a href="#"><b>Grades 3-4</b> - <i>Intro to Human Psychology</i></a>
-											</li>
-											<li class="full">
-												<a href="#"><b>Grades 3-4 <span class="full">FULL!</span></b> - <i>Making clothing out of animal skins</i></a>
-											</li>
-											<li>
-												<a href="#"><b>Grades 5-6</b> - <i>Making clothing out of animal skins</i></a>
-											</li>
-											<li>
-												<a href="#"><b class="full">Grades 7-8 FULL</b> - <i>Making clothing out of animal skins</i></a>
-											</li>
-										</ul><!--.classlist-->
-									</div><!--.content-->
-
-								</div><!--.accordion-->
-							</div>
-							
-							
-
-						</div><!--.tabs-->
-					</section><!--#registration-->
 				</div><!--#secondary-->
 				
 				
 
 					<!-- Block notes
-						// Default orientation is stacked, so you don't need to add stacked class. Adding class="horizontal" to the article element will override orientation on large monitors only. Phones and tablets will always show stacked orientation (better for consistency as things move around for a smaller screen).
+
+						// ROWS: Blocks must be organized into rows. Just add a <div class="block-row"></div> around each set of blocks. This will ensure that they clear properly. Also, they won't be styled if not in a block-row div.
+
+						// ORIENTATION: Default orientation is stacked, so you don't need to add stacked class. Adding class="horizontal" to the article element will override orientation on large monitors only. Phones and tablets will always show stacked orientation (better for consistency as things move around for a smaller screen).
 						
-						// Blocks must be organized into rows. Just add a <div class="block-row"></div> around each set of blocks. This will ensure that they clear properly. Also, they won't be styled if not in a block-row div.
+						// SIZES: Blocks come in four sizes: small, medium, large and full. Just add the class to your block element and behold the magic.
+							
+							- The full-width layout (desktop) is arranged in a 5-column grid. For smaller devices (handheld), the grid is 2-column. Each block size will span a different number of columns, shown below (size class: desktop - handheld).
+								- small: 1/5 - 1/2
+								- medium: 2/5 - 1/2
+								- large: 3/5 - 2/2
+								- full: 5/5 - 2/2
 
-						// For last block in a row (full size) add class 'last' to aricle element. This will eliminate the right margin.
+							- We recommend using only the horizontal orientation for full blocks.
+							- There is no 4-column size. This would be weird.
 
-						// Content: 
+						// MARGINS: 
+							- Margins are applied automatically to the right of each block.
+							- For last block in a row (full size) add class 'last' to aricle element. This will eliminate the right margin.
+
+						// EXAMPLE CODE: 
+							- This will produce a single-column block 
+
+							<div class="block-row">
+								<article class="block stacked small">
+									<figure>
+										<a href="#">
+											<img src="images/Ranger-480x320.jpg" alt="image alt text" />
+										</a>
+									</figure>
+									<div class="content">
+										<h3 class="block-title">Class Title</h3>
+										<p>Learn the ancient art of working hot metal on the anvil!</p>
+
+									</div>
+								</article>
+
+						// CONTENT: 
 							- For the title of the block, use <h3 class="block-title">Title</h3>
 							- For content use <p>content blah blah...</p>
 
-						// Images:
-							- 
+						// IMAGES:
+							- Be sure to place images in a figure tag, see example above.
 					-->
 
 					<!-- Buttons
@@ -367,45 +216,13 @@ require 'header-pdx.php'; //Includes main navigation and body, header, #masthead
 
 						//
 					-->
-					<div class="block-row">
 
-						<article class="block one-column">
-							<div class="content">
-								<p>Column 1</p>
-							</div><!--.content-->
-						</article>
-
-						<article class="block one-column">
-							<div class="content">
-								<p>Column 2</p>
-							</div><!--.content-->
-						</article>
-
-						<article class="block one-column">
-							<div class="content">
-								<p>Column 3</p>
-							</div><!--.content-->
-						</article>
-
-						<article class="block one-column">
-							<div class="content">
-								<p>Column 4</p>
-							</div><!--.content-->
-						</article>
-
-						<article class="block one-column last">
-							<div class="content">
-								<p>Column 5</p>
-							</div><!--.content-->
-						</article>
-
-					</div><!--.block-row-->
 					
 					<!-- Small Image Blocks -->
 
 					<div class="block-row">
 
-						<article class="block stacked one-column">
+						<article class="block stacked small">
 							<figure>
 								<a href="#">
 									<img src="images/Ranger-480x320.jpg" alt="image alt text" />
@@ -418,7 +235,7 @@ require 'header-pdx.php'; //Includes main navigation and body, header, #masthead
 							</div><!--.content-->
 						</article><!--.block-->
 
-						<article class="block stacked one-column">
+						<article class="block small">
 							<figure>
 								<a href="#">
 									<img src="images/Ranger-480x320.jpg" alt="image alt text" />
@@ -430,7 +247,7 @@ require 'header-pdx.php'; //Includes main navigation and body, header, #masthead
 							</div><!--.content-->
 						</article><!--.block-->
 
-						<article class="block stacked one-column">
+						<article class="block stacked small">
 							<figure>
 								<a href="#">
 									<img src="images/Ranger-480x320.jpg" alt="image alt text" />
@@ -443,7 +260,7 @@ require 'header-pdx.php'; //Includes main navigation and body, header, #masthead
 							</div><!--.content-->
 						</article><!--.block-->
 
-						<article class="block stacked one-column">
+						<article class="block stacked small">
 							<figure>
 								<a href="#">
 									<img src="images/Ranger-480x320.jpg" alt="image alt text" />
@@ -456,7 +273,7 @@ require 'header-pdx.php'; //Includes main navigation and body, header, #masthead
 							</div><!--.content-->
 						</article><!--.block-->
 
-						<article class="block stacked one-column last">
+						<article class="block stacked small last">
 							<figure>
 								<a href="#">
 									<img src="images/Ranger-480x320.jpg" alt="image alt text" />
@@ -473,7 +290,7 @@ require 'header-pdx.php'; //Includes main navigation and body, header, #masthead
 					<!-- Large Blocks -->
 					<div class="block-row">
 						
-						<article class="block stacked two-column">
+						<article class="block stacked medium">
 							<figure>
 								<a href="#">
 									<img src="images/Animals-480x356.jpg" alt="image alt text" />
@@ -486,7 +303,7 @@ require 'header-pdx.php'; //Includes main navigation and body, header, #masthead
 							</div><!--.content-->
 						</article><!--.block-->
 
-						<article class="block horizontal three-column last">
+						<article class="block horizontal large last">
 							<figure>
 								<a href="#">
 									<img src="images/Animals-480x356.jpg" alt="image alt text" />
@@ -504,7 +321,7 @@ require 'header-pdx.php'; //Includes main navigation and body, header, #masthead
 					<!-- Large Blocks -->
 					<div class="block-row">
 						
-						<article class="block horizontal two-column">
+						<article class="block horizontal large">
 							<figure>
 								<a href="#">
 									<img src="images/Ranger-480x320.jpg" alt="image alt text" />
@@ -517,7 +334,7 @@ require 'header-pdx.php'; //Includes main navigation and body, header, #masthead
 							</div><!--.content-->
 						</article><!--.block-->
 
-						<article class="block stacked two-column">
+						<article class="block stacked small">
 							<figure>
 								<a href="#">
 									<img src="images/Ranger-480x320.jpg" alt="image alt text" />
@@ -530,7 +347,7 @@ require 'header-pdx.php'; //Includes main navigation and body, header, #masthead
 							</div><!--.content-->
 						</article><!--.block-->
 						
-						<article class="block stacked one-column last">
+						<article class="block stacked small last">
 							<figure>
 								<a href="#">
 									<img src="images/Ranger-480x320.jpg" alt="image alt text" />
@@ -540,6 +357,23 @@ require 'header-pdx.php'; //Includes main navigation and body, header, #masthead
 								<h3 class="block-title">Class Title - 480 x 320 img dimensions</h3>
 								<p>Learn the ancient art of working hot metal on the anvil!</p>
 								<a class="button" href="#">Normal button</a>
+							</div><!--.content-->
+						</article><!--.block-->
+
+					</div><!--.block-row-->
+
+					<div class="block-row">
+						
+						<article class="block horizontal full">
+							<figure>
+								<a href="#">
+									<img src="images/Ranger-480x320.jpg" alt="image alt text" />
+								</a>
+							</figure>
+							<div class="content">
+								<h3 class="block-title">Class Title - 480 x 320 img dimensions</h3>
+								<p>Learn the ancient art of working hot metal on the anvil!</p>
+
 							</div><!--.content-->
 						</article><!--.block-->
 

@@ -5,36 +5,31 @@ window.viewportUnitsBuggyfill.init();
 $(document).ready(function() {
 
 	/* Off Canvas nav */
-	$(".open-panel").click(function(){
+	$('.open-panel').click(function(){
   
-		$("html").toggleClass("openNav");
-		//$('#page').toggleClass('open');
+		$('html').toggleClass('openNav');
 	});
 	
 		//Click anywhere in primary content area to close menu
 		$('main').click(function() {
 			$('html').removeClass('openNav');
-			//$('#page').removeClass('open');
-		});
+		}); 
 	
 
-	  $('.flexslider').flexslider({
-	    animation: "slide"
-	  });
+	//Flexslider
+	$('.flexslider').flexslider({
+		animation: "slide"
+	});
 
 	//Homemade accordion - opens multiple items at once
 	$('.accordion .head').click(function() {
 			$(this).toggleClass('active');
-		$(this).next().toggle('medium');
+		$(this).next().slideToggle( 400, 'swing' );
 		return false;
 	}).next().hide();
 
+	//Registration tabs - jQuery UI
 	$( ".tabs" ).tabs();
-
-	$('.test-popup-link').magnificPopup({ 
-	  type: 'image'
-		// other options
-	});
 
 
 	//Form test
@@ -42,6 +37,8 @@ $(document).ready(function() {
 	  type:'inline',
 	  midClick: true // Allow opening popup on middle mouse click. Always set it to true if you don't provide alternative source in href.
 	});
+
+
 }); //end document ready
 
 
