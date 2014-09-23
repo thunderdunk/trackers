@@ -24,14 +24,16 @@
 
 // Move nav off screen, setup transitions 
 	#mobile-navigation {
-		width: 60%;
+		width: 75%;
 		position: absolute;
-		right: -60.003%;//Extra .003% Fixes weird gap on left in Chrome OSX
+		right: -75.003%;//Extra .003% Fixes weird gap on left in Chrome OSX
 		top: 0;
 		display: block;
 		overflow: scroll;
 		-webkit-overflow-scrolling: touch;
 		background: $bg-dark;
+		height: 100vh;
+		overflow: auto;
 
 		.wrap {
 			padding-bottom: 3em;
@@ -75,6 +77,15 @@
 						padding: 2em 1em .5em;
 					}
 
+					&.contact {
+						padding: 1em 0 .5em;
+						text-align: center;
+						border-bottom: none;
+						.button {
+							display: inline-block;
+						}
+					}
+
 					&.social {
 						padding: .5em 0;
 						@include font-size(18);
@@ -99,24 +110,27 @@
 		}
 	}
 
-	.openNav #page {
-		//height: 100vh; //fix page so menu scrolls independently ??Was working but stopped
-
-	}
-
+	.openNav {
+		body {
+			overflow: hidden;
+			position: fixed; //Needed to prevent main page scrolling in iOS
+		}
 		//Slide the page when link is clicked
-		.openNav #page {
-			right: 60%;
-			-webkit-transform: translate(-60%, 0);
-			-moz-transform: translate(-60%, 0);
-			-ms-transform: translate(-60%, 0);
-			-o-transform: translate(-60%, 0);
-			transform: translate(-60%, 0);
+		#page {
+			right: 75%;
+			-webkit-transform: translate(-75%, 0);
+			-moz-transform: translate(-75%, 0);
+			-ms-transform: translate(-75%, 0);
+			-o-transform: translate(-75%, 0);
+			transform: translate(-75%, 0);
 			-webkit-transition: -webkit-transform 400ms ease;
 			-moz-transition: -moz-transform 400ms ease;
 			-o-transition: -o-transform 400ms ease;
 			transition: transform 400ms ease;
 		}
+	}
+
+		
 		  
 		/* When the panel is closed, transition the page back to the right */
 		#page {
@@ -131,6 +145,36 @@
 			-o-transition: -o-transform 400ms ease;
 			transition: transform 400ms ease;
 		}
+
+@media screen and (min-width: $break-small) {
+
+	#mobile-navigation {
+		width: 40%;
+		right: -40.003%;//Extra .003% Fixes weird gap on left in Chrome OSX
+	}
+
+	.openNav {
+
+		body {
+			overflow: hidden;
+		}
+		//Slide the page when link is clicked
+		#page {
+			right: 40%;
+			-webkit-transform: translate(-40%, 0);
+			-moz-transform: translate(-40%, 0);
+			-ms-transform: translate(-40%, 0);
+			-o-transform: translate(-40%, 0);
+			transform: translate(-40%, 0);
+			-webkit-transition: -webkit-transform 400ms ease;
+			-moz-transition: -moz-transform 400ms ease;
+			-o-transition: -o-transform 400ms ease;
+			transition: transform 400ms ease;
+			//overflow: hidden;
+			//height: 100vh;
+		}
+	}
+}
 
 @media screen and (min-width: $break-medium) {
 	

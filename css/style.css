@@ -527,8 +527,8 @@ textarea {
   *vertical-align: middle;
   /* Improves appearance and consistency in all browsers */ }
 
-.button,
-.button:visited,
+a.button,
+a.button:visited,
 button,
 input[type="button"],
 input[type="reset"],
@@ -576,8 +576,8 @@ input[type="submit"] {
   -ms-transition: background .2s;
   -o-transition: background .2s;
   transition: background .2s; }
-  .button:hover,
-  .button:visited:hover,
+  a.button:hover,
+  a.button:visited:hover,
   button:hover,
   input[type="button"]:hover,
   input[type="reset"]:hover,
@@ -600,8 +600,8 @@ input[type="submit"] {
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b7d0b4', endColorstr='#80ab7b',GradientType=0 );
     /* IE6-8 */
     color: #fff; }
-  .button.action,
-  .button:visited.action,
+  a.button.action,
+  a.button:visited.action,
   button.action,
   input[type="button"].action,
   input[type="reset"].action,
@@ -628,8 +628,8 @@ input[type="submit"] {
     -ms-text-shadow: -1px -1px 2px #bb4728;
     -o-text-shadow: -1px -1px 2px #bb4728;
     text-shadow: -1px -1px 2px #bb4728; }
-    .button.action:hover,
-    .button:visited.action:hover,
+    a.button.action:hover,
+    a.button:visited.action:hover,
     button.action:hover,
     input[type="button"].action:hover,
     input[type="reset"].action:hover,
@@ -652,9 +652,9 @@ input[type="submit"] {
       /* W3C */
       filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f8652c', endColorstr='#f23818',GradientType=0 );
       /* IE6-8 */ }
-    .button.action:focus, .button.action:active,
-    .button:visited.action:focus,
-    .button:visited.action:active,
+    a.button.action:focus, a.button.action:active,
+    a.button:visited.action:focus,
+    a.button:visited.action:active,
     button.action:focus,
     button.action:active,
     input[type="button"].action:focus,
@@ -664,8 +664,8 @@ input[type="submit"] {
     input[type="submit"].action:focus,
     input[type="submit"].action:active {
       border: 1px solid red; }
-  .button.big,
-  .button:visited.big,
+  a.button.big,
+  a.button:visited.big,
   button.big,
   input[type="button"].big,
   input[type="reset"].big,
@@ -673,16 +673,16 @@ input[type="submit"] {
     font-size: 18px;
     font-size: 1.8rem;
     font-weight: 400; }
-  .button.small,
-  .button:visited.small,
+  a.button.small,
+  a.button:visited.small,
   button.small,
   input[type="button"].small,
   input[type="reset"].small,
   input[type="submit"].small {
     font-size: 12px;
     font-size: 1.2rem; }
-  .button.x-large,
-  .button:visited.x-large,
+  a.button.x-large,
+  a.button:visited.x-large,
   button.x-large,
   input[type="button"].x-large,
   input[type="reset"].x-large,
@@ -746,7 +746,8 @@ textarea {
   border: 1px solid #ccc;
   font-size: 16px;
   margin-bottom: 1.5em;
-  max-width: 94%; }
+  max-width: 94%;
+  border-radius: 0; }
   input[type="text"]::-webkit-input-placeholder,
   input[type="email"]::-webkit-input-placeholder,
   input[type="url"]::-webkit-input-placeholder,
@@ -820,8 +821,25 @@ textarea {
   /* Improves readability and alignment in all browsers */ }
 
 /* EMAIL SIGNUP FORM */
-.email-signup {
+#hero-slider .container .email-signup {
   display: none; }
+
+#mobile-navigation .mailchimp .email-signup {
+  width: 100%; }
+  #mobile-navigation .mailchimp .email-signup form {
+    margin-bottom: 0; }
+    #mobile-navigation .mailchimp .email-signup form label {
+      display: none; }
+    #mobile-navigation .mailchimp .email-signup form input[type="email"] {
+      padding: 2%;
+      margin-right: -.4rem;
+      margin-bottom: 0;
+      height: 20px;
+      width: 74%; }
+    #mobile-navigation .mailchimp .email-signup form input[type="submit"] {
+      padding: 2%;
+      height: 32px;
+      width: 20%; }
 
 @media screen and (min-width: 769px) {
   #hero-slider .container {
@@ -875,14 +893,16 @@ textarea {
   display: none; }
 
 #mobile-navigation {
-  width: 60%;
+  width: 75%;
   position: absolute;
-  right: -60.003%;
+  right: -75.003%;
   top: 0;
   display: block;
   overflow: scroll;
   -webkit-overflow-scrolling: touch;
-  background: #1c2922; }
+  background: #1c2922;
+  height: 100vh;
+  overflow: auto; }
   #mobile-navigation .wrap {
     padding-bottom: 3em;
     /* Display nav items vertically */ }
@@ -916,6 +936,12 @@ textarea {
           font-style: normal;
           border-bottom: 1px solid #777;
           padding: 2em 1em .5em; }
+        #mobile-navigation .wrap ul li.contact {
+          padding: 1em 0 .5em;
+          text-align: center;
+          border-bottom: none; }
+          #mobile-navigation .wrap ul li.contact .button {
+            display: inline-block; }
         #mobile-navigation .wrap ul li.social {
           padding: .5em 0;
           font-size: 18px;
@@ -931,13 +957,16 @@ textarea {
         #mobile-navigation .wrap ul li.mailchimp {
           padding: 1em; }
 
+.openNav body {
+  overflow: hidden;
+  position: fixed; }
 .openNav #page {
-  right: 60%;
-  -webkit-transform: translate(-60%, 0);
-  -moz-transform: translate(-60%, 0);
-  -ms-transform: translate(-60%, 0);
-  -o-transform: translate(-60%, 0);
-  transform: translate(-60%, 0);
+  right: 75%;
+  -webkit-transform: translate(-75%, 0);
+  -moz-transform: translate(-75%, 0);
+  -ms-transform: translate(-75%, 0);
+  -o-transform: translate(-75%, 0);
+  transform: translate(-75%, 0);
   -webkit-transition: -webkit-transform 400ms ease;
   -moz-transition: -moz-transform 400ms ease;
   -o-transition: -o-transform 400ms ease;
@@ -956,6 +985,24 @@ textarea {
   -o-transition: -o-transform 400ms ease;
   transition: transform 400ms ease; }
 
+@media screen and (min-width: 480px) {
+  #mobile-navigation {
+    width: 40%;
+    right: -40.003%; }
+
+  .openNav body {
+    overflow: hidden; }
+  .openNav #page {
+    right: 40%;
+    -webkit-transform: translate(-40%, 0);
+    -moz-transform: translate(-40%, 0);
+    -ms-transform: translate(-40%, 0);
+    -o-transform: translate(-40%, 0);
+    transform: translate(-40%, 0);
+    -webkit-transition: -webkit-transform 400ms ease;
+    -moz-transition: -moz-transform 400ms ease;
+    -o-transition: -o-transform 400ms ease;
+    transition: transform 400ms ease; } }
 @media screen and (min-width: 769px) {
   .menu-toggle {
     display: none; }
@@ -1444,19 +1491,37 @@ img.mfp-img {
 
 /* Lightbox Overrides
 --------------------------------------------- */
-.mfp-wrap .mfp-inline-holder .mfp-content,
-.mfp-wrap .mfp-ajax-holder .mfp-content {
-  width: 90%;
-  padding: 5%;
-  background: #f8f6f3;
-  max-height: 80%;
-  overflow: scroll; }
+.mfp-wrap .mfp-inline-holder,
+.mfp-wrap .mfp-ajax-holder {
+  padding: 0; }
+  .mfp-wrap .mfp-inline-holder .mfp-content,
+  .mfp-wrap .mfp-ajax-holder .mfp-content {
+    width: 80%;
+    padding: 5%;
+    background: #f8f6f3;
+    max-height: 80%;
+    margin: 5% auto;
+    overflow: scroll; }
+    .mfp-wrap .mfp-inline-holder .mfp-content .mfp-close,
+    .mfp-wrap .mfp-ajax-holder .mfp-content .mfp-close {
+      font-size: 48px;
+      font-size: 4.8rem;
+      width: 48px;
+      width: 4.8rem;
+      height: 48px;
+      height: 4.8rem;
+      line-height: 48px;
+      line-height: 4.8rem; }
 
 @media screen and (min-width: 769px) {
   .mfp-wrap .mfp-inline-holder .mfp-content,
   .mfp-wrap .mfp-ajax-holder .mfp-content {
     width: 65%;
-    padding: 2em; } }
+    padding: 2em; }
+    .mfp-wrap .mfp-inline-holder .mfp-content .mfp-close,
+    .mfp-wrap .mfp-ajax-holder .mfp-content .mfp-close {
+      font-size: 28px;
+      font-size: 2.8rem; } }
 @media screen and (min-width: 769px) {
   .mfp-wrap .mfp-inline-holder .mfp-content,
   .mfp-wrap .mfp-ajax-holder .mfp-content {

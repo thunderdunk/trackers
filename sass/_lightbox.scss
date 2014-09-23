@@ -6,14 +6,29 @@
 
 	.mfp-inline-holder,
 	.mfp-ajax-holder {
+		padding: 0;
 		
 		.mfp-content {
 			//width: 65%;
-			width: 90%;
+			width: 80%;
 			padding: 5%;
 			background: $bg-main;
+			//max-height:80%;
 			max-height:80%;
+			margin: 5% auto;
+
 			overflow: scroll;
+
+			.mfp-close {
+				@include font-size(48);
+				//padding: .1em .5em;
+				width: 48px;
+				width: 4.8rem;
+				height: 48px;
+				height: 4.8rem;
+				line-height: 48px;
+				line-height: 4.8rem;
+			}
 		}
 	}
 }
@@ -23,11 +38,16 @@
 	.mfp-wrap {
 		.mfp-inline-holder,
 		.mfp-ajax-holder {
+
 			
 			.mfp-content {
 				width: 65%;
 				padding: 2em;
 				//background: $bg-main;
+
+				.mfp-close {
+					@include font-size(28);
+				}
 			}
 		}
 	}

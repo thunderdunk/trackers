@@ -50,8 +50,8 @@ textarea {
 	*vertical-align: middle; /* Improves appearance and consistency in all browsers */
 }
 
-.button,
-.button:visited,
+a.button,
+a.button:visited,
 button,
 input[type="button"],
 input[type="reset"],
@@ -225,6 +225,7 @@ textarea {
 	font-size: 16px; //Keeps iOS from zooming
 	margin-bottom: $vspacing;
 	max-width: 94%;
+	border-radius: 0;
 
 	//Placeholders
 	&::-webkit-input-placeholder {
@@ -287,9 +288,47 @@ textarea {
 
 
 /* EMAIL SIGNUP FORM */
+#hero-slider { //Hide main content email signup for smaller devices
+	.container {
+		.email-signup {
+			display: none;
+		}
+	}
+}
+
+#mobile-navigation {
+	.mailchimp {
+		.email-signup {
+			width: 100%;
+			form {
+				margin-bottom: 0;
+
+				label {
+					display: none;
+				}
+
+				input[type="email"] {
+					padding: 2%;
+					//box-sizing: border-box;
+					margin-right: -.4rem;
+					margin-bottom: 0;
+					height: 20px;
+					width: 74%;
+				}
+
+				input[type="submit"] {
+					padding: 2%;
+					height: 32px;
+					width: 20%;
+				}
+			}
+		}
+	}
+}
 
 .email-signup {
-	display: none;
+
+	
 }
 
 @media screen and (min-width: $break-medium) {
