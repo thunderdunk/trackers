@@ -3,13 +3,13 @@
  * Page: All Site Elements
  */
 
-//require 'header.php'; //Use for home page
-//require 'header-bay.php'; //Use for Bay pages
-require 'header-pdx.php'; //Includes main navigation and body, header, #masthead, #page FOR PDX PAGES
+//require 'includes/header.php'; //Use for home page
+//require 'includes/header-bay.php'; //Use for Bay pages
+require 'includes/header-pdx.php'; //Includes main navigation and body, header, #masthead, #page FOR PDX PAGES
 ?>
 
 			<!--Uses FlexSlider @link https://github.com/woothemes/FlexSlider
-				// Use image with minimum dimensions _____ X _____ as background image -->
+				// Use image with minimum dimensions 1280 X 800 as background image -->
 			<section id="hero-slider" class="slider hero">
 				<div class="flexslider">
 
@@ -57,22 +57,23 @@ require 'header-pdx.php'; //Includes main navigation and body, header, #masthead
 			-->
 			<div class="container">
 
+				<!-- Breadcrumb trail - You'll need to enter the values and page links -->
+				<p class="breadcrumb"><a href="#">Portland</a> &raquo; <a href="#">Parent Page</a> &raquo; This Page</p>
+
 				<header class="page-header">
 					<h1 class="page-title">Page Title</h1>
 				</header><!--.page-header-->
 				
 				<div class="primary">
 
-				<?php //require_once('contact-form.php'); ?>
-
 					<!-- Entry Content
 						// Use class="entry-content" for the main body text on a page, and for text content in the sidebar/secondary area (including around Callout boxes). This will set all the proper text formats, such as subheadings, blockquotes, paragraph spacing, etc. 
 
 					-->
 					<article class="entry-content">
-						<h2>Heading 2</h2>
+						
 						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis erat odio, ornare eu velit a, facilisis luctus lorem. Pellentesque imperdiet dui id purus lobortis, <a href="#">link inside the main content area</a> a semper magna auctor. Curabitur tristique dictum metus eget tempor. Cras id ex aliquam arcu maximus interdum vitae vel purus. Ut varius, quam id lacinia accumsan, ante ligula posuere libero, at ullamcorper lorem orci id dolor. Nam ac mauris augue. Donec id mattis quam. Sed hendrerit mauris in leo lacinia rhoncus maximus nec nisi. Fusce ac nisi lectus.</p>
-	       
+	       				<h2>Heading 2</h2>
 						<p><strong>Pellentesque habitant morbi tristique</strong> senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. <em>Aenean ultricies mi vitae est.</em> Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, <code>commodo vitae</code>, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. <a href="#">Donec non enim</a> in turpis pulvinar facilisis. Ut felis.</p>
 
 						<h2>Header Level 2</h2>
@@ -105,7 +106,7 @@ require 'header-pdx.php'; //Includes main navigation and body, header, #masthead
 							<p class="register-help">Click your location and week</p>
 						</header><!--reg-heading-->
 
-							<?php include 'registration-catpage.php'; ?>
+							<?php include 'includes/registration-catpage.php'; ?>
 
 							<header class="reg-heading">
 							
@@ -114,7 +115,7 @@ require 'header-pdx.php'; //Includes main navigation and body, header, #masthead
 							<p class="register-help">Click your location and week</p>
 						</header><!--reg-heading-->
 
-							<?php include 'registration-classpage.php'; ?>
+							<?php include 'includes/registration-classpage.php'; ?>
 
 					</section><!--.class-picker-->
 
@@ -188,6 +189,7 @@ require 'header-pdx.php'; //Includes main navigation and body, header, #masthead
 							- For content use <p>content blah blah...</p>
 
 						// IMAGES:
+							- ALL BLOCK IMAGES SHOULD BE 720px X 480px
 							- Be sure to place images in a figure tag, see example above.
 					-->
 
@@ -366,5 +368,5 @@ require 'header-pdx.php'; //Includes main navigation and body, header, #masthead
 
 			</div><!--.container-->
 
-<?php include 'footer.php'; // Includes closing main, body, html tags and footer #colophon ?>
+<?php include 'includes/footer.php'; // Includes closing main, body, html tags and footer #colophon ?>
 

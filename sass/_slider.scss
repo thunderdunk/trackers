@@ -18,7 +18,7 @@
 			display: none;
 
 			@media screen and (min-width: $break-medium) {
-				display: block;
+				display: block; 
 			}
 
 			a { //Override: These create extra margins on the side if they go off-canvas
@@ -36,11 +36,12 @@
 			height: 100%;
 
 			.slide {
-				height: 70vh; //Slider height - min height
+				//height: 70vh; //Slider height - min height
+				height: 40vh;
 				width: 10%;
 				position: relative;
 				background-size: cover;
-				background-position: center center;
+				background-position: center top;
 
 				.gradient {
 					/* IE9 SVG, needs conditional override of 'filter' to 'none' */
@@ -62,6 +63,7 @@
 					
 
 						.content {
+							display: none;
 							margin-top: 30vh;
 							color: #fff;
 							line-height: 1.4;
@@ -83,50 +85,58 @@
 							
 						}
 
-						@media all and (min-height: 600px) {
 
-							.content {
-								margin-top: 30vh;
 
-								h3 {
-									//@include font-size(24);
-									//font-style: italic;
-								}
+					}
+				}
+			}
 
-								h4 {
-									//@include font-size(16);
-									//font-weight: 100;
-									margin-bottom: 2em;
-									margin-top: .5em;
-								}
-							}
+			@media all and (min-height: 600px) {
+				.slide {
+					.content {
+						margin-top: 30vh;
+
+						h3 {
+
 						}
 
-						@media all and (min-height: 800px) {
-							//margin: 0 auto;
-							//max-width: 1280px;
-
-							.content {
-								margin-top: 40vh;
-
-								h3 {
-									//@include font-size(28);
-									//font-style: italic;
-								}
-
-								h4 {
-									//@include font-size(18);
-									//font-weight: 100;
-									margin-bottom: 2em;
-									margin-top: .5em;
-								}
-							}
+						h4 {
+							margin-bottom: 2em;
+							margin-top: .5em;
 						}
+					}
+				}
+			}
 
-						@media all and (min-width: $break-medium) {
+			@media all and (min-height: 800px) {
 
+				.slide {
+					.content {
+						margin-top: 40vh;
+
+
+						h4 {
+							margin-bottom: 2em;
+							margin-top: .5em;
+						}
+					}
+				}
+			}
+
+			@media all and (min-width: $break-small) {
+				.slide {
+					height: 40vh;					
+				}
+			}
+
+			@media all and (min-width: $break-medium) {
+				.slide {
+					height: 60vh;
+
+					.gradient {
+						.container {
 							.content {
-								//margin-top: 30vh;
+								display: block;
 
 								h3 {
 									@include font-size(24);
@@ -136,41 +146,43 @@
 								h4 {
 									@include font-size(16);
 									font-weight: 100;
-									//margin-bottom: 2em;
-									//margin-top: .5em;
 								}
 							}
 						}
+					}
+					
+				}
+			}
 
-						@media all and (min-width: $break-large) {
-							//margin: 0 auto;
-							//max-width: 1280px;
+			@media all and (min-width: $break-large) {
+				.slide {
+					height: 70vh;
 
-							.content {
-								//margin-top: 40vh;
+					.content {
 
-								h3 {
-									@include font-size(28);
-									font-style: italic;
-								}
-
-								h4 {
-									@include font-size(18);
-									font-weight: 100;
-									//margin-bottom: 2em;
-									//margin-top: .5em;
-								}
-							}
+						h3 {
+							@include font-size(28);
+							font-style: italic;
 						}
 
-						@media all and (min-width: $break-x-large) {
-							margin: 0 auto;
-							max-width: 1280px;
-
+						h4 {
+							@include font-size(18);
+							font-weight: 100;
 						}
-
 					}
 				}
+				
+			}
+
+			@media all and (min-width: $break-x-large) {
+				.slide {
+					.content {
+						margin: 0 auto;
+						max-width: 1280px;
+					}
+				}
+				
+				
 			}
 		}
 

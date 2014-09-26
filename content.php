@@ -3,9 +3,9 @@
  * Page: Content Page
  */
 
-//require 'header.php'; //Use for home page
-//require 'header-bay.php'; //Use for Bay pages
-require 'header-pdx.php'; //Includes main navigation and body, header, #masthead, #page FOR PDX PAGES
+//require 'includes/header.php'; //Use for home page
+//require 'includes/header-bay.php'; //Use for Bay pages
+require 'includes/header-pdx.php'; //Includes main navigation and body, header, #masthead, #page FOR PDX PAGES
 ?>
 
 			<!--Uses FlexSlider @link https://github.com/woothemes/FlexSlider
@@ -33,7 +33,7 @@ require 'header-pdx.php'; //Includes main navigation and body, header, #masthead
 					  	    	    <div class="content alignright">
 										<h3 class="quote">&ldquo;A totally new experience... like a junior Outward Bound.&rdquo;</h3>
 										<h4 class="author">Lucy Bosworth, 2013 Parent</h4>
-										<a class="button big action" href="#">Really Important Button</a>
+										<a class="button action" href="#">Really Important Button</a>
 									</div><!--.content-->
 								</div><!--.container-->
 							</div><!--.gradient-->
@@ -102,7 +102,7 @@ require 'header-pdx.php'; //Includes main navigation and body, header, #masthead
 							<div class="content">
 								<h3 class="block-title">Class Title</h3>
 								<p>Learn the ancient art of working hot metal on the anvil!</p>
-								<a class="button small">Button Small</a>
+								<a class="button">Button Small</a>
 							</div><!--.content-->
 						</article><!--.block-->
 
@@ -115,7 +115,7 @@ require 'header-pdx.php'; //Includes main navigation and body, header, #masthead
 							<div class="content">
 								<h3 class="block-title">Class Title</h3>
 								<p>Learn the ancient art of working hot metal on the anvil!</p>
-								<a class="button small">Button Small</a>
+								<a class="button">Button Small</a>
 							</div><!--.content-->
 						</article><!--.block-->
 
@@ -131,7 +131,7 @@ require 'header-pdx.php'; //Includes main navigation and body, header, #masthead
 							<div class="content">
 								<h3 class="block-title">Class Title</h3>
 								<p>Learn the ancient art of working hot metal on the anvil!</p>
-								<a class="button small">Button Small</a>
+								<a class="button">Button Small</a>
 							</div><!--.content-->
 						</article><!--.block-->
 
@@ -184,14 +184,15 @@ require 'header-pdx.php'; //Includes main navigation and body, header, #masthead
 							- For content use <p>content blah blah...</p>
 
 						// IMAGES:
+							- ALL BLOCK IMAGES SHOULD BE 720px X 480px
 							- Be sure to place images in a figure tag, see example above.
 					-->
 
 					<!-- Buttons
 						// Create a button by adding class="button" to an <a> element. Example: <a class="button" href="#">Button Text</a>
 						// Styles: Buttons default to green at 14px font-size. 
-						//		- For a larger button (font-size 18px) use class 'big'. Example <a class="button big" href="#">Button Text</a>
-								- For a smaller button (font-size 12px) use class 'small'. Example <a class="button small" href="#">Button Text</a>
+						//		
+								
 								- For an orange button use class 'action'. Example <a class="button action" href="#">Button Text</a>
 
 						//
@@ -217,7 +218,7 @@ require 'header-pdx.php'; //Includes main navigation and body, header, #masthead
 								<div class="content">
 									<h3 class="block-title">Class Title</h3>
 									<p>Learn the ancient art of working hot metal on the anvil!</p>
-									<a class="button action small" href="#">Small button</a>
+									<a class="button action" href="#">Small button</a>
 								</div><!--.content-->
 							</article><!--.block-->
 
@@ -282,5 +283,5 @@ require 'header-pdx.php'; //Includes main navigation and body, header, #masthead
 
 			</div><!--.container-->
 
-<?php include 'footer.php'; // Includes closing main, body, html tags and footer #colophon ?>
+<?php include 'includes/footer.php'; // Includes closing main, body, html tags and footer #colophon ?>
 

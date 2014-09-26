@@ -3,7 +3,7 @@
  * Page: Mashup
  */
 
-require 'header-pdx.php'; //Includes main navigation and body, header, #masthead, #page FOR PDX PAGES
+require 'includes/header-pdx.php'; //Includes main navigation and body, header, #masthead, #page FOR PDX PAGES
 ?>
 
 			<!--Uses FlexSlider @link https://github.com/woothemes/FlexSlider
@@ -31,7 +31,7 @@ require 'header-pdx.php'; //Includes main navigation and body, header, #masthead
 					  	    	    <div class="content alignright">
 										<h3 class="quote">&ldquo;A totally new experience... like a junior Outward Bound.&rdquo;</h3>
 										<h4 class="author">Lucy Bosworth, 2013 Parent</h4>
-										<a class="button big action" href="#">Really Important Button</a>
+										<a class="button action" href="#">Really Important Button</a>
 									</div><!--.content-->
 								</div><!--.container-->
 							</div><!--.gradient-->
@@ -51,6 +51,9 @@ require 'header-pdx.php'; //Includes main navigation and body, header, #masthead
 
 			-->
 			<div class="container">
+
+				<!-- Breadcrumb trail - You'll need to enter the values -->
+				<p class="breadcrumb"><a href="#">Portland</a> &raquo; <a href="#">Parent Page</a> &raquo; This Page</p>
 
 				<header class="page-header">
 					<h1 class="page-title">Page Title</h1>
@@ -72,7 +75,7 @@ require 'header-pdx.php'; //Includes main navigation and body, header, #masthead
 				</div><!--.primary-->
 
 				<div class="secondary">
-					<h3 class="sidebar-title">Awards and such</h3>
+					
 
 					<div class="block-row">
 						<!--Use class "item" for images you want arranged like blocks but not styled as such -->
@@ -137,14 +140,14 @@ require 'header-pdx.php'; //Includes main navigation and body, header, #masthead
 							- For content use <p>content blah blah...</p>
 
 						// IMAGES:
+							- ALL BLOCK IMAGES SHOULD BE 720px X 480px
 							- Be sure to place images in a figure tag, see example above.
 					-->
 
 					<!-- Buttons
 						// Create a button by adding class="button" to an <a> element. Example: <a class="button" href="#">Button Text</a>
 						// Styles: Buttons default to green at 14px font-size. 
-						//		- For a larger button (font-size 18px) use class 'big'. Example <a class="button big" href="#">Button Text</a>
-								- For a smaller button (font-size 12px) use class 'small'. Example <a class="button small" href="#">Button Text</a>
+						//		
 								- For an orange button use class 'action'. Example <a class="button action" href="#">Button Text</a>
 
 						//
@@ -189,7 +192,7 @@ require 'header-pdx.php'; //Includes main navigation and body, header, #masthead
 							<div class="content">
 								<h3 class="block-title">Class Title</h3>
 								<p>Learn the ancient art of working hot metal on the anvil!</p>
-								<a class="button small">Button Small</a>
+								
 							</div><!--.content-->
 						</article><!--.block-->
 
@@ -202,7 +205,7 @@ require 'header-pdx.php'; //Includes main navigation and body, header, #masthead
 							<div class="content">
 								<h3 class="block-title">Class Title</h3>
 								<p>Learn the ancient art of working hot metal on the anvil!</p>
-								<a class="button action small" href="#">Small action button</a>
+								
 							</div><!--.content-->
 						</article><!--.block-->
 
@@ -220,78 +223,102 @@ require 'header-pdx.php'; //Includes main navigation and body, header, #masthead
 
 					</div><!--.block-row-->
 				
-					<!-- Large Blocks -->
+					<!-- Large Blocks in two columns
+						//If you want to stack horizontal blocks next to a taller block, use .primary and .secondary to create columns
+					-->
 					<div class="block-row">
-						
-						<article class="block stacked medium">
-							<figure>
-								<a href="#">
-									<img src="images/Animals-480x356.jpg" alt="image alt text" />
-								</a>
-							</figure>
-							<div class="content">
-								<h3 class="block-title">Class Title - 480 x 356 img dimensions</h3>
-								<p>Learn the ancient art of working hot metal on the anvil!</p>
-								<a class="button">Normal button</a>
-							</div><!--.content-->
-						</article><!--.block-->
+						<div class="primary">
+							<article class="block horizontal full">
+								<figure>
+									<a href="#">
+										<img src="images/Ranger-480x320.jpg" alt="image alt text" />
+									</a>
+								</figure>
+								<div class="content">
+									<h3 class="block-title">Class Title - 480 x 356 img dimensions</h3>
+									<p>Learn the ancient art of working hot metal on the anvil!</p>
+									<a class="button">Normal button</a>
+								</div><!--.content-->
+							</article><!--.block-->
 
-						<article class="block horizontal large last">
-							<figure>
-								<a href="#">
-									<img src="images/Animals-480x356.jpg" alt="image alt text" />
-								</a>
-							</figure>
-							<div class="content">
-								<h3 class="block-title">Class Title - 480 x 356 img dimensions</h3>
-								<p>Learn the ancient art of working hot metal on the anvil!</p>
-								<a class="button big action">Big Action button</a>
-							</div><!--.content-->
-						</article><!--.block-->
+							<article class="block horizontal full">
+								<figure>
+									<a href="#">
+										<img src="images/Ranger-480x320.jpg" alt="image alt text" />
+									</a>
+								</figure>
+								<div class="content">
+									<h3 class="block-title">Class Title - 480 x 356 img dimensions</h3>
+									<p>Learn the ancient art of working hot metal on the anvil!</p>
+									<a class="button">Normal button</a>
+								</div><!--.content-->
+							</article><!--.block-->
+						</div><!--.primary-->
+					
+						<div class="secondary">
 
+							<article class="block full">
+								<figure>
+									<a href="#">
+										<img src="images/Ranger-480x320.jpg" alt="image alt text" />
+									</a>
+								</figure>
+								<div class="content">
+									<h3 class="block-title">Class Title - 480 x 356 img dimensions</h3>
+									<p>Learn the ancient art of working hot metal on the anvil!</p>
+									<a class="button action">Big Action button</a>
+								</div><!--.content-->
+							</article><!--.block-->
+						</div><!--.secondary-->
 					</div><!--.block-row-->
 
-					<!-- Large Blocks -->
+					<!-- 1 Large Block and 2 small
+						// To get the spacing right on smaller screens, this layout requires two columns, using .primary and .secondary, demonstrated here
+					-->
 					<div class="block-row">
-						
-						<article class="block horizontal large">
-							<figure>
-								<a href="#">
-									<img src="images/Ranger-480x320.jpg" alt="image alt text" />
-								</a>
-							</figure>
-							<div class="content">
-								<h3 class="block-title">Class Title - 480 x 320 img dimensions</h3>
-								<p>Learn the ancient art of working hot metal on the anvil!</p>
+						<div class="primary">
+							<article class="block horizontal full">
+								<figure>
+									<a href="#">
+										<img src="images/Ranger-480x320.jpg" alt="image alt text" />
+									</a>
+								</figure>
+								<div class="content">
+									<h3 class="block-title">Class Title - 480 x 320 img dimensions</h3>
+									<p>Learn the ancient art of working hot metal on the anvil!</p>
 
-							</div><!--.content-->
-						</article><!--.block-->
+								</div><!--.content-->
+							</article><!--.block-->
+						</div><!--.primary-->
 
-						<article class="block stacked small">
-							<figure>
-								<a href="#">
-									<img src="images/Ranger-480x320.jpg" alt="image alt text" />
-								</a>
-							</figure>
-							<div class="content">
-								<h3 class="block-title">Class Title - 480 x 320 img dimensions</h3>
-								<p>Learn the ancient art of working hot metal on the anvil!</p>
-								<a class="button big">Big Button</a>
-							</div><!--.content-->
-						</article><!--.block-->
-						
-						<article class="block stacked small last">
-							<figure>
-								<a href="#">
-									<img src="images/Ranger-480x320.jpg" alt="image alt text" />
-								</a>
-							</figure>
-							<div class="content">
-								<h3 class="block-title">Class Title - 480 x 320 img dimensions</h3>
-								<p>Learn the ancient art of working hot metal on the anvil!</p>
-								<a class="button" href="#">Normal button</a>
-							</div><!--.content-->
-						</article><!--.block-->
+						<div class="secondary">
+							<article class="block stacked small">
+								<figure>
+									<a href="#">
+										<img src="images/Ranger-480x320.jpg" alt="image alt text" />
+									</a>
+								</figure>
+								<div class="content">
+									<h3 class="block-title">Class Title - 480 x 320 img dimensions</h3>
+									<p>Learn the ancient art of working hot metal on the anvil!</p>
+									
+								</div><!--.content-->
+							</article><!--.block-->
+							
+							<article class="block stacked small last">
+								<figure>
+									<a href="#">
+										<img src="images/Ranger-480x320.jpg" alt="image alt text" />
+									</a>
+								</figure>
+								<div class="content">
+									<h3 class="block-title">Class Title - 480 x 320 img dimensions</h3>
+									<p>Learn the ancient art of working hot metal on the anvil!</p>
+									
+								</div><!--.content-->
+							</article><!--.block-->
+
+						</div><!--.seondary-->
 
 					</div><!--.block-row-->
 
@@ -315,5 +342,5 @@ require 'header-pdx.php'; //Includes main navigation and body, header, #masthead
 
 			</div><!--.container-->
 
-<?php include 'footer.php'; // Includes closing main, body, html tags and footer #colophon ?>
+<?php include 'includes/footer.php'; // Includes closing main, body, html tags and footer #colophon ?>
 

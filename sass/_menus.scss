@@ -219,7 +219,7 @@
 						float: left;
 						left: 0;
 						position: absolute;
-						top: 2.5em;
+						top: 2em;
 						z-index: 99999;
 						padding: 1em 0;
 						
@@ -255,6 +255,25 @@
 		}
 
 		
+	} // #masthead
+
+} // media break-medium
+
+@media screen and (min-width: $break-large) {
+
+	#masthead {
+		
+		#main-navigation {
+			
+			ul {				
+				li {
+					//Child menu
+					ul {
+						top: 2.5em;
+					}
+				}
+			}
+		}
 	} // #masthead
 
 } // media break-medium

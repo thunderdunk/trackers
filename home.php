@@ -3,7 +3,7 @@
  * Page: All Site Elements
  */
 
-require 'header.php'; //Includes main navigation and body, header, #masthead, #page FOR PDX PAGES
+require 'includes/header.php'; //Includes main navigation and body, header, #masthead, #page FOR PDX PAGES
 ?>
 			<section id="hero-home" class="hero">
 
@@ -53,42 +53,15 @@ require 'header.php'; //Includes main navigation and body, header, #masthead, #p
 						
 						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis erat odio, ornare eu velit a, facilisis luctus lorem. Pellentesque imperdiet dui id purus lobortis, <a href="#">link inside the main content area</a> a semper magna auctor. Curabitur tristique dictum metus eget tempor. Cras id ex aliquam arcu maximus interdum vitae vel purus. Ut varius, quam id lacinia accumsan, ante ligula posuere libero, at ullamcorper lorem orci id dolor. Nam ac mauris augue. Donec id mattis quam. Sed hendrerit mauris in leo lacinia rhoncus maximus nec nisi. Fusce ac nisi lectus.</p>
 	       
-						<h2>A Subheading 2</h2>
-
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis erat odio, ornare eu velit a, facilisis luctus lorem. Pellentesque imperdiet dui id purus lobortis, <a href="#">link inside the main content area</a> a semper magna auctor. Curabitur tristique dictum metus eget tempor. Cras id ex aliquam arcu maximus interdum vitae vel purus. Ut varius, quam id lacinia accumsan, ante ligula posuere libero, at ullamcorper lorem orci id dolor. Nam ac mauris augue. Donec id mattis quam. Sed hendrerit mauris in leo lacinia rhoncus maximus nec nisi. Fusce ac nisi lectus.</p>
-
+					
 					</article><!--.entry-content-->
 				</div><!--.primary-->
 
 				<div class="secondary">
-					<div class="block-row">
-
-						<article class="block stacked small">
-							<figure>
-								<a href="#">
-									<img src="images/Ranger-480x320.jpg" alt="image alt text" />
-								</a>
-							</figure>
-							<div class="content">
-								<h3 class="block-title">Class Title</h3>
-								<p>Learn the ancient art of working hot metal on the anvil!</p>
-
-							</div><!--.content-->
-						</article><!--.block-->
-
-						<article class="block stacked small last">
-							<figure>
-								<a href="#">
-									<img src="images/Ranger-480x320.jpg" alt="image alt text" />
-								</a>
-							</figure>
-							<div class="content">
-								<h3 class="block-title">Class Title</h3>
-								<p>Learn the ancient art of working hot metal on the anvil!</p>
-							</div><!--.content-->
-						</article><!--.block-->
-
-					</div><!--.block-row-->
+					<article class="intro">
+						<p class="mission">Trackers Earth tells compelling stories that change peoples&rsquo; lives</p>
+						<p>Choose your location above</p>
+					</article><!--.mission-->
 
 					
 				</div><!--#secondary-->

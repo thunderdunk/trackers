@@ -3,9 +3,9 @@
  * Page: Category Page
  */
 
-//require 'header.php'; //Use for home page
-//require 'header-bay.php'; //Use for Bay pages
-require 'header-pdx.php'; //Includes main navigation and body, header, #masthead, #page FOR PDX PAGES
+//require 'includes/header.php'; //Use for home page
+//require 'includes/header-bay.php'; //Use for Bay pages
+require 'includes/header-pdx.php'; //Includes main navigation and body, header, #masthead, #page FOR PDX PAGES
 ?>
 
 			<!--Uses FlexSlider @link https://github.com/woothemes/FlexSlider
@@ -53,6 +53,9 @@ require 'header-pdx.php'; //Includes main navigation and body, header, #masthead
 
 			-->
 			<div class="container">
+				
+				<!-- Breadcrumb trail - You'll need to enter the values and page links -->
+				<p class="breadcrumb"><a href="#">Portland</a> &raquo; This Category Page</p>
 
 				<header class="page-header">
 					<h1 class="page-title">Page Title</h1>
@@ -100,7 +103,7 @@ require 'header-pdx.php'; //Includes main navigation and body, header, #masthead
 							<p class="register-help">Click your location and week</p>
 						</header><!--reg-heading-->
 
-							<?php include 'registration-catpage.php'; ?>
+							<?php include 'includes/registration-catpage.php'; ?>
 
 
 					</section><!--.class-picker-->
@@ -175,6 +178,7 @@ require 'header-pdx.php'; //Includes main navigation and body, header, #masthead
 							- For content use <p>content blah blah...</p>
 
 						// IMAGES:
+							- ALL BLOCK IMAGES SHOULD BE 720px X 480px
 							- Be sure to place images in a figure tag, see example above.
 					-->
 
@@ -300,5 +304,5 @@ require 'header-pdx.php'; //Includes main navigation and body, header, #masthead
 
 			</div><!--.container-->
 
-<?php include 'footer.php'; // Includes closing main, body, html tags and footer #colophon ?>
+<?php include 'includes/footer.php'; // Includes closing main, body, html tags and footer #colophon ?>
 

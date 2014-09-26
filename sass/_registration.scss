@@ -181,8 +181,11 @@
 					.classlist {
 						li {
 							line-height: 1.2;
-							border-bottom: $block-border;
-							//padding: 0;
+							border-bottom: 1px solid #ddd;
+
+							&:last-child {
+								border-bottom: $block-border;
+							}
 
 							.title {
 								width: 80%;
@@ -192,7 +195,7 @@
 							a {
 								display: block;
 								padding: 1em;
-								//text-decoration: none;
+								text-decoration: none;
 								color: $text-light;
 								@include font-size(13);
 								-webkit-transition: background .2s;

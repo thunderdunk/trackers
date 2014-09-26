@@ -123,3 +123,26 @@
 		}
 	}
 }
+
+//Home Sidebar
+.intro {
+
+	p {
+		text-align: center;
+		font-style: italic;
+	}
+
+	.mission {
+		
+		color: $trackers-orange;
+		@include font-size(20);
+		//font-style: italic;
+		line-height: 1.4;
+		padding: 0 10%;
+		margin-bottom: 1em;
+	}
+}
+
+
+
+

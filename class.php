@@ -3,9 +3,9 @@
  * Page: Individual Class
  */
 
-//require 'header.php'; //Use for home page
-//require 'header-bay.php'; //Use for Bay pages
-require 'header-pdx.php'; //Includes main navigation and body, header, #masthead, #page FOR PDX PAGES
+//require 'includes/header.php'; //Use for home page
+//require 'includes/header-bay.php'; //Use for Bay pages
+require 'includes/header-pdx.php'; //Includes main navigation and body, header, #masthead, #page FOR PDX PAGES
 ?>
 
 			<!--Uses FlexSlider @link https://github.com/woothemes/FlexSlider
@@ -33,7 +33,7 @@ require 'header-pdx.php'; //Includes main navigation and body, header, #masthead
 					  	    	    <div class="content alignright">
 										<h3 class="quote">&ldquo;A totally new experience... like a junior Outward Bound.&rdquo;</h3>
 										<h4 class="author">Lucy Bosworth, 2013 Parent</h4>
-										<a class="button big action" href="#">Really Important Button</a>
+										<a class="button action" href="#">Really Important Button</a>
 									</div><!--.content-->
 								</div><!--.container-->
 							</div><!--.gradient-->
@@ -53,6 +53,9 @@ require 'header-pdx.php'; //Includes main navigation and body, header, #masthead
 
 			-->
 			<div class="container">
+				
+				<!-- Breadcrumb trail - You'll need to enter the values -->
+				<p class="breadcrumb"><a href="#">Portland</a> &raquo; <a href="#">Category</a> &raquo; This Class Page</p>
 
 				<header class="page-header">
 					<h1 class="page-title">Class Title</h1>
@@ -102,8 +105,13 @@ require 'header-pdx.php'; //Includes main navigation and body, header, #masthead
 							
 							<p class="register-help">Click your week</p>
 						</header><!--reg-heading-->
+							
+							<!-- These are generic files. 
 
-							<?php include 'registration-classpage.php'; ?>
+								// For the Dreamweaver template, instead of including the files from a different location, you might want to copy the entire registration-classpage.php file and paste it into your template as an editable area.
+
+							-->
+							<?php include 'includes/registration-classpage.php'; ?>
 
 					</section><!--.class-picker-->
 
@@ -137,5 +145,5 @@ require 'header-pdx.php'; //Includes main navigation and body, header, #masthead
 
 			</div><!--.container-->
 
-<?php include 'footer.php'; // Includes closing main, body, html tags and footer #colophon ?>
+<?php include 'includes/footer.php'; // Includes closing main, body, html tags and footer #colophon ?>
 

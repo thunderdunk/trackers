@@ -69,6 +69,23 @@
 						vertical-align: top; //Eliminate extra space below img element
 					}
 				}
+
+				&.large {
+					figure {
+						width: 57.1%; //Matches height of small block with two lines title and 3 lines text at >1280px
+					}
+					
+				}
+			}
+		}
+
+		.primary {
+			.block {
+				&.full {
+					figure {
+						width: 57.1%;
+					}
+				}
 			}
 		}
 	}

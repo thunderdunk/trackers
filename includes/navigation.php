@@ -12,6 +12,7 @@
 				<li><a href="youth.html">Youth</a></li>
 				<li><a href="adult.html">Adult</a></li>
 				<li><a href="#">Blog</a></li>
+				<li><a href="#">Store</a></li>
 
 				<li class="label">Locations</li>
 				
@@ -44,24 +45,24 @@
 <!--DESKTOP FULL NAV-->
 	<nav id="main-navigation" >
 		<ul class="menu main">
-			<li><a href="#">Info</a>
+			<li><a href="about.html">Info</a>
 				<ul class="child">
 					<li><a href="#">About</a></li>
-					<li><a href="#">Contact</a></li>
+					<li><a href="#" data-mfp-src="#contact-popup" class="open-popup-link">Contact</a></li>
 					<li><a href="#">Staff</a></li>
 					<li><a href="#">Employment</a></li>
 				</ul>
 			</li>
 			<li><a href="youth.html">Youth</a></li>
 			<li><a href="adult.html">Adult</a></li>
-			<li class="label"><a href="#">Locations</a>
+			<li><a href="#">Locations</a>
 				<ul class="child">
 					<li><a href="portland.html">Portland</a></li>
 					<li><a href="bayarea.html">Bay Area</a></li>
 				</ul>
 			</li>
+			<li><a href="#">Store</a></li>
 			<li><a href="#">Blog</a></li>
-			<li><a href="#" data-mfp-src="#contact-popup" class="open-popup-link">Contact</a></li>
 		</ul>
 			
 		<ul class="menu secondary">

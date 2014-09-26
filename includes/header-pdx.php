@@ -25,7 +25,7 @@
 
 				<a href="#" class="menu-toggle open-panel"><i class="fa fa-bars"></i></a>
 				
-				<?php include 'navigation.php'; ?>
+				<?php include 'includes/navigation.php'; ?>
 				
 
 			</div><!--.container-->
