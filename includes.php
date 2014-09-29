@@ -27,14 +27,5 @@
 	<!-- jQuery UI -->
 	<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.1/jquery-ui.min.js"></script>
 
-	<!-- Magnific Popup core JS file -->
-	<script src="js/jquery.magnific-popup.min.js"></script> 
 
-	<!-- FlexSlider -->
-	<script src="js/jquery.flexslider-min.js"></script>
-
-	<!--BUGGYFILL TO FIX VIEWPORT UNITS IN IOS @link https://github.com/rodneyrehm/viewport-units-buggyfill-->
-	<script src="js/viewport-units-buggyfill.js"></script>
-
-
-	<script src="js/initiators.js"></script>
+	<script src="js/min/initiators-min.js"></script>
