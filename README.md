@@ -1,5 +1,16 @@
 # Trackers Earth Redesign Notes
 
+## Example Pages
+
+The following example pages have been built out to show the layout and structure of page elements, and for your reference:
+
+*	**Home:** Home page `home.php'
+*	**Content:** Generic content page, like About `content.php`
+*	**Mashup:** Mashup page `mashup.php`
+*	**Class:** Single class page with add to cart in registration `class.php`
+*	**Category:** Category page `category.php`
+*	**Index:** General page with all site elements `index.php`
+
 ## Header
 
 Either include the appropriate header file from the includes folder, or paste in the code, whichever works best. Each header file includes main navigation and body, header, #masthead, #page
@@ -41,6 +52,23 @@ In the example code, many of the site sections are included from other files, fo
 	<?php include 'includes/registration-classpage.php'; //This is the registration accordion for single Class pages ?>
 
 This is primarily to clean up the example site files, and isn't required. You can keep this format, or paste the entire content of the included file into your Dreamweaver template, whichever makes more sense for you.
+
+## Lightboxes
+
+We're using Magnific Popup for the lightboxes: http://dimsemenov.com/plugins/magnific-popup/
+*	Everything that goes in a lightbox should be wrapped in a `div` and the div's id needs to be referenced in the `<a>` element as `data-mfp-src="#your-div-id"`
+*	Add `class="open-popup-link"` to the `<a>` element as well to activate the popup script
+*	Add `class="mfp-hide"` to the popup content div to hide it from the main page
+
+	//Popup Link
+	<a href="#" data-mfp-src="#my-popup-div" class="open-popup-link">Contact</a>
+
+	//Popup Content
+	<div id="my-popup-div" class="mfp-hide">
+	  <form>
+	  	...Form Content...  
+	  </form>
+	</div><!-- #my-popup-div -->
 
 ## Image Blocks
 

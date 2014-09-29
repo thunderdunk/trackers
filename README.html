@@ -1,5 +1,19 @@
 <h1>Trackers Earth Redesign Notes</h1>
 
+<h2>Example Pages</h2>
+
+<p>The following example pages have been built out to show the layout and structure of page elements, and for your reference:</p>
+
+<ul>
+<li><strong>Home:</strong> Home page `home.php'</li>
+<li><strong>Content:</strong> Generic content page, like About <code>content.php</code></li>
+<li><strong>Mashup:</strong> Mashup page <code>mashup.php</code></li>
+<li><strong>Class:</strong> Single class page with add to cart in registration <code>class.php</code></li>
+<li><strong>Category:</strong> Category page <code>category.php</code></li>
+<li><strong>Index:</strong> General page with all site elements <code>index.php</code></li>
+</ul>
+
+
 <h2>Header</h2>
 
 <p>Either include the appropriate header file from the includes folder, or paste in the code, whichever works best. Each header file includes main navigation and body, header, #masthead, #page</p>
@@ -42,6 +56,24 @@
 </code></pre>
 
 <p>This is primarily to clean up the example site files, and isn&rsquo;t required. You can keep this format, or paste the entire content of the included file into your Dreamweaver template, whichever makes more sense for you.</p>
+
+<h2>Lightboxes</h2>
+
+<p>We&rsquo;re using Magnific Popup for the lightboxes: http://dimsemenov.com/plugins/magnific-popup/
+*   Everything that goes in a lightbox should be wrapped in a <code>div</code> and the div&rsquo;s id needs to be referenced in the <code>&lt;a&gt;</code> element as <code>data-mfp-src="#your-div-id"</code>
+*   Add <code>class="open-popup-link"</code> to the <code>&lt;a&gt;</code> element as well to activate the popup script
+*   Add <code>class="mfp-hide"</code> to the popup content div to hide it from the main page</p>
+
+<pre><code>//Popup Link
+&lt;a href="#" data-mfp-src="#my-popup-div" class="open-popup-link"&gt;Contact&lt;/a&gt;
+
+//Popup Content
+&lt;div id="my-popup-div" class="mfp-hide"&gt;
+  &lt;form&gt;
+    ...Form Content...  
+  &lt;/form&gt;
+&lt;/div&gt;&lt;!-- #my-popup-div --&gt;
+</code></pre>
 
 <h2>Image Blocks</h2>
 

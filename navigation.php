@@ -74,6 +74,12 @@
 
 	</nav><!--#main-navigation-->
 
+<!-- Lightbox Contents 
+	// We're using Magnific Popup for the lightboxes: http://dimsemenov.com/plugins/magnific-popup/
+	// Everything that goes in a lightbox should be wrapped in a `div` and the div's id needs to be referenced in the `<a>` element as `data-mfp-src="#your-div-id"`
+	// Add `class="open-popup-link"` to the `<a>` element as well to activate the popup script
+
+-->
 
 <div id="contact-popup" class="mfp-hide">
   <form method="post" action="forms/contact-send.php">
