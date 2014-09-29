@@ -11,7 +11,7 @@ require 'includes/header-pdx.php'; //Includes main navigation and body, header, 
 			<!--Uses FlexSlider @link https://github.com/woothemes/FlexSlider
 				// Use image with minimum dimensions 1280 X 800 as background image
 					- Image will be centered and aligned top
-					
+
 				// Slide content goes inside div class="content". 
 					- classes 'alignleft', 'alignright', and 'aligncenter' will control placement and alignment
 					- Please use the structure and content classes outlined in the examples (h3 class='quote' for a quote and h4 class='author' for the person quoting)
@@ -105,12 +105,11 @@ require 'includes/header-pdx.php'; //Includes main navigation and body, header, 
 						
 					</article><!--.entry-content-->
 					
+					<!--REGISTRATION-->
 					<section class="class-picker">
-						<!--REGISTRATION-->
+						
 						<header class="reg-heading">
-							
 							<h2 class="content-subheading">Register Now!</h2>
-							
 							<p class="register-help">Click your location and week</p>
 						</header><!--reg-heading-->
 

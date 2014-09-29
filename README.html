@@ -1,5 +1,14 @@
 <h1>Trackers Earth Redesign Notes</h1>
 
+<h2>Header</h2>
+
+<p>Either include the appropriate header file from the includes folder, or paste in the code, whichever works best. Each header file includes main navigation and body, header, #masthead, #page</p>
+
+<pre><code>- **Home:** `require 'includes/header.php';` 
+- **Bay:** `require 'includes/header-bay.php';` 
+- **PDX:** `require 'includes/header-pdx.php';` 
+</code></pre>
+
 <h2>Slider</h2>
 
 <p>We&rsquo;re using FlexSlider @link https://github.com/woothemes/FlexSlider</p>
@@ -7,16 +16,112 @@
 <p>Use image with minimum dimensions 1280 X 800 as background image
     - Image will be centered and aligned top</p>
 
-<p>Slide content goes inside div class=&ldquo;content&rdquo;.
-    - classes &lsquo;alignleft&rsquo;, &lsquo;alignright&rsquo;, and &lsquo;aligncenter&rsquo; will control placement and alignment
-    - Please use the structure and content classes outlined in the examples (h3 class=&lsquo;quote&rsquo; for a quote and h4 class=&lsquo;author&rsquo; for the person quoting)
-    - For a button just add class=&lsquo;button&rsquo; to your link. If you want an orange button add the &lsquo;action&rsquo; class to the link element
-    - Other types of content can be place in the &lsquo;content&rsquo; container. If it&rsquo;s not looking right, contact Heptagon with the specifics and we can work it out.</p>
+<p>Slide content goes inside <code>&lt;div class="content"&gt;</code>.
+    - classes <code>alignleft</code>, <code>alignright</code>, and <code>aligncenter</code> will control placement and alignment
+    - Please use the structure and content classes outlined in the examples (<code>&lt;h3 class="quote"&gt;</code> for a quote and <code>&lt;h4 class="author"&gt;</code> for the person quoting)
+    - For a button just add <code>class="button"</code> to your link. If you want an orange button add the <code>action</code> class to the link element
+    - Other types of content can be place in the <code>&lt;div class="content"&gt;</code> container. If it&rsquo;s not looking right, contact Heptagon with the specifics and we can work it out.</p>
 
 <h2>Container</h2>
 
-<p>A div with class=&ldquo;container&rdquo; sets a max-width and adds margins on the left and right depending on window size.</p>
+<p>A div with <code>class="container"</code> sets a max-width and adds margins on the left and right depending on window size.</p>
 
-<p>Only use container for full-width elements! Note that the .primary and #secondary columns are within the container.</p>
+<p>Only use container for full-width elements! Note that the <code>.primary</code> and <code>#secondary</code> columns are within the container.</p>
 
-<p>&ndash;></p>
+<h2>Entry Content</h2>
+
+<p>Use <code>class="entry-content"</code> for the main body text on a page, and for text content in the sidebar/secondary area (including around Callout boxes). This will set all the proper text formats, such as subheadings, blockquotes, paragraph spacing, etc.</p>
+
+<h2>File Includes</h2>
+
+<p>In the example code, many of the site sections are included from other files, for example:</p>
+
+<pre><code>&lt;?php include 'includes/registration-classpage.php'; //This is the registration accordion for single Class pages ?&gt;
+</code></pre>
+
+<p>This is primarily to clean up the example site files, and isn&rsquo;t required. You can keep this format, or paste the entire content of the included file into your Dreamweaver template, whichever makes more sense for you.</p>
+
+<h2>Image Blocks</h2>
+
+<p><strong>ROWS:</strong> Blocks must be organized into rows. Just add a <code>&lt;div class="block-row"&gt;&lt;/div&gt;</code> around each set of blocks. This will ensure that they clear properly. Also, they won&rsquo;t be styled if not in a block-row div.</p>
+
+<p><strong>ORIENTATION:</strong> Default orientation is stacked, so you don&rsquo;t need to add stacked class. Adding <code>class="horizontal"</code> to the <code>article</code> element will override orientation on large monitors only. Phones and tablets will always show stacked orientation (better for consistency as things move around for a smaller screen).</p>
+
+<p><strong>SIZES:</strong> Blocks come in four sizes: <code>small</code>, <code>medium</code>, <code>large</code> and <code>full</code>. Just add the class to your block element and behold the magic.</p>
+
+<p>The full-width layout (desktop) is arranged in a 5-column grid. For smaller devices (handheld), the grid is 2-column. Each block size will span a different number of columns, shown below (size class: desktop - handheld).
+    - small: 1/5 - &frac12;
+    - medium: 2/5 - &frac12;
+    - large: 3/5 - 2/2
+    - full: 5/5 - 2/2</p>
+
+<p>Notes:
+    - We recommend using only the horizontal orientation for full blocks.
+    - There is no 4-column size. This would be weird.</p>
+
+<p><strong>MARGINS: </strong>
+    - Margins are applied automatically to the right of each block.
+    - For last block in a row (full size) add class &lsquo;last&rsquo; to aricle element. This will eliminate the right margin.</p>
+
+<p><strong>EXAMPLE BLOCK CODE: </strong>
+This will produce a single-column block</p>
+
+<pre><code>&lt;div class="block-row"&gt;
+    &lt;article class="block small"&gt;
+        &lt;figure&gt;
+            &lt;a href="#"&gt;
+                &lt;img src="images/Ranger-480x320.jpg" alt="image alt text" /&gt;
+            &lt;/a&gt;
+        &lt;/figure&gt;
+        &lt;div class="content"&gt;
+            &lt;h3 class="block-title"&gt;Class Title&lt;/h3&gt;
+            &lt;p&gt;Learn the ancient art of working hot metal on the anvil!&lt;/p&gt;
+
+        &lt;/div&gt;
+    &lt;/article&gt;
+
+    ... //More blocks
+
+    &lt;article class="block small last"&gt;&lt;!--Adding class="last" will clear the right margin so the blocks fit in the row --&gt;
+        &lt;figure&gt;
+            &lt;a href="#"&gt;
+                &lt;img src="images/Ranger-480x320.jpg" alt="image alt text" /&gt;
+            &lt;/a&gt;
+        &lt;/figure&gt;
+        &lt;div class="content"&gt;
+            &lt;h3 class="block-title"&gt;Class Title&lt;/h3&gt;
+            &lt;p&gt;Learn the ancient art of working hot metal on the anvil!&lt;/p&gt;
+
+        &lt;/div&gt;
+    &lt;/article&gt;
+&lt;/div&gt;&lt;!-- .block-row --&gt;
+</code></pre>
+
+<p><strong>CONTENT:</strong>
+    - For the title of the block, use <code>&lt;h3 class="block-title"&gt;Title&lt;/h3&gt;</code>
+    - For content use <code>&lt;p&gt;content blah blah...&lt;/p&gt;</code></p>
+
+<p><strong>IMAGES:</strong>
+    - ALL BLOCK IMAGES SHOULD BE 720px X 480px
+    - Be sure to place images in a <code>figure</code> tag, see example above.</p>
+
+<p><strong>ARRANGEMENT</strong>
+View the <code>index.php</code> and <code>mashup.php</code> files for examples of block arrangement.</p>
+
+<pre><code>- Add `class="last"` to the last block in a row to clear the right margin. This will ensure the blocks fit as intended.
+- **Large Blocks in two columns.** If you want to stack horizontal blocks next to a taller block, use `.primary` and `.secondary` to create columns within the `block-row` div.
+</code></pre>
+
+<h2>Buttons</h2>
+
+<p>Create a button by adding <code>class="button"</code> to an <code>&lt;a&gt;</code> element. Example: <code>&lt;a class="button" href="#"&gt;Button Text&lt;/a&gt;</code></p>
+
+<p><strong>Styles:</strong> Buttons default to green at 14px font-size.
+    - For an orange button use <code>class="action"</code>. Example <code>&lt;a class="button action" href="#"&gt;Button Text&lt;/a&gt;</code></p>
+
+<h2>Footer</h2>
+
+<p>Includes closing <code>main</code>, <code>body</code>, <code>html</code> tags and <code>footer</code> <code>#colophon</code>. If this will change a lot from page to page, it might be best to paste it in as an editable element.</p>
+
+<pre><code>&lt;?php include 'includes/footer.php'; ?&gt;
+</code></pre>
