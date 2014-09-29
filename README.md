@@ -60,11 +60,11 @@ Notes:
 *	We recommend using only the horizontal orientation for full blocks.
 *	There is no 4-column size. This would be weird.
 
-**MARGINS: **
+**MARGINS:**
 *	Margins are applied automatically to the right of each block.
 *	For last block in a row (full size) add class 'last' to aricle element. This will eliminate the right margin.
 
-**EXAMPLE BLOCK CODE: **
+**EXAMPLE BLOCK CODE:**
 This will produce a single-column block 
 
 	<div class="block-row">
@@ -105,7 +105,8 @@ This will produce a single-column block
 *	ALL BLOCK IMAGES SHOULD BE 720px X 480px
 *	Be sure to place images in a `figure` tag, see example above.
 
-**ARRANGEMENT**
+**ARRANGEMENT:**
+
 View the `index.php` and `mashup.php` files for examples of block arrangement. 
 
 *	Add `class="last"` to the last block in a row to clear the right margin. This will ensure the blocks fit as intended.
