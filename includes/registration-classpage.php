@@ -34,19 +34,19 @@
 				<div class="content">
 					<ul class="classlist">
 						<li>
-							<span class="title"><b>Grades 1-2</b> - <i>Stealth and Archery and Superfun Stuff</i></span><button class="cart" href="#"><i class="fa fa-shopping-cart"></i> Add</button>
+							<span class="title"><b>Grades 1-2</b> - <i>Stealth and Archery and Superfun Stuff</i></span><div class="cartbutton"><button class="cart" href="#"><i class="fa fa-shopping-cart"></i> Add</button></div>
 						</li>
 						<li>
-							<span class="title"><b>Grades 3-4</b> - <i>Intro to Human Psychology</i></span><button class="cart" href="#"><i class="fa fa-shopping-cart"></i> Add</button>
+							<span class="title"><b>Grades 3-4</b> - <i>Intro to Human Psychology</i></span><div class="cartbutton"><button class="cart" href="#"><i class="fa fa-shopping-cart"></i> Add</button></div>
 						</li>
 						<li class="full">
 							<span class="title"><b>Grades 3-4 <span class="full">FULL!</span></b> - <i>Making clothing out of animal skins</i></span>
 						</li>
 						<li>
-							<span class="title"><b>Grades 5-6</b> - <i>Making clothing out of animal skins</i></span><button class="cart" href="#"><i class="fa fa-shopping-cart"></i> Add</button>
+							<span class="title"><b>Grades 5-6</b> - <i>Making clothing out of animal skins</i></span><div class="cartbutton"><button class="cart" href="#"><i class="fa fa-shopping-cart"></i> Add</button></div>
 						</li>
 						<li>
-							<span class="title"><b>Grade 1 &amp; 4-5 OPEN <span class="full">Grade 2-3 FULL</span></b> - <i>Stealth, Archery &amp; Wilderness Survival</i></span><button class="cart" href="#"><i class="fa fa-shopping-cart"></i> Add</button>
+							<span class="title"><b>Grade 1 &amp; 4-5 OPEN <span class="full">Grade 2-3 FULL</span></b> - <i>Stealth, Archery &amp; Wilderness Survival</i></span><div class="cartbutton"><button class="cart" href="#"><i class="fa fa-shopping-cart"></i> Add</button></div>
 						</li>
 					</ul><!--.classlist-->
 				</div><!--.content-->
@@ -58,19 +58,19 @@
 				<div class="content">
 					<ul class="classlist">
 						<li>
-							<span class="title"><b>Grades 1-2</b> - <i>Stealth and Archery and Superfun Stuff</i></span><button class="cart" href="#"><i class="fa fa-shopping-cart"></i> Add</button>
+							<span class="title"><b>Grades 1-2</b> - <i>Stealth and Archery and Superfun Stuff</i></span><div class="cartbutton"><button class="cart" href="#"><i class="fa fa-shopping-cart"></i> Add</button></div>
 						</li>
 						<li>
-							<span class="title"><b>Grades 3-4</b> - <i>Intro to Human Psychology</i></span><button class="cart" href="#"><i class="fa fa-shopping-cart"></i> Add</button>
+							<span class="title"><b>Grades 3-4</b> - <i>Intro to Human Psychology</i></span><div class="cartbutton"><button class="cart" href="#"><i class="fa fa-shopping-cart"></i> Add</button></div>
 						</li>
 						<li class="full">
 							<span class="title"><b>Grades 3-4 <span class="full">FULL!</span></b> - <i>Making clothing out of animal skins</i></span>
 						</li>
 						<li>
-							<span class="title"><b>Grades 5-6</b> - <i>Making clothing out of animal skins</i></span><button class="cart" href="#"><i class="fa fa-shopping-cart"></i> Add</button>
+							<span class="title"><b>Grades 5-6</b> - <i>Making clothing out of animal skins</i></span><div class="cartbutton"><button class="cart" href="#"><i class="fa fa-shopping-cart"></i> Add</button></div>
 						</li>
 						<li>
-							<span class="title"><b>Grade 1 &amp; 4-5 OPEN <span class="full">Grade 2-3 FULL</span></b> - <i>Stealth, Archery &amp; Wilderness Survival</i></span><button class="cart" href="#"><i class="fa fa-shopping-cart"></i> Add</button>
+							<span class="title"><b>Grade 1 &amp; 4-5 OPEN <span class="full">Grade 2-3 FULL</span></b> - <i>Stealth, Archery &amp; Wilderness Survival</i></span><div class="cartbutton"><button class="cart" href="#"><i class="fa fa-shopping-cart"></i> Add</button></div>
 						</li>
 					</ul><!--.classlist-->
 				</div><!--.content-->
@@ -82,19 +82,19 @@
 				<div class="content">
 					<ul class="classlist">
 						<li>
-							<span class="title"><b>Grades 1-2</b> - <i>Stealth and Archery and Superfun Stuff</i></span><button class="cart" href="#"><i class="fa fa-shopping-cart"></i> Add</button>
+							<span class="title"><b>Grades 1-2</b> - <i>Stealth and Archery and Superfun Stuff</i></span><div class="cartbutton"><button class="cart" href="#"><i class="fa fa-shopping-cart"></i> Add</button></div>
 						</li>
 						<li>
-							<span class="title"><b>Grades 3-4</b> - <i>Intro to Human Psychology</i></span><button class="cart" href="#"><i class="fa fa-shopping-cart"></i> Add</button>
+							<span class="title"><b>Grades 3-4</b> - <i>Intro to Human Psychology</i></span><div class="cartbutton"><button class="cart" href="#"><i class="fa fa-shopping-cart"></i> Add</button></div>
 						</li>
 						<li class="full">
 							<span class="title"><b>Grades 3-4 <span class="full">FULL!</span></b> - <i>Making clothing out of animal skins</i></span>
 						</li>
 						<li>
-							<span class="title"><b>Grades 5-6</b> - <i>Making clothing out of animal skins</i></span><button class="cart" href="#"><i class="fa fa-shopping-cart"></i> Add</button>
+							<span class="title"><b>Grades 5-6</b> - <i>Making clothing out of animal skins</i></span><div class="cartbutton"><button class="cart" href="#"><i class="fa fa-shopping-cart"></i> Add</button></div>
 						</li>
 						<li>
-							<span class="title"><b>Grade 1 &amp; 4-5 OPEN <span class="full">Grade 2-3 FULL</span></b> - <i>Stealth, Archery &amp; Wilderness Survival</i></span><button class="cart" href="#"><i class="fa fa-shopping-cart"></i> Add</button>
+							<span class="title"><b>Grade 1 &amp; 4-5 OPEN <span class="full">Grade 2-3 FULL</span></b> - <i>Stealth, Archery &amp; Wilderness Survival</i></span><div class="cartbutton"><button class="cart" href="#"><i class="fa fa-shopping-cart"></i> Add</button></div>
 						</li>
 					</ul><!--.classlist-->
 				</div><!--.content-->
@@ -136,19 +136,19 @@
 				<div class="content">
 					<ul class="classlist">
 						<li>
-							<span class="title"><b>Grades 1-2</b> - <i>Stealth and Archery and Superfun Stuff</i></span><button class="cart" href="#"><i class="fa fa-shopping-cart"></i> Add</button>
+							<span class="title"><b>Grades 1-2</b> - <i>Stealth and Archery and Superfun Stuff</i></span><div class="cartbutton"><button class="cart" href="#"><i class="fa fa-shopping-cart"></i> Add</button></div>
 						</li>
 						<li>
-							<span class="title"><b>Grades 3-4</b> - <i>Intro to Human Psychology</i></span><button class="cart" href="#"><i class="fa fa-shopping-cart"></i> Add</button>
+							<span class="title"><b>Grades 3-4</b> - <i>Intro to Human Psychology</i></span><div class="cartbutton"><button class="cart" href="#"><i class="fa fa-shopping-cart"></i> Add</button></div>
 						</li>
 						<li class="full">
 							<span class="title"><b>Grades 3-4 <span class="full">FULL!</span></b> - <i>Making clothing out of animal skins</i></span>
 						</li>
 						<li>
-							<span class="title"><b>Grades 5-6</b> - <i>Making clothing out of animal skins</i></span><button class="cart" href="#"><i class="fa fa-shopping-cart"></i> Add</button>
+							<span class="title"><b>Grades 5-6</b> - <i>Making clothing out of animal skins</i></span><div class="cartbutton"><button class="cart" href="#"><i class="fa fa-shopping-cart"></i> Add</button></div>
 						</li>
 						<li>
-							<span class="title"><b>Grade 1 &amp; 4-5 OPEN <span class="full">Grade 2-3 FULL</span></b> - <i>Stealth, Archery &amp; Wilderness Survival</i></span><button class="cart" href="#"><i class="fa fa-shopping-cart"></i> Add</button>
+							<span class="title"><b>Grade 1 &amp; 4-5 OPEN <span class="full">Grade 2-3 FULL</span></b> - <i>Stealth, Archery &amp; Wilderness Survival</i></span><div class="cartbutton"><button class="cart" href="#"><i class="fa fa-shopping-cart"></i> Add</button></div>
 						</li>
 					</ul><!--.classlist-->
 				</div><!--.content-->
@@ -160,19 +160,19 @@
 				<div class="content">
 					<ul class="classlist">
 						<li>
-							<span class="title"><b>Grades 1-2</b> - <i>Stealth and Archery and Superfun Stuff</i></span><button class="cart" href="#"><i class="fa fa-shopping-cart"></i> Add</button>
+							<span class="title"><b>Grades 1-2</b> - <i>Stealth and Archery and Superfun Stuff</i></span><div class="cartbutton"><button class="cart" href="#"><i class="fa fa-shopping-cart"></i> Add</button></div>
 						</li>
 						<li>
-							<span class="title"><b>Grades 3-4</b> - <i>Intro to Human Psychology</i></span><button class="cart" href="#"><i class="fa fa-shopping-cart"></i> Add</button>
+							<span class="title"><b>Grades 3-4</b> - <i>Intro to Human Psychology</i></span><div class="cartbutton"><button class="cart" href="#"><i class="fa fa-shopping-cart"></i> Add</button></div>
 						</li>
 						<li class="full">
 							<span class="title"><b>Grades 3-4 <span class="full">FULL!</span></b> - <i>Making clothing out of animal skins</i></span>
 						</li>
 						<li>
-							<span class="title"><b>Grades 5-6</b> - <i>Making clothing out of animal skins</i></span><button class="cart" href="#"><i class="fa fa-shopping-cart"></i> Add</button>
+							<span class="title"><b>Grades 5-6</b> - <i>Making clothing out of animal skins</i></span><div class="cartbutton"><button class="cart" href="#"><i class="fa fa-shopping-cart"></i> Add</button></div>
 						</li>
 						<li>
-							<span class="title"><b>Grade 1 &amp; 4-5 OPEN <span class="full">Grade 2-3 FULL</span></b> - <i>Stealth, Archery &amp; Wilderness Survival</i></span><button class="cart" href="#"><i class="fa fa-shopping-cart"></i> Add</button>
+							<span class="title"><b>Grade 1 &amp; 4-5 OPEN <span class="full">Grade 2-3 FULL</span></b> - <i>Stealth, Archery &amp; Wilderness Survival</i></span><div class="cartbutton"><button class="cart" href="#"><i class="fa fa-shopping-cart"></i> Add</button></div>
 						</li>
 					</ul><!--.classlist-->
 				</div><!--.content-->
@@ -184,19 +184,19 @@
 				<div class="content">
 					<ul class="classlist">
 						<li>
-							<span class="title"><b>Grades 1-2</b> - <i>Stealth and Archery and Superfun Stuff</i></span><button class="cart" href="#"><i class="fa fa-shopping-cart"></i> Add</button>
+							<span class="title"><b>Grades 1-2</b> - <i>Stealth and Archery and Superfun Stuff</i></span><div class="cartbutton"><button class="cart" href="#"><i class="fa fa-shopping-cart"></i> Add</button></div>
 						</li>
 						<li>
-							<span class="title"><b>Grades 3-4</b> - <i>Intro to Human Psychology</i></span><button class="cart" href="#"><i class="fa fa-shopping-cart"></i> Add</button>
+							<span class="title"><b>Grades 3-4</b> - <i>Intro to Human Psychology</i></span><div class="cartbutton"><button class="cart" href="#"><i class="fa fa-shopping-cart"></i> Add</button></div>
 						</li>
 						<li class="full">
 							<span class="title"><b>Grades 3-4 <span class="full">FULL!</span></b> - <i>Making clothing out of animal skins</i></span>
 						</li>
 						<li>
-							<span class="title"><b>Grades 5-6</b> - <i>Making clothing out of animal skins</i></span><button class="cart" href="#"><i class="fa fa-shopping-cart"></i> Add</button>
+							<span class="title"><b>Grades 5-6</b> - <i>Making clothing out of animal skins</i></span><div class="cartbutton"><button class="cart" href="#"><i class="fa fa-shopping-cart"></i> Add</button></div>
 						</li>
 						<li>
-							<span class="title"><b>Grade 1 &amp; 4-5 OPEN <span class="full">Grade 2-3 FULL</span></b> - <i>Stealth, Archery &amp; Wilderness Survival</i></span><button class="cart" href="#"><i class="fa fa-shopping-cart"></i> Add</button>
+							<span class="title"><b>Grade 1 &amp; 4-5 OPEN <span class="full">Grade 2-3 FULL</span></b> - <i>Stealth, Archery &amp; Wilderness Survival</i></span><div class="cartbutton"><button class="cart" href="#"><i class="fa fa-shopping-cart"></i> Add</button></div>
 						</li>
 					</ul><!--.classlist-->
 				</div><!--.content-->

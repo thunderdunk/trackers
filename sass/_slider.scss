@@ -64,7 +64,7 @@
 
 						.content {
 							display: none;
-							margin-top: 30vh;
+							margin-top: 20vh;
 							color: #fff;
 							line-height: 1.4;
 							text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
@@ -94,7 +94,7 @@
 			@media all and (min-height: 600px) {
 				.slide {
 					.content {
-						margin-top: 30vh;
+						margin-top: 20vh;
 
 						h3 {
 
@@ -112,13 +112,24 @@
 
 				.slide {
 					.content {
-						margin-top: 40vh;
+						margin-top: 30vh;
 
 
 						h4 {
 							margin-bottom: 2em;
 							margin-top: .5em;
 						}
+					}
+				}
+			}
+
+			@media all and (min-height: 900px) {
+
+				.slide {
+					.content {
+						//margin-top: 50vh;
+
+
 					}
 				}
 			}
@@ -131,7 +142,7 @@
 
 			@media all and (min-width: $break-medium) {
 				.slide {
-					height: 60vh;
+					height: 50vh;
 
 					.gradient {
 						.container {
@@ -156,7 +167,7 @@
 
 			@media all and (min-width: $break-large) {
 				.slide {
-					height: 70vh;
+					height: 50vh;
 
 					.content {
 

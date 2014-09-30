@@ -365,7 +365,6 @@ a {
 --------------------------------------------- */
 #masthead {
   /* IE9 SVG, needs conditional override of 'filter' to 'none' */
-  /* IE9 SVG, needs conditional override of 'filter' to 'none' */
   background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzAwMDAwMCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9Ijk4JSIgc3RvcC1jb2xvcj0iIzAwMDAwMCIgc3RvcC1vcGFjaXR5PSIwIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMwMDAwMDAiIHN0b3Atb3BhY2l0eT0iMCIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
   background: -moz-linear-gradient(top, black 0%, transparent 100%, transparent 100%);
   /* FF3.6+ */
@@ -1041,7 +1040,7 @@ textarea {
         left: 0;
         position: absolute;
         top: 2em;
-        z-index: 99999;
+        z-index: 901;
         padding: 1em 0; }
         #masthead #main-navigation ul li ul li a {
           width: 200px;
@@ -1856,7 +1855,7 @@ html[xmlns] .slides {
             margin: 0 10%; }
             #hero-slider .flexslider .slides .slide .gradient .container .content {
               display: none;
-              margin-top: 30vh;
+              margin-top: 20vh;
               color: #fff;
               line-height: 1.4;
               text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); }
@@ -1872,13 +1871,13 @@ html[xmlns] .slides {
                 margin-top: .5em; }
       @media all and (min-height: 600px) {
         #hero-slider .flexslider .slides .slide .content {
-          margin-top: 30vh; }
+          margin-top: 20vh; }
           #hero-slider .flexslider .slides .slide .content h4 {
             margin-bottom: 2em;
             margin-top: .5em; } }
       @media all and (min-height: 800px) {
         #hero-slider .flexslider .slides .slide .content {
-          margin-top: 40vh; }
+          margin-top: 30vh; }
           #hero-slider .flexslider .slides .slide .content h4 {
             margin-bottom: 2em;
             margin-top: .5em; } }
@@ -1887,7 +1886,7 @@ html[xmlns] .slides {
           height: 40vh; } }
       @media all and (min-width: 769px) {
         #hero-slider .flexslider .slides .slide {
-          height: 60vh; }
+          height: 50vh; }
           #hero-slider .flexslider .slides .slide .gradient .container .content {
             display: block; }
             #hero-slider .flexslider .slides .slide .gradient .container .content h3 {
@@ -1900,7 +1899,7 @@ html[xmlns] .slides {
               font-weight: 100; } }
       @media all and (min-width: 1024px) {
         #hero-slider .flexslider .slides .slide {
-          height: 70vh; }
+          height: 50vh; }
           #hero-slider .flexslider .slides .slide .content h3 {
             font-size: 28px;
             font-size: 2.8rem;
@@ -2074,20 +2073,29 @@ html[xmlns] .slides {
           background: #eee; }
         #registration .ui-tabs .ui-tabs-panel .accordion .content .classlist li a .full {
           color: #dc3d12; }
-      #registration .ui-tabs .ui-tabs-panel .accordion .content .classlist li .cart {
-        padding: .5em;
-        float: right;
-        font-size: 12px;
-        font-size: 1.2rem;
-        margin-top: -.5em;
-        text-transform: none; }
       #registration .ui-tabs .ui-tabs-panel .accordion .content .classlist li.full a {
         background: #fadece; }
   #registration.class-page .ui-tabs .ui-tabs-panel .accordion .content .classlist li {
-    padding: 1em;
     color: #555;
     font-size: 13px;
-    font-size: 1.3rem; }
+    font-size: 1.3rem;
+    clear: both;
+    overflow: hidden; }
+    #registration.class-page .ui-tabs .ui-tabs-panel .accordion .content .classlist li .title {
+      width: 75%;
+      display: inline-block;
+      margin: 1em 2.5%;
+      float: left; }
+    #registration.class-page .ui-tabs .ui-tabs-panel .accordion .content .classlist li .cartbutton {
+      float: right;
+      width: 20%;
+      text-align: right; }
+      #registration.class-page .ui-tabs .ui-tabs-panel .accordion .content .classlist li .cartbutton button {
+        padding: .5em;
+        font-size: 12px;
+        font-size: 1.2rem;
+        text-transform: none;
+        margin: .8rem; }
     #registration.class-page .ui-tabs .ui-tabs-panel .accordion .content .classlist li .full {
       color: #dc3d12; }
     #registration.class-page .ui-tabs .ui-tabs-panel .accordion .content .classlist li.full {

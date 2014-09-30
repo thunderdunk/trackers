@@ -170,8 +170,6 @@
 			-moz-transition: -moz-transform 400ms ease;
 			-o-transition: -o-transform 400ms ease;
 			transition: transform 400ms ease;
-			//overflow: hidden;
-			//height: 100vh;
 		}
 	}
 }
@@ -191,8 +189,8 @@
 			display: block;
 			
 			ul {
-				
-				
+
+
 				li {
 					position: relative;
 					display: inline-block;
@@ -214,16 +212,18 @@
 					//Child menu
 					ul {
 						box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+
 						background: rgba(28,41,34,0.8);
 						display: none;
 						float: left;
 						left: 0;
 						position: absolute;
 						top: 2em;
-						z-index: 99999;
+						z-index: 901;
 						padding: 1em 0;
 						
 						li {
+
 							a {
 								width: 200px;
 								display: block;
@@ -247,6 +247,15 @@
 
 				li:hover > ul {
 					display: block;
+
+
+					li {
+						//z-index: 1000;
+
+						a {
+							//z-index: 1001;
+						}
+					}
 				}
 			}
 
