@@ -1885,18 +1885,16 @@ html[xmlns] .slides {
         #hero-slider .flexslider .slides .slide {
           height: 40vh; } }
       @media all and (min-width: 769px) {
-        #hero-slider .flexslider .slides .slide {
-          height: 50vh; }
-          #hero-slider .flexslider .slides .slide .gradient .container .content {
-            display: block; }
-            #hero-slider .flexslider .slides .slide .gradient .container .content h3 {
-              font-size: 24px;
-              font-size: 2.4rem;
-              font-style: italic; }
-            #hero-slider .flexslider .slides .slide .gradient .container .content h4 {
-              font-size: 16px;
-              font-size: 1.6rem;
-              font-weight: 100; } }
+        #hero-slider .flexslider .slides .slide .gradient .container .content {
+          display: block; }
+          #hero-slider .flexslider .slides .slide .gradient .container .content h3 {
+            font-size: 24px;
+            font-size: 2.4rem;
+            font-style: italic; }
+          #hero-slider .flexslider .slides .slide .gradient .container .content h4 {
+            font-size: 16px;
+            font-size: 1.6rem;
+            font-weight: 100; } }
       @media all and (min-width: 1024px) {
         #hero-slider .flexslider .slides .slide {
           height: 50vh; }
