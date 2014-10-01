@@ -5,8 +5,11 @@
 
 //require 'includes/header.php'; //Use for home page
 //require 'includes/header-bay.php'; //Use for Bay pages
+
 require 'includes/header-pdx.php'; //Includes main navigation and body, header, #masthead, #page FOR PDX PAGES
 ?>
+
+
 
 			<!--Uses FlexSlider @link https://github.com/woothemes/FlexSlider
 				// Use image with minimum dimensions 1280 X 800 as background image
@@ -405,4 +408,10 @@ require 'includes/header-pdx.php'; //Includes main navigation and body, header, 
 			</div><!--.container-->
 
 <?php include 'includes/footer.php'; // Includes closing main, body, html tags and footer #colophon ?>
+
+<!-- AddThis code. We have the Mobile Toolbar and Sharing Sidebar currently enabled. Change them here: https://www.addthis.com/dashboard#gallery/ra-509c8411329287cc/tools/mobile-toolbar
+	Go to www.addthis.com/dashboard to customize your tools -->
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-509c8411329287cc" async></script>
+
+
 

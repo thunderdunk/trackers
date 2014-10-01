@@ -68,7 +68,7 @@ body main {
   padding: 0 0 6em 0; }
 
 .container {
-  margin: 0 3%; }
+  margin: 0 5%; }
   .container .primary,
   .container .secondary {
     margin-bottom: 3em; }
@@ -184,7 +184,7 @@ body main {
   .block-row .secondary .block.last,
   .block-row .secondary .item.last {
     margin-right: 0; } }
-@media all and (min-width: 1320px) {
+@media all and (min-width: 1380px) {
   .container {
     max-width: 1280px;
     margin: 0 auto; } }
@@ -443,7 +443,7 @@ a {
     padding: 1rem 1em; }
   #masthead #main-navigation .menu.secondary li a {
     padding: 1rem 1em; } }
-@media all and (min-width: 1320px) {
+@media all and (min-width: 1380px) {
   #masthead #main-navigation {
     float: right;
     width: 70%; }
@@ -1915,7 +1915,7 @@ html[xmlns] .slides {
             font-size: 18px;
             font-size: 1.8rem;
             font-weight: 100; } }
-      @media all and (min-width: 1320px) {
+      @media all and (min-width: 1380px) {
         #hero-slider .flexslider .slides .slide .gradient .container {
           margin: 0 auto;
           max-width: 1280px; } }

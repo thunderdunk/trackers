@@ -9,7 +9,7 @@ body {
 $break-small: 480px;
 $break-medium: 769px;
 $break-large: 1024px;
-$break-x-large: 1320px;
+$break-x-large: 1380px;
 
 //Grid - 5 columns
 $col-1-5: 17.6%;
@@ -23,7 +23,7 @@ $gutter: 3%;
 $col-1-2: 48.5%;
 
 .container {
-	margin: 0 3%;
+	margin: 0 5%;
 
 	.primary,
 	.secondary {

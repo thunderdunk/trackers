@@ -173,3 +173,9 @@ Includes closing `main`, `body`, `html` tags and `footer` `#colophon`. If this w
 
 	<?php include 'includes/footer.php'; ?>
 
+## AddThis social sharing
+AddThis code has been added on `index.php` below the footer section. Just add the code on any page you'd like it to appear.
+
+We have the Mobile Toolbar and Sharing Sidebar currently enabled. Go to www.addthis.com/dashboard to customize your tools.
+
+
