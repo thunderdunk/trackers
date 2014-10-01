@@ -44,16 +44,20 @@ require 'includes/header-pdx.php'; //Includes main navigation and body, header, 
 					<?php include 'includes/email-signup.php'; ?>
 				</div><!--.container-->
 			</section><!--.slider-->
-	
+			
+			<!-- Breadcrumb trail - You'll need to enter the values -->
+				<div class="bread-wrapper">
+					<div class="container">
+						<p class="breadcrumb"><a href="#">Portland</a> &raquo; <a href="#">Parent Page</a> &raquo; This Page</p>
+					</div><!--.container-->
+				</div><!--.bread-wrapper-->
+				
 			<!-- Container
 				// A div with class="container" sets a max-width and adds margins on the left and right depending on window size. 
 				// Only use container for full-width elements! Note that the .primary and #secondary columns are within the container.
 
 			-->
 			<div class="container">
-
-				<!-- Breadcrumb trail - You'll need to enter the values -->
-				<p class="breadcrumb"><a href="#">Portland</a> &raquo; <a href="#">Parent Page</a> &raquo; This Page</p>
 
 				<header class="page-header">
 					<h1 class="page-title">Page Title</h1>

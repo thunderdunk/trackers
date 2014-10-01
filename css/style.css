@@ -1058,9 +1058,11 @@ textarea {
     top: 2.5em; } }
 /* Content
 --------------------------------------------- */
-.breadcrumb {
-  font-style: italic;
-  margin: 1.5em 0; }
+.bread-wrapper {
+  background: #e2e1de;
+  padding: 1em 0; }
+  .bread-wrapper .breadcrumb {
+    font-style: italic; }
 
 .entry-content {
   margin-bottom: 3em; }
