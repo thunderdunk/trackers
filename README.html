@@ -75,6 +75,26 @@
 &lt;/div&gt;&lt;!-- #my-popup-div --&gt;
 </code></pre>
 
+<h2>Registration Accordions</h2>
+
+<p><strong>Location Imgs:</strong>
+*   Use image dimensions: 960px X 240px.
+*   Be sure to include the <code>&lt;figure&gt;</code> tags around the image and <code>&lt;figcaption</code> around the address. This will ensure proper placement and styling.</p>
+
+<p><strong>Tabs:</strong>
+*   Tab titles are listed in the first <code>ul</code> element. The associated <code>href="#myid"</code> is referencing the div below containing that tab&rsquo;s content. The <code>id</code> value can be anything, just make sure the tab element and the content element match.
+*   Make sure each tab has <code>class="tab"</code> or they won&rsquo;t work.</p>
+
+<p><strong>Individual Classes:</strong>
+*   The registration accordion items are setup differently for single classes and categories. The single class item has a Cart button, whereas the the category page class item is simply a link to the single class page. Be sure to use the correct structure for each accordion type.
+*   Note that the registration section for the single class page needs to contain the <code>class-page</code> class: <code>&lt;section id="registration" class="class-page"&gt;</code>
+*   <strong>Full Classes:</strong> Indicate a full or partially full class by adding <code>class="full"</code> to the <code>li</code> element, to a <code>span</code> around the affected part of the class title, or both. Example below</p>
+
+<pre><code>&lt;li class="full"&gt;
+    &lt;span class="title"&gt;&lt;b&gt;Grade 1 &amp;amp; 4-5 OPEN &lt;span class="full"&gt;Grade 2-3 FULL&lt;/span&gt;&lt;/b&gt; - &lt;i&gt;Stealth, Archery &amp;amp; Wilderness Survival&lt;/i&gt;&lt;/span&gt;&lt;div class="cartbutton"&gt;&lt;button class="cart" href="#"&gt;&lt;i class="fa fa-shopping-cart"&gt;&lt;/i&gt; Add&lt;/button&gt;&lt;/div&gt;
+&lt;/li&gt;
+</code></pre>
+
 <h2>Image Blocks</h2>
 
 <p><strong>ROWS:</strong> Blocks must be organized into rows. Just add a <code>&lt;div class="block-row"&gt;&lt;/div&gt;</code> around each set of blocks. This will ensure that they clear properly. Also, they won&rsquo;t be styled if not in a block-row div.</p>

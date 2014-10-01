@@ -70,6 +70,25 @@ We're using Magnific Popup for the lightboxes: http://dimsemenov.com/plugins/mag
 	  </form>
 	</div><!-- #my-popup-div -->
 
+## Registration Accordions
+**Location Imgs:** 
+*	Use image dimensions: 960px X 240px. 
+*	Be sure to include the `<figure>` tags around the image and `<figcaption` around the address. This will ensure proper placement and styling.
+
+**Tabs:** 
+*	Tab titles are listed in the first `ul` element. The associated `href="#myid"` is referencing the div below containing that tab's content. The `id` value can be anything, just make sure the tab element and the content element match.
+*	Make sure each tab has `class="tab"` or they won't work.
+
+**Individual Classes:**
+*	The registration accordion items are setup differently for single classes and categories. The single class item has a Cart button, whereas the the category page class item is simply a link to the single class page. Be sure to use the correct structure for each accordion type.
+*	Note that the registration section for the single class page needs to contain the `class-page` class: `<section id="registration" class="class-page">`
+*	**Full Classes:** Indicate a full or partially full class by adding `class="full"` to the `li` element, to a `span` around the affected part of the class title, or both. Example below
+
+	<li class="full">
+		<span class="title"><b>Grade 1 &amp; 4-5 OPEN <span class="full">Grade 2-3 FULL</span></b> - <i>Stealth, Archery &amp; Wilderness Survival</i></span><div class="cartbutton"><button class="cart" href="#"><i class="fa fa-shopping-cart"></i> Add</button></div>
+	</li>
+
+
 ## Image Blocks
 
 **ROWS:** Blocks must be organized into rows. Just add a `<div class="block-row"></div>` around each set of blocks. This will ensure that they clear properly. Also, they won't be styled if not in a block-row div.
