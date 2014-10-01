@@ -1872,34 +1872,41 @@ html[xmlns] .slides {
                 margin-bottom: 2em;
                 margin-top: .5em; }
       @media all and (min-height: 600px) {
-        #hero-slider .flexslider .slides .slide .content {
-          margin-top: 20vh; }
-          #hero-slider .flexslider .slides .slide .content h4 {
+        #hero-slider .flexslider .slides .slide .gradient .container .content {
+          margin-top: 30vh; }
+          #hero-slider .flexslider .slides .slide .gradient .container .content h4 {
             margin-bottom: 2em;
             margin-top: .5em; } }
       @media all and (min-height: 800px) {
-        #hero-slider .flexslider .slides .slide .content {
-          margin-top: 30vh; }
-          #hero-slider .flexslider .slides .slide .content h4 {
-            margin-bottom: 2em;
-            margin-top: .5em; } }
+        #hero-slider .flexslider .slides .slide {
+          height: 60vh; }
+          #hero-slider .flexslider .slides .slide .gradient .container .content {
+            margin-top: 30vh; }
+            #hero-slider .flexslider .slides .slide .gradient .container .content h4 {
+              margin-bottom: 2em;
+              margin-top: .5em; } }
+      @media all and (min-height: 1000px) {
+        #hero-slider .flexslider .slides .slide .gradient .container .content {
+          margin-top: 35vh; } }
       @media all and (min-width: 480px) {
         #hero-slider .flexslider .slides .slide {
           height: 40vh; } }
       @media all and (min-width: 769px) {
-        #hero-slider .flexslider .slides .slide .gradient .container .content {
-          display: block; }
-          #hero-slider .flexslider .slides .slide .gradient .container .content h3 {
-            font-size: 24px;
-            font-size: 2.4rem;
-            font-style: italic; }
-          #hero-slider .flexslider .slides .slide .gradient .container .content h4 {
-            font-size: 16px;
-            font-size: 1.6rem;
-            font-weight: 100; } }
+        #hero-slider .flexslider .slides .slide {
+          height: 60vh; }
+          #hero-slider .flexslider .slides .slide .gradient .container .content {
+            display: block; }
+            #hero-slider .flexslider .slides .slide .gradient .container .content h3 {
+              font-size: 24px;
+              font-size: 2.4rem;
+              font-style: italic; }
+            #hero-slider .flexslider .slides .slide .gradient .container .content h4 {
+              font-size: 16px;
+              font-size: 1.6rem;
+              font-weight: 100; } }
       @media all and (min-width: 1024px) {
         #hero-slider .flexslider .slides .slide {
-          height: 50vh; }
+          height: 70vh; }
           #hero-slider .flexslider .slides .slide .content h3 {
             font-size: 28px;
             font-size: 2.8rem;
@@ -1909,7 +1916,7 @@ html[xmlns] .slides {
             font-size: 1.8rem;
             font-weight: 100; } }
       @media all and (min-width: 1320px) {
-        #hero-slider .flexslider .slides .slide .content {
+        #hero-slider .flexslider .slides .slide .gradient .container {
           margin: 0 auto;
           max-width: 1280px; } }
     #hero-slider .flexslider .flex-control-paging {

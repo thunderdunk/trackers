@@ -93,16 +93,20 @@
 
 			@media all and (min-height: 600px) {
 				.slide {
-					.content {
-						margin-top: 20vh;
+					.gradient {
+						.container {
+							.content {
+								margin-top: 30vh;
 
-						h3 {
+								h3 {
 
-						}
+								}
 
-						h4 {
-							margin-bottom: 2em;
-							margin-top: .5em;
+								h4 {
+									margin-bottom: 2em;
+									margin-top: .5em;
+								}
+							}
 						}
 					}
 				}
@@ -111,25 +115,35 @@
 			@media all and (min-height: 800px) {
 
 				.slide {
-					.content {
-						margin-top: 30vh;
+					height: 60vh;
+
+					.gradient {
+						.container {
+							.content {
+								margin-top: 30vh;
 
 
-						h4 {
-							margin-bottom: 2em;
-							margin-top: .5em;
+								h4 {
+									margin-bottom: 2em;
+									margin-top: .5em;
+								}
+							}
 						}
 					}
 				}
 			}
 
-			@media all and (min-height: 900px) {
+			@media all and (min-height: 1000px) {
 
 				.slide {
-					.content {
-						//margin-top: 50vh;
+					.gradient {
+						.container {
+							.content {
+								margin-top: 35vh;
 
 
+							}
+						}
 					}
 				}
 			}
@@ -142,7 +156,7 @@
 
 			@media all and (min-width: $break-medium) {
 				.slide {
-					//height: 50vh;
+					height: 60vh;
 
 					.gradient {
 						.container {
@@ -167,7 +181,7 @@
 
 			@media all and (min-width: $break-large) {
 				.slide {
-					height: 50vh;
+					height: 70vh;
 
 					.content {
 
@@ -187,10 +201,18 @@
 
 			@media all and (min-width: $break-x-large) {
 				.slide {
-					.content {
-						margin: 0 auto;
-						max-width: 1280px;
+					.gradient {
+						.container {
+							margin: 0 auto;
+							max-width: 1280px;
+
+							.content {
+								//margin-top: 30vh;
+							}
+						}
 					}
+					//height: 60vh;
+					
 				}
 				
 				
