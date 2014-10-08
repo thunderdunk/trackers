@@ -9,7 +9,7 @@
 <section id="registration">
 
 	<div class="tabs" id="tabs">
-		<ul>
+		<ul> <!--Tab Titles here. The associated id # is referencing the div below containing that tab's content -->
 			<li><a href="#tabs-1">NE</a></li>
 			<li><a href="#tabs-2">North</a></li>
 			<li><a href="#tabs-3">Hillsboro</a></li>

@@ -56,6 +56,11 @@
 					
 					overflow: hidden;
 					height: 100%;
+					
+					//Fixes bug in older versions of Safari - height attribute is ignored
+					position: absolute;
+					width: 100%;
+					bottom: 0px;
 
 					.container {
 						position: relative;
