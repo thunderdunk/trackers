@@ -34,7 +34,12 @@
 				<div class="content">
 					<ul class="classlist">
 						<li>
-							<span class="title"><b>Grades 1-2</b> - <i>Stealth and Archery and Superfun Stuff</i></span><div class="cartbutton"><button class="cart" href="#"><i class="fa fa-shopping-cart"></i> Add</button></div>
+							<?php
+								$courseID =1314103010; //This is the course identification number
+								$output = '<button class="cart" href="http://trackerspdx.com/register/cart.php?action=add&qty=1&id='.$courseID.'" ><i class="fa fa-shopping-cart"></i> Add</button>';
+								//echo $output;
+								?>
+							<span class="title"><b>Grades 1-2</b> - <i>Stealth and Archery and Superfun Stuff</i></span><div class="cartbutton"><?php echo $output; ?></div>
 						</li>
 						<li>
 							<span class="title"><b>Grades 3-4</b> - <i>Intro to Human Psychology</i></span><div class="cartbutton"><button class="cart" href="#"><i class="fa fa-shopping-cart"></i> Add</button></div>
