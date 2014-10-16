@@ -36,8 +36,7 @@
 						<li>
 							<?php
 								$courseID =1314103010; //This is the course identification number
-								$output = '<button class="cart" href="http://trackerspdx.com/register/cart.php?action=add&qty=1&id='.$courseID.'" ><i class="fa fa-shopping-cart"></i> Add</button>';
-								//echo $output;
+								$output = '<a class="button cart" href="http://trackerspdx.com/register/cart.php?action=add&qty=1&id='.$courseID.'" ><i class="fa fa-shopping-cart"></i> Add</a>';
 								?>
 							<span class="title"><b>Grades 1-2</b> - <i>Stealth and Archery and Superfun Stuff</i></span><div class="cartbutton"><?php echo $output; ?></div>
 						</li>

@@ -39,7 +39,7 @@ form,
 	}
 }
 
-
+.button,
 button,
 input,
 select,
@@ -50,8 +50,8 @@ textarea {
 	*vertical-align: middle; /* Improves appearance and consistency in all browsers */
 }
 
-a.button,
-a.button:visited,
+.button,
+.button:visited,
 button,
 input[type="button"],
 input[type="reset"],
@@ -166,7 +166,6 @@ input[type="submit"] {
 		@include font-size(24);
 	}
 }
-
 
 button,
 input[type="button"],
