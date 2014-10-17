@@ -101,7 +101,8 @@
 					.gradient {
 						.container {
 							.content {
-								margin-top: 30vh;
+								display: block;
+								margin-top: 20vh;
 
 								h3 {
 
@@ -125,6 +126,7 @@
 					.gradient {
 						.container {
 							.content {
+								display: block;
 								margin-top: 30vh;
 
 
@@ -166,7 +168,7 @@
 					.gradient {
 						.container {
 							.content {
-								display: block;
+								//display: block;
 
 								h3 {
 									@include font-size(24);
@@ -181,6 +183,20 @@
 						}
 					}
 					
+				}
+			}
+
+			@media all and (max-width: $break-medium) {
+				.slide {
+					.gradient {
+						.container {
+							.content {
+								display: none;
+
+
+							}
+						}
+					}
 				}
 			}
 
@@ -216,13 +232,24 @@
 							}
 						}
 					}
-					//height: 60vh;
-					
 				}
-				
-				
 			}
+
+			/*@media all and (max-height: 599px) {
+				.slide {
+					.gradient {
+						.container {
+							.content {
+								display: none !important;
+							}
+						}
+					}
+				}
+			}*/
+			
 		}
+
+
 
 		.flex-control-paging {
 			bottom: 1em;
